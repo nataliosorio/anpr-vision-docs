@@ -133,9 +133,10 @@ Desarrollado con **Angular** e **Ionic**, provee una interfaz moderna, responsiv
 ## 🧱 Repositorios del Proyecto
 | Módulo | Descripción | Repositorio |
 |---------|--------------|-------------|
-|  **Apr-Vision-Backend** | API REST desarrollada en **.NET Core**, encargada de la lógica de negocio, seguridad y comunicación con el microservicio OCR. | [🔗 Ir al repositorio](https://github.com/tuusuario/ANPR-VISION-BACKEND) |
-|  **Apr-Vision-Frontend** | Aplicación **Angular** para la interfaz web administrativa y de usuario final. Incluye dashboard, reportes y gestión general. | [🔗 Ir al repositorio](https://github.com/tuusuario/ANPR-VISION-FRONTEND) |
-|  **Apr-Vision-Mobile** | Aplicación móvil híbrida desarrollada con **Ionic**, orientada al uso para usuarios finales. | [🔗 Ir al repositorio](https://github.com/tuusuario/ANPR-VISION-MOBILE) |
-|  **Apr-Vision-Microservice** | Microservicio independiente en **Python**, con **OpenCV**, **EasyOCR**, **YOLOv5** y **ByteTrack** para detección y reconocimiento de matrículas. | [🔗 Ir al repositorio](https://github.com/tuusuario/ANPR-VISION-MICROSERVICE) |
+|  **Apr-Vision-Backend** | API REST desarrollada en **.NET Core**, encargada de la lógica de negocio, seguridad y comunicación con el microservicio OCR. | [🔗 Ir al repositorio](https://github.com/nataliosorio/anpr-vision-api) |
+|  **Apr-Vision-Frontend** | Aplicación **Angular** para la interfaz web administrativa y de usuario final. Incluye dashboard, reportes y gestión general. | [🔗 Ir al repositorio](https://github.com/nataliosorio/anpr-vision-portal) |
+|  **Apr-Vision-Mobile** | Aplicación móvil híbrida desarrollada con **Ionic**, orientada al uso para usuarios finales. | [🔗 Ir al repositorio](https://github.com/nataliosorio/anpr-vision-app) |
+|  **Apr-Vision-Microservice** | Microservicio independiente en **Python**, con **OpenCV**, **EasyOCR**, **YOLOv5** y **ByteTrack** para detección y reconocimiento de matrículas. | [🔗 Ir al repositorio](https://github.com/nataliosorio/anpr-vision-microservice) |
+|  **Apr-Vision-db** | Base de datos | [🔗 Ir al repositorio](https://github.com/nataliosorio/anpr-vision-db) |
 
 </div>
