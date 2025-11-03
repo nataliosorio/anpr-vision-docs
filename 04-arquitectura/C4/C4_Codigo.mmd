@@ -1,0 +1,24 @@
+C4Component
+title Diagrama de Código — Estructura General ANPR VISION
+
+Container_Boundary(backend, "Backend API (.NET)") {
+    Component(vehicleService, "VehicleService", "C#", "Gestiona entradas, salidas y registros manuales.")
+    Component(notificationHub, "NotificationHub", "SignalR", "Canal en tiempo real para alertas y notificaciones.")
+    Component(vehicleIngressManager, "VehicleIngressManager", "C#", "Orquestador de eventos de detección ANPR.")
+    Component(notificationBusiness, "NotificationBusiness", "C#", "Lógica de creación y persistencia de notificaciones.")
+    Component(repository, "GenericRepository", "EF Core", "Acceso genérico a entidades y repositorios.")
+}
+
+Container_Boundary(micro, "Microservicio ANPR (Python)") {
+    Component(cameraHandler, "CameraHandler", "Python", "Administra los streams RTSP de cámaras registradas.")
+    Component(plateDetector, "PlateDetector", "YOLOv5 / OpenCV", "Detecta matrículas en tiempo real.")
+    Component(ocrReader, "OCRReader", "Tesseract OCR", "Extrae texto de las matrículas detectadas.")
+    Component(kafkaProducer, "KafkaProducer", "Confluent Kafka", "Publica detecciones en el topic correspondiente.")
+}
+
+Rel(vehicleIngressManager, kafkaProducer, "Consume eventos de detección")
+Rel(vehicleService, repository, "Guarda registro en DB")
+Rel(notificationBusiness, notificationHub, "Envía notificación al usuario")
+Rel(cameraHandler, plateDetector, "Procesa frames en tiempo real")
+Rel(plateDetector, ocrReader, "Extrae caracteres de la matrícula")
+Rel(ocrReader, kafkaProducer, "Envía resultado de detección")
