@@ -1,0 +1,352 @@
+@startuml
+' =====================================================
+' 📘 ANPR-VISION – Diagrama de Clases UML (Dominio + Funcionalidades)
+' =====================================================
+
+!define RECTANGLE class
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor #D5E8D4
+  BorderColor black
+  ArrowColor black
+}
+title ANPR-VISION - Diagrama de Clases UML (Backend .NET)
+
+' ===================== CLASES BASE =======================
+abstract class BaseModel {
+  + int Id
+  + bool Asset
+  + bool? IsDeleted
+  --
+  + void Activate()
+  + void Deactivate()
+  + void MarkDeleted()
+}
+
+abstract class GenericModel {
+  + string Name
+  --
+  + string ToString()
+}
+
+class ApiResponse<T> {
+  + T Data
+  + bool Success
+  + string Message
+  + object Details
+  --
+  + ApiResponse(T data, bool success, string message, object details)
+}
+
+' ===================== SECURITY ===========================
+package "Security" {
+  class User {
+    + string Username
+    + string Email
+    + string Password
+    + int PersonId
+    + Person Person
+    --
+    + bool ValidatePassword(string input)
+    + void ChangePassword(string newPass)
+    + void UpdateProfile(Person data)
+  }
+
+  class Person {
+    + string FirstName
+    + string LastName
+    + string Document
+    + string Phone
+    + string Email
+    + int Age
+    + Client Client
+    --
+    + string GetFullName()
+    + bool IsAdult()
+  }
+
+  class Rol {
+    + string Name
+    + string Description
+    + ICollection<RolFormPermission> RolFormPermission
+    --
+    + void AddPermission(Form form, Permission permission)
+    + bool HasPermission(string permName)
+  }
+
+  class Permission {
+    + string Name
+    + string Description
+  }
+
+  class Form {
+    + string Name
+    + string? Description
+    + ICollection<FormModule> FormModules
+    + ICollection<RolFormPermission> RolFormPermission
+    --
+    + void AssignToModule(Module module)
+  }
+
+  class Module {
+    + string Name
+    + string Description
+    + ICollection<FormModule> FormModules
+    --
+    + void AddForm(Form form)
+  }
+
+  class RolFormPermission {
+    + int RolId
+    + int FormId
+    + int PermissionId
+    + Rol Rol
+    + Form Form
+    + Permission Permission
+  }
+
+  class FormModule {
+    + int FormId
+    + int ModuleId
+    + Form Form
+    + Module Module
+  }
+
+  class RolParkingUser {
+    + int RolId
+    + int UserId
+    + int ParkingId
+    + Rol Rol
+    + User User
+    + Parking Parking
+  }
+
+  class PasswordReset {
+    + int Id
+    + int UsuarioId
+    + string Code
+    + DateTime ExpiryDate
+    + bool Used
+    + DateTime CreatedAt
+    + User Usuario
+    --
+    + bool IsExpired()
+    + void MarkAsUsed()
+  }
+}
+
+' ===================== PARAMETER ==========================
+package "Parameter" {
+  class Parking {
+    + string Name
+    + string Location
+    + int ParkingCategoryId
+    + ParkingCategory ParkingCategory
+    + IEnumerable<Zones> Zones
+    + ICollection<Rates> Rates
+    + IEnumerable<Camera> Camaras
+    + ICollection<Notification> Notifications
+    + ICollection<RolParkingUser> RolParkingUsers
+    --
+    + void AddCamera(Camera camera)
+    + void AddZone(Zones zone)
+    + void AddRate(Rates rate)
+    + void Notify(string title, string message)
+  }
+
+  class ParkingCategory {
+    + string Code
+    + string Description
+    + ICollection<Parking> Parkings
+  }
+
+  class Zones {
+    + string Name
+    + int ParkingId
+    + Parking Parking
+    + ICollection<Sectors> Sectors
+    --
+    + void AddSector(Sectors s)
+  }
+
+  class Sectors {
+    + string Name
+    + int Capacity
+    + int ZonesId
+    + int TypeVehicleId
+    + Zones Zones
+    + TypeVehicle TypeVehicle
+    + ICollection<Slots> Slots
+    --
+    + int GetAvailableSlots()
+  }
+
+  class Slots {
+    + string Name
+    + bool IsAvailable
+    + int SectorsId
+    + Sectors Sectors
+    + ICollection<RegisteredVehicles> RegisteredVehicles
+    --
+    + void Occupy()
+    + void Release()
+  }
+
+  class RatesType {
+    + string Name
+    + string? Description
+    + ICollection<Rates> Rates
+  }
+
+  class Rates {
+    + string Type
+    + decimal Amount
+    + DateTime StartHour
+    + DateTime EndHour
+    + int Year
+    + int ParkingId
+    + int RatesTypeId
+    + int TypeVehicleId
+    + RatesType RatesType
+    + TypeVehicle TypeVehicle
+    + Parking Parking
+    --
+    + bool IsValid(DateTime date)
+    + decimal CalculateAmount(TimeSpan duration)
+  }
+
+  class TypeVehicle {
+    + string Name
+    + ICollection<Vehicle> Vehicles
+    + ICollection<Rates> Rates
+    + ICollection<Sectors> Sectors
+  }
+
+  class Camera {
+    + string Name
+    + string Resolution
+    + string Url
+    + int ParkingId
+    + Parking Parking
+    --
+    + void CapturePlate()
+    + void Calibrate()
+  }
+
+  class Client {
+    + string Name
+    + int PersonId
+    + Person Person
+    + ICollection<Vehicle> Vehicles
+    --
+    + void AddVehicle(Vehicle v)
+  }
+}
+
+' ===================== OPERATIONAL ========================
+package "Operational" {
+  class Vehicle {
+    + string Plate
+    + string? Color
+    + int TypeVehicleId
+    + int ClientId
+    + ICollection<RegisteredVehicles> RegisteredVehicles
+    + ICollection<Memberships> Memberships
+    + Client Client
+    + TypeVehicle TypeVehicle
+    --
+    + bool IsRegistered()
+    + void AssignClient(Client c)
+  }
+
+  class RegisteredVehicles {
+    + DateTime EntryDate
+    + DateTime? ExitDate
+    + ERegisterStatus Status
+    + int VehicleId
+    + Vehicle Vehicle
+    + int? SlotsId
+    + Slots? Slots
+    --
+    + void RegisterEntry()
+    + void RegisterExit()
+    + TimeSpan GetStayDuration()
+  }
+
+  class Notification {
+    + int? ParkingId
+    + string Title
+    + string Message
+    + string Type
+    + bool IsRead
+    + DateTime CreatedAt
+    + int? RelatedEntityId
+    + Parking Parking
+    --
+    + void MarkAsRead()
+  }
+
+  class BlackList {
+    + string Reason
+    + DateTime RestrictionDate
+    + int VehicleId
+    + Vehicle Vehicle
+    --
+    + bool IsActive()
+  }
+}
+
+' ===================== AUDIT ==============================
+package "Audit" {
+  class AuditLog {
+    + int Id
+    + string Action
+    + string EntityName
+    + int EntityId
+    + string UserName
+    + DateTime Timestamp
+    + string Changes
+    --
+    + void RecordChange(string entity, string user)
+  }
+}
+
+' ===================== ENUM ==============================
+enum ERegisterStatus {
+  Ingress
+  Inside
+  Exit
+  Canceled
+}
+
+' ===================== RELACIONES ======================
+User --> Person : 1
+Person --> Client : 1
+Client --> Vehicle : *
+Vehicle --> RegisteredVehicles : *
+Vehicle --> BlackList : *
+RegisteredVehicles --> Slots : 0..1
+Parking --> Zones : *
+Zones --> Sectors : *
+Sectors --> Slots : *
+Sectors --> TypeVehicle : 1
+Parking --> Rates : *
+Rates --> RatesType : 1
+Rates --> TypeVehicle : 1
+Parking --> Camera : *
+Parking --> Notification : *
+Parking --> RolParkingUser : *
+RolParkingUser --> Rol
+RolParkingUser --> User
+RolFormPermission --> Rol
+RolFormPermission --> Form
+RolFormPermission --> Permission
+FormModule --> Form
+FormModule --> Module
+ParkingCategory --> Parking
+PasswordReset --> User
+Notification --> Parking
+BlackList --> Vehicle
+AuditLog --> User : "by UserName"
+
+@enduml
