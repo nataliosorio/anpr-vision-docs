@@ -1,0 +1,18 @@
+C4Context
+title Diagrama de Contexto — ANPR VISION
+
+Person(admin, "Administrador del Sistema", "Gestiona el parqueadero, usuarios, tarifas y cámaras.")
+Person(employee, "Empleado del Parqueadero", "Registra manualmente vehículos y gestiona alertas.")
+Person(user, "Usuario Final", "Consulta el estado de su vehículo, pagos y alertas desde la app.")
+Person(camera, "Cámara ANPR", "Captura imágenes de matrículas en tiempo real.")
+System_Boundary(s1, "ANPR VISION") {
+    System(backend, "Backend API", "ASP.NET Core", "Gestiona la lógica del negocio, base de datos y notificaciones.")
+    System(micro, "Microservicio ANPR", "Python", "Detecta matrículas mediante visión artificial (YOLOv5 + OCR).")
+    System(front, "Aplicación Web / Móvil", "Angular / Ionic", "Interfaz para administradores, empleados y usuarios finales.")
+}
+Rel(camera, micro, "Envía imágenes o frames de video en tiempo real")
+Rel(micro, backend, "Publica eventos Kafka (detección de placas)")
+Rel(backend, front, "Proporciona API REST y notificaciones SignalR")
+Rel(admin, backend, "Administra cámaras, tarifas, usuarios y reportes")
+Rel(employee, backend, "Gestiona vehículos, alertas y cobros")
+Rel(user, backend, "Consulta historial, notificaciones y pagos")

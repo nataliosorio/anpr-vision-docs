@@ -1,0 +1,30 @@
+---
+title: Diagrama de Actividades - ANPR VISION (Flujo General)
+---
+
+flowchart TD
+    %% Inicio del proceso
+    A[Inicio] --> B[Cámara ANPR captura imagen del vehículo]
+
+    %% Proceso de detección
+    B --> C{¿Placa reconocida correctamente?}
+    C -- Sí --> D[Microservicio ANPR envía evento Kafka: PlateDetected]
+    C -- No --> E[Operador realiza registro manual en el sistema]
+
+    %% Registro del vehículo
+    D --> F[Backend registra el vehículo en la base de datos]
+    E --> F
+    F --> G[Backend envía notificación vía SignalR al operador]
+
+    %% Estacionamiento
+    G --> H[Se actualizan cupos disponibles en el parqueadero]
+    H --> I[Vehículo permanece estacionado]
+    I --> J[Cámara o operador detecta salida del vehículo]
+
+    %% Proceso de salida
+    J --> K[Backend calcula valor a pagar según tiempo de estancia]
+    K --> L[Usuario realiza pago del estacionamiento]
+    L --> M[Se cierra ticket o factura]
+    M --> N[Se actualizan cupos disponibles]
+    N --> O[Generación de reporte y estadísticas]
+    O --> P[Fin del proceso]
