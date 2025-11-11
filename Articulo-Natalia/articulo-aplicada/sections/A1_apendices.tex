@@ -1,9 +1,39 @@
 \appendix
-\section{Checklist de reproducibilidad (plantilla)}
+\section{Apéndices}
+\label{sec:apendices}
+
+\subsection{Checklist de Reproducibilidad}
+Para garantizar la transferencia y la validez externa de los hallazgos de proceso y la arquitectura propuesta, se proporciona el siguiente checklist de reproducibilidad.
+
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Datos}: fuente, versión, licencias, anonimización.
-  \item \textbf{Código}: repositorio, commit hash, instrucciones de ejecución.
-  \item \textbf{Entorno}: SO, versión de compiladores, dependencias, semillas.
-  \item \textbf{Procedimiento}: pasos exactos para replicar resultados.
-  \item \textbf{Resultados}: tablas/figuras generadas automáticamente en \texttt{build/}.
+  \item \textbf{Datos}: Fuente (ej. Colección de imágenes de parqueos urbanos y datasets públicos como COCO/PASCAL VOC para YOLOv5), versión, licencias (ej. Creative Commons para imágenes públicas), protocolo de anonimización (ej. anonimización de matrículas no estándar).
+  \item \textbf{Código}: Repositorio Git (URL), *commit hash* específico de la versión final del artículo, instrucciones detalladas de ejecución (incluyendo el uso de \texttt{Docker-compose.yaml}).
+  \item \textbf{Entorno}: Sistema Operativo (ej. Ubuntu 20.04), versión de compiladores (ej. Python 3.9), dependencias principales (\texttt{requirements.txt}), semillas usadas para entrenamiento (si aplica) o configuración base de \texttt{Apache Kafka}.
+  \item \textbf{Procedimiento}: Pasos exactos documentados en el \textit{runbook} de adopción (referenciado en \texttt{README.md}) para replicar el entorno de despliegue de los Microservicios.
+  \item \textbf{Resultados}: Tablas y figuras que resumen las métricas DORA y de rendimiento (ej. latencia de Kafka) generadas automáticamente en el directorio \texttt{build/}.
 \end{itemize}
+
+\subsection{Especificaciones Técnicas del Stack de Comunicación}
+
+Para complementar la descripción de la arquitectura, la Tabla \ref{tab:kafka_config} detalla la configuración inicial de los componentes críticos de *stream processing* y comunicación, vital para replicar la arquitectura de baja latencia.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Configuración Detallada de los Componentes de Comunicación}
+    \label{tab:kafka_config}
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Componente} & \textbf{Herramienta} & \textbf{Propósito/Versión Clave} \\
+        \hline
+        *Message Broker* & Apache Kafka & Versión 3.x \\
+        \hline
+        Productor & Python (librería \texttt{confluent-kafka}) & Envío asíncrono de eventos ANPR \\
+        \hline
+        Consumidor & Servicio de Lógica de Negocio & Consumo y actualización de DB \\
+        \hline
+        *Tracker* & ByteTracker & Seguimiento continuo de vehículo por ID \\
+        \hline
+        Tiempo Real Web & WebSockets / SignalR & Notificación inmediata de puestos libres \\
+        \hline
+    \end{tabular}
+\end{table}

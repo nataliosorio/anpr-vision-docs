@@ -333,6 +333,7 @@ INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT sections/02_relacionados.tex
+OUTPUT build/main_acm.xdv
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex
@@ -346,7 +347,6 @@ INPUT ./sections/04_implementacion.tex
 INPUT ./sections/04_implementacion.tex
 INPUT ./sections/04_implementacion.tex
 INPUT sections/04_implementacion.tex
-OUTPUT build/main_acm.xdv
 INPUT ./graphics/correlacion_devops.pdf
 INPUT ./graphics/correlacion_devops.pdf
 INPUT ./graphics/correlacion_devops.pdf

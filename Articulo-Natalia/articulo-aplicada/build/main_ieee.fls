@@ -266,6 +266,7 @@ INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT sections/02_relacionados.tex
+OUTPUT build/main_ieee.xdv
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex
@@ -274,7 +275,6 @@ INPUT sections/03_metodologia.tex
 INPUT ./graphics/comparacion_metodologias.pdf
 INPUT ./graphics/comparacion_metodologias.pdf
 INPUT ./graphics/comparacion_metodologias.pdf
-OUTPUT build/main_ieee.xdv
 INPUT ./sections/04_implementacion.tex
 INPUT ./sections/04_implementacion.tex
 INPUT ./sections/04_implementacion.tex

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  6 NOV 2025 09:39
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  11 NOV 2025 03:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1248,8 +1248,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[2] (./sections/01_introduccion.tex) (./sections/02_relacionados.tex) (./sectio
-ns/03_metodologia.tex
+[2] (./sections/01_introduccion.tex
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1258,6 +1257,38 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
 [3]
+
+LaTeX Warning: Reference `sec:relacionados' on page 4 undefined on input line 1
+8.
+
+
+LaTeX Warning: Reference `sec:metodologia' on page 4 undefined on input line 18
+.
+
+
+LaTeX Warning: Reference `sec:implementacion' on page 4 undefined on input line
+ 18.
+
+
+LaTeX Warning: Reference `sec:resultados' on page 4 undefined on input line 18.
+
+
+
+LaTeX Warning: Reference `sec:discusion' on page 4 undefined on input line 18.
+
+
+LaTeX Warning: Reference `sec:conclusiones' on page 4 undefined on input line 1
+8.
+
+) (./sections/02_relacionados.tex
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[4]) (./sections/03_metodologia.tex
 \openout5 = `main_apa7.fff'.
 
 (main_apa7.fff)
@@ -1273,7 +1304,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[4] (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+[5] (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
@@ -1282,6 +1313,14 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 \openout4 = `main_apa7.ttt'.
 
 (main_apa7.ttt))) (./sections/05_resultados.tex
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 15.21004pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.21004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
+
+[6]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
 .
 (/opt/texlive/texdir/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1312,9 +1351,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 5.
-
-Underfull \vbox (badness 4765) has occurred while \output is active []
-
+) (./sections/06_discusion.tex) (./sections/07_conclusiones.tex
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1322,7 +1359,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[5]) (./sections/06_discusion.tex) (./sections/07_conclusiones.tex
+[7]) (./sections/A1_apendices.tex
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
 (fancyhdr)                Make it at least 15.21004pt, for example:
@@ -1330,15 +1367,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[6]) (./sections/A1_apendices.tex
-
-Package fancyhdr Warning: \headheight is too small (15.2pt): 
-(fancyhdr)                Make it at least 15.21004pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.21004pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
-
-[7] (build/main_apa7.ttt
+[8] (build/main_apa7.ttt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 8.
 )
@@ -1349,7 +1378,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[8
+[9
 
 ] (build/main_apa7.fff
 File: graphics/comparacion_metodologias.pdf Graphic file (type pdf)
@@ -1361,7 +1390,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[9
+[10
 
 ]
 File: graphics/correlacion_devops.pdf Graphic file (type pdf)
@@ -1373,7 +1402,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[10
+[11
 
 ]
 File: graphics/metricas_dora.pdf Graphic file (type pdf)
@@ -1385,7 +1414,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[11
+[12
 
 ]
 File: graphics/evolucion_metricas.pdf Graphic file (type pdf)
@@ -1398,7 +1427,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[12
+[13
 
 ])
 
@@ -1408,7 +1437,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[13
+[14
 
 ] AED endfloat: Processing end Figures and Tables
 
@@ -1418,7 +1447,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.01004pt}.
 
-[14
+[15
 
 
 ] (build/main_apa7.aux
@@ -1430,6 +1459,9 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main_apa7.out' has not changed.
 (rerunfilecheck)             Checksum: 6C206CCBABE2F76EAF86BF642B23F55E;3072.
 Package logreq Info: Writing requests to 'main_apa7.run.xml'.
@@ -1437,12 +1469,12 @@ Package logreq Info: Writing requests to 'main_apa7.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43675 strings out of 468179
- 926714 string characters out of 5435043
- 1921928 words of memory out of 5000000
- 71805 multiletter control sequences out of 15000+600000
+ 43677 strings out of 468179
+ 926793 string characters out of 5435043
+ 1921962 words of memory out of 5000000
+ 71807 multiletter control sequences out of 15000+600000
  660189 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,118p,1006b,5084s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,118p,1006b,5084s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_apa7.xdv (14 pages, 128980 bytes).
+Output written on build/main_apa7.xdv (15 pages, 153092 bytes).

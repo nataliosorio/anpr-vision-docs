@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex build/main_acm"] 1762421937.69207 "build/main_acm.aux" "build/main_acm.bbl" "build/main_acm" 1762421946.84987 0
+["bibtex build/main_acm"] 1762832269.32011 "build/main_acm.aux" "build/main_acm.bbl" "build/main_acm" 1762832279.0158 0
   "./bibliography/references.bib" 1762419522.95612 1887 1b333411cd59264f7258718d40d2ea2e ""
   "/opt/texlive/texdir/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1748720794 93560 12e0ced1522ea2bfa9b2fb12855c7e9e ""
-  "build/main_acm.aux" 1762421946.11551 6299 40d7880241e5fbae88e4f82b22fa84ea "xelatex"
+  "build/main_acm.aux" 1762832277.71537 6256 614d258fab385587173c8bc1a440ed70 "xelatex"
   (generated)
   "build/main_acm.bbl"
   "build/main_acm.blg"
   (rewritten before read)
-["xdvipdfmx"] 1762421946.49145 "build/main_acm.xdv" "build/main_acm.pdf" "build/main_acm" 1762421946.88136 0
-  "build/main_acm.xdv" 1762421946.12172 149656 9198bd8764b774fbe4064ffa8ecf947b "xelatex"
+["xdvipdfmx"] 1762832278.6674 "build/main_acm.xdv" "build/main_acm.pdf" "build/main_acm" 1762832279.07237 0
+  "build/main_acm.xdv" 1762832277.72823 173460 8b8ab4c34bc7302055705a4ccade9659 "xelatex"
   (generated)
   "build/main_acm.pdf"
   (rewritten before read)
-["xelatex"] 1762421937.90358 "main_acm.tex" "build/main_acm.xdv" "main_acm" 1762421946.85577 0
+["xelatex"] 1762832269.51831 "main_acm.tex" "build/main_acm.xdv" "main_acm" 1762832279.02044 0
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -153,10 +153,10 @@
   "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1749313668 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1762421656 5947729 e091d492387925497f5db4b6cf4ca96a ""
   "/opt/texlive/texdir/texmf.cnf" 1759376174 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "build/main_acm.aux" 1762421946.11551 6299 40d7880241e5fbae88e4f82b22fa84ea "xelatex"
-  "build/main_acm.bbl" 1762421937.72979 4426 41589dcb2d5e0aa3ac4eb24f09321659 "bibtex build/main_acm"
-  "build/main_acm.log" 1762421946.12172 94404 9442ab8df9a603b2cd3fa47158225025 "xelatex"
-  "build/main_acm.out" 1762421946.11829 3862 56701ee2706d216cdc9d789f72a3f575 "xelatex"
+  "build/main_acm.aux" 1762832277.71537 6256 614d258fab385587173c8bc1a440ed70 "xelatex"
+  "build/main_acm.bbl" 1762832269.67616 4426 41589dcb2d5e0aa3ac4eb24f09321659 "bibtex build/main_acm"
+  "build/main_acm.log" 1762832277.72873 94918 ecdcbc0c82198bf2542677cd97c9377d "xelatex"
+  "build/main_acm.out" 1762832277.72344 3862 56701ee2706d216cdc9d789f72a3f575 "xelatex"
   "graphics/comparacion_metodologias.pdf" 1762419522.97789 20100 e089cf178c4d2ae9c21f2e386949b091 ""
   "graphics/correlacion_devops.pdf" 1762419522.99395 27499 a09bf7fcf11694c8b5682a29ed7a4a61 ""
   "graphics/evolucion_metricas.pdf" 1762419523.00295 20577 c0c92e9f496546ad0f55478a4ddefe75 ""
@@ -164,8 +164,8 @@
   "includes/preamble_acm.tex" 1762419523.02639 118 3f1ba5b5d56dca6cd0336ca2b9c163d0 ""
   "includes/preamble_common.tex" 1762419523.0284 1297 07518923b9f4f85072fe97d52092a43e ""
   "main_acm.tex" 1762419522.93127 1091 184be8e479266002e54e40069289ab72 ""
-  "sections/00_abstract.tex" 1762420733.05678 1511 b22f2a3c9991777ba832a6eb52266136 ""
-  "sections/01_introduccion.tex" 1762419523.05321 967 38b56cffb0e28fa5ee9d75e690f29988 ""
+  "sections/00_abstract.tex" 1762832201.25196 1589 7e66eee577520efac03a5bc84f3e9904 ""
+  "sections/01_introduccion.tex" 1762832228.36952 3580 9a1a68476129234d68524b9466365393 ""
   "sections/02_relacionados.tex" 1762419523.05702 1122 63c6a480aced6be378a3d5026943dabe ""
   "sections/03_metodologia.tex" 1762419523.06288 1658 1810fa4007cbe0a22e249b4a3ea3e2ea ""
   "sections/04_implementacion.tex" 1762419523.0669 1735 9db69bccd0083c52555fc9673733b1a0 ""

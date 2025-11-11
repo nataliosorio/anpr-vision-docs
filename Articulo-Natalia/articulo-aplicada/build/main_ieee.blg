@@ -1,14 +1,14 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'build/main_ieee.blg'
-[67] biber:342> INFO - === Thu Nov  6, 2025, 09:38:13
+[70] biber:342> INFO - === Tue Nov 11, 2025, 03:20:53
 [90] Biber.pm:421> INFO - Reading 'build/main_ieee.bcf'
-[159] Biber.pm:1002> INFO - Found 7 citekeys in bib section 0
-[175] Biber.pm:4487> INFO - Processing section 0
-[183] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/references.bib' for section 0
-[195] bibtex.pm:1713> INFO - LaTeX decoding ...
-[206] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/references.bib'
-[299] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[300] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[300] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[308] bbl.pm:676> INFO - Writing 'build/main_ieee.bbl' with encoding 'UTF-8'
-[316] bbl.pm:779> INFO - Output to build/main_ieee.bbl
+[161] Biber.pm:1002> INFO - Found 7 citekeys in bib section 0
+[178] Biber.pm:4487> INFO - Processing section 0
+[190] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/references.bib' for section 0
+[197] bibtex.pm:1713> INFO - LaTeX decoding ...
+[209] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/references.bib'
+[270] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[271] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[271] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[279] bbl.pm:676> INFO - Writing 'build/main_ieee.bbl' with encoding 'UTF-8'
+[284] bbl.pm:779> INFO - Output to build/main_ieee.bbl

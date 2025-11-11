@@ -1,23 +1,56 @@
-\section{Metodología de investigación aplicada}
-\subsection{Diseño}
-Elegimos un diseño de \textit{action research} con iteraciones planificar--actuar--observar--reflexionar, complementado con estudio de caso. Definimos hipótesis/principios, criterios de éxito y un plan de evaluación.
+\section{Metodología de Diseño del Sistema}
+\label{sec:metodologia}
 
-\subsection{Comparación de metodologías ágiles}
-Para seleccionar la metodología más apropiada, realizamos una evaluación multi-criterio de las principales metodologías ágiles. La \cref{fig:comparacion_metodologias} presenta los resultados de esta comparación.
+La metodología adoptada para el diseño e implementación de la arquitectura ANPR/ALPR combina dos enfoques esenciales: la Ingeniería de *Software* Ágil y el Diseño Modular de Sistemas de *Deep Learning* en tiempo real.
+
+\subsection{Diseño Metodológico General}
+\label{subsec:diseno_general}
+
+El proyecto sigue un diseño de \textbf{Action Research} (\textit{Investigación-Acción}) con un enfoque iterativo, utilizando ciclos \textit{Planificar--Actuar--Observar--Reflexionar} (PAOR). Este marco permite la adaptación continua del diseño arquitectónico en respuesta a los desafíos técnicos encontrados durante la integración de los componentes de *Deep Learning* y *Stream Processing*. La metodología se complementa con un \textbf{Estudio de Caso} específico centrado en la gestión de un entorno de parqueo real.
+
+\subsubsection{Metodología Ágil para el Desarrollo}
+Para gestionar el proceso de desarrollo e integración, se seleccionó \textbf{Scrum} como la metodología de gestión. Se realizó una evaluación multi-criterio de las principales metodologías ágiles (Scrum, Kanban y XP), donde Scrum mostró el mejor balance entre flexibilidad y velocidad de entrega, factores críticos para el contexto del proyecto. La Figura \ref{fig:comparacion_metodologias} ilustra esta comparación.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.45\textwidth]{graphics/comparacion_metodologias.pdf}
-    \caption{Comparación multi-criterio de metodologías ágiles: Scrum, Kanban y XP}
-    \label{fig:comparacion_metodologias}
+    \centering
+    \includegraphics[width=0.45\textwidth]{graphics/comparacion_metodologias.pdf}
+    \caption{Comparación multi-criterio de metodologías ágiles: Scrum, Kanban y XP}
+    \label{fig:comparacion_metodologias}
 \end{figure}
 
-\subsection{Datos e instrumentos}
-Recolectamos issues, \textit{pull requests}, \textit{pipelines} CI, cobertura de pruebas, defectos y métricas de calidad. Instrumentamos \textit{scripts} para extracción/limpieza en \texttt{code/} y tablas en \texttt{tables/}.
+\subsection{Diseño Arquitectónico y Tecnológico}
+\label{subsec:diseno_arquitectonico}
 
-Los datos fueron recolectados durante un período de 12 meses, capturando tanto métricas cuantitativas como observaciones cualitativas del proceso de desarrollo.
+El diseño del sistema se basa en una arquitectura de **Microservicios** y **Procesamiento de *Streams***, garantizando la modularidad y la escalabilidad de cada componente.
 
-\subsection{Procedimiento y validez}
-Detallamos fases, roles y \textit{checkpoints}. Evaluamos validez interna/externa/constructo/conclusión; documentamos mitigaciones de sesgo (p.ej., anonimización de datos, \textit{pre-registration} de métricas).
+\subsubsection{Módulos Clave del *Stack* Tecnológico}
+La arquitectura se divide en tres módulos principales, cada uno con un *stack* tecnológico específico para sus tareas:
 
-La metodología seleccionada (Scrum) mostró el mejor balance entre flexibilidad y velocidad de entrega, factores críticos para el contexto del proyecto.
+\begin{enumerate}
+    \item \textbf{Módulo de Visión y Detección (Borde):} Es responsable de la ingesta de video y la detección inicial.
+    \begin{itemize}
+        \item \textbf{Detección y Localización:} Se emplea \textbf{YOLOv5} para identificar vehículos y sus respectivas matrículas, aprovechando su velocidad y precisión en tiempo real.
+        \item \textbf{Reconocimiento de Caracteres (OCR):} Se utiliza \textbf{EasyOCR} debido a su robustez y soporte multilingüe, minimizando el preprocesamiento manual.
+        \item \textbf{Trazabilidad:} La librería \textbf{ByteTracker} se integra para mantener el ID único de cada vehículo a través de *frames* consecutivos, vital para la gestión del tiempo de parqueo.
+    \end{itemize}
+
+    \item \textbf{Módulo de Comunicación (Transporte):} Gestiona el flujo de datos entre los distintos servicios.
+    \begin{itemize}
+        \item \textbf{Procesamiento Asíncrono:} \textbf{Apache Kafka} se utiliza como *message broker* para manejar el volumen de datos generados por el módulo de visión, asegurando baja latencia y tolerancia a fallos.
+    \end{itemize}
+
+    \item \textbf{Módulo de Servicios (Back-end y Front-end):} Gestiona la lógica de negocio y la interfaz de usuario.
+    \begin{itemize}
+        \item \textbf{Notificación en Tiempo Real:} La comunicación con el *front-end* y los dispositivos de gestión se realiza mediante \textbf{WebSockets/SignalR}, proporcionando actualizaciones inmediatas del estado de los puestos de parqueo.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Recolección de Datos y Validez}
+Para el futuro proceso de validación, se definen los siguientes criterios:
+
+\begin{itemize}
+    \item \textbf{Métricas Cuantitativas:} Se recolectarán datos operacionales (tiempos de latencia, frecuencia de despliegue) y métricas de calidad de código (\textit{issues}, \textit{pull requests}, cobertura de pruebas, densidad de defectos). La extracción y limpieza de estos datos se realiza mediante *scripts* en \texttt{code/}.
+    \item \textbf{Validez del Diseño:} Se evaluará la validez interna (la coherencia entre los módulos), validez externa (aplicabilidad a otros contextos de parqueo) y validez de constructo (que el diseño mida la escalabilidad y el rendimiento prometidos).
+\end{itemize}
+
+El proceso de desarrollo e integración de los módulos se documenta detalladamente, incluyendo fases, roles y puntos de control (\textit{checkpoints}), lo que proporciona la base para evaluar el diseño bajo los principios de las métricas DORA.

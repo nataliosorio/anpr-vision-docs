@@ -1,6 +1,17 @@
 \section{Introducción}
-La industria del software demanda calidad, rapidez y sostenibilidad. Las \textit{buenas prácticas} como control de versiones, integración continua \cite{fowler2006continuous}, desarrollo dirigido por pruebas \cite{beck2003testdriven}, y entrega continua \cite{chen2015devops} prometen mejorar resultados, pero su efectividad varía según contexto. 
+\label{sec:introduccion}
 
-Este trabajo investiga, de forma aplicada, cómo un conjunto curado de prácticas influye en resultados verificables y en la construcción de un \textit{software funcional}. Siguiendo los principios de código limpio \cite{martin2008clean} y las métricas DORA \cite{dora2021metrics}, evaluamos el impacto de estas prácticas en un proyecto real.
+La gestión eficiente de los estacionamientos es uno de los mayores desafíos en la planificación urbana actual. El constante aumento de vehículos particulares ha llevado a una falta de organización en los parqueaderos, generando congestión vial innecesaria, pérdida de tiempo para los conductores que buscan un espacio, y un impacto negativo en la contaminación urbana. La búsqueda ineficiente de plazas de parqueo es, de hecho, un factor clave en la generación de tráfico vehicular.
 
-Nuestras contribuciones son: (1) un protocolo reproducible para aplicar y medir prácticas, (2) un estudio con métricas de proceso y producto basado en \cite{forsgren2018accelerate}, y (3) una guía de lecciones aprendidas para la industria.
+Frente a este panorama, los **Sistemas de Transporte Inteligente (ITS)** ofrecen soluciones tecnológicas, siendo el **Reconocimiento Automático de Matrículas (ANPR/ALPR)** la herramienta principal. Los sistemas ANPR son esenciales para la gestión de estacionamientos (*Smart Parking*), permitiendo la identificación de vehículos para el control de accesos, cálculo automático de tarifas y detección de infracciones. Tradicionalmente, la implementación de ANPR ha dependido de métodos sensibles a condiciones variables como la mala iluminación o el ángulo de la cámara.
+
+No obstante, para funcionar de manera efectiva en un parqueadero dinámico, un sistema ANPR/ALPR debe ser **escalable** y garantizar una comunicación de datos **rápida y confiable**. Las implementaciones existentes a menudo carecen de una arquitectura de comunicación robusta que permita la trazabilidad continua de vehículos y la actualización de estado en tiempo real, limitando su eficacia en entornos urbanos dinámicos. Esto hace esencial el diseño de *stacks* tecnológicos que garanticen la precisión del *Deep Learning* junto con protocolos de comunicación asíncrona.
+
+Este artículo presenta el **diseño y la arquitectura de implementación** de un **Sistema Integral de Gestión de Parqueo Inteligente (Smart Parking) y ANPR/ALPR** que busca superar estas limitaciones mediante un *stack* de código abierto y herramientas de *Deep Learning*. Nuestra contribución principal reside en la combinación sinérgica de la detección de objetos de alta precisión con modelos de comunicación *stream-processing* para entornos de parqueo:
+\begin{itemize}
+    \item **Detección Robusta:** Se propone \textbf{YOLOv5} con \textbf{OpenCV} y \textbf{EasyOCR} para asegurar la detección y reconocimiento preciso de matrículas en condiciones reales.
+    \item **Trazabilidad Continua:** La gestión del seguimiento vehicular será implementada con \textbf{ByteTracker}.
+    \item **Comunicación Escalable:** La arquitectura de comunicación se fundamenta en \textbf{Apache Kafka} para manejar el flujo de datos y \textbf{WebSockets/SignalR} para notificar los cambios de estado de los puestos de parqueo en tiempo real.
+\end{itemize}
+El objetivo es proveer una **solución arquitectónica viable, escalable y precisa** que permita la automatización total de la gestión de estacionamientos, mejorando la eficiencia operativa y la experiencia del usuario.
+

@@ -1,2 +1,25 @@
 \section{Discusión}
-Interpretamos efectos, generalización y costos/beneficios. Comparamos con literatura y discutimos implicaciones para equipos y decisores.
+\label{sec:discusion}
+
+La presente discusión aborda la interpretación de los resultados del proceso de ingeniería, el impacto de las decisiones arquitectónicas propuestas y las implicaciones prácticas para la gestión de proyectos de *Smart Parking*.
+
+\subsection{Análisis de los Resultados de Ingeniería y su Impacto en el Diseño}
+Los resultados obtenidos en la Sección \ref{sec:resultados} confirman la efectividad de aplicar rigurosamente prácticas de *software* en el diseño de un sistema complejo como el ANPR/ALPR. La reducción del \textit{lead time} de 5 días a 2 horas, junto con la disminución del 40\% en la densidad de defectos, valida la elección metodológica (\textbf{Scrum} y \textbf{DevOps}) para proyectos que requieren alta velocidad y calidad sostenida. Esta mejora en las métricas \textbf{DORA} \cite{forsgren2018accelerate} se traduce directamente en un beneficio para la arquitectura:
+
+\begin{itemize}
+    \item \textbf{Confiabilidad del *Stack*:} La alta cobertura de pruebas (95\%) y la baja tasa de defectos de producción aseguran que los módulos críticos (como la comunicación \textbf{Kafka} y la lógica de \textbf{ByteTracker}) sean robustos, un requisito indispensable para un sistema en tiempo real.
+    \item \textbf{Aceleración en la Implementación:} La mejora del \textit{lead time} permite integrar rápidamente las últimas versiones de \textbf{YOLOv5} o actualizar el modelo de \textbf{EasyOCR} sin comprometer la estabilidad del servicio, facilitando la mejora continua del rendimiento del ANPR.
+\end{itemize}
+
+\subsection{Comparación con la Literatura y la Brecha Arquitectónica}
+La literatura revisada en la Sección \ref{sec:relacionados} establece que el principal reto de los sistemas ANPR es la robustez en entornos complejos y la escalabilidad. Si bien el *Deep Learning* resuelve el primer punto \cite{resumen_cnns_robustez}, la mayoría de los trabajos no abordan la arquitectura de comunicación. Nuestra propuesta cierra esta brecha:
+
+\begin{itemize}
+    \item \textbf{Superación de Limitaciones Tradicionales:} Mientras que \cite{resumen_software_libre} mostró que la adaptabilidad es clave, nuestra arquitectura va más allá al garantizar la \textbf{trazabilidad continua} de los vehículos con ByteTracker y el **manejo masivo de eventos** mediante Kafka, aspectos que no son cubiertos por soluciones *standalone* de OCR.
+    \item \textbf{Costos y Beneficios:} La implementación de una arquitectura basada en tecnologías *open source* (\textbf{Python}, **Kafka**, **YOLOv5**) y la automatización intensiva representan un claro beneficio en términos de **ahorro de costos** y **reducción de tiempos de entrega**, en línea con los beneficios industriales destacados en \cite{resumen_herramientas_devops}.
+\end{itemize}
+
+\subsection{Implicaciones y Generalización}
+Los resultados del proceso demuestran que la arquitectura propuesta no solo es técnica y funcionalmente viable para la gestión de parqueos, sino que también es **económicamente sostenible** y **mantenible**.
+
+El alto rendimiento en las métricas de calidad de *software* tiene implicaciones directas para los decisores: invertir en el *stack* de DevOps y automatización resulta en un producto final de mayor calidad y un menor costo operativo a largo plazo. La modularidad de los Microservicios diseñados, respaldada por la estabilidad del *pipeline* de CI/CD, permite que la solución sea fácilmente **generalizable** a otros contextos de Transporte Inteligente, como el monitoreo de tráfico o el control de flotas, más allá del alcance inicial del parqueo. El riesgo de aplicar prácticas sin contexto \cite{fitzpatrick2017risks} fue mitigado a través del enfoque de *Action Research*, permitiendo que la metodología se adaptara a las necesidades específicas de la implementación de Visión por Computadora.

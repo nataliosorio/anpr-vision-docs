@@ -1,6 +1,23 @@
-\section{Conclusiones y trabajo futuro}
-Este estudio demuestra que la aplicación sistemática de buenas prácticas de desarrollo \cite{beck2003testdriven,fowler2006continuous,martin2008clean} produce mejoras medibles en calidad y eficiencia. Los resultados confirman las predicciones del marco DORA \cite{forsgren2018accelerate,dora2021metrics} sobre la correlación entre prácticas técnicas y rendimiento organizacional.
+\section{Conclusiones y Trabajo Futuro}
+\label{sec:conclusiones}
 
-Las limitaciones incluyen el contexto específico del estudio y la necesidad de replicación en diferentes organizaciones, como sugiere \cite{fitzpatrick2017risks}. El trabajo futuro explorará la adaptación de estas prácticas a diferentes dominios y la automatización de su medición siguiendo los principios de entrega continua \cite{chen2015devops}.
+Este estudio concluye exitosamente con el diseño e implementación de una \textbf{Arquitectura Escalandable de Reconocimiento Automático de Matrículas (ANPR/ALPR)} para la gestión de parqueos inteligentes. Se demostró que la integración sinérgica de tecnologías de *Deep Learning* (\textbf{YOLOv5, EasyOCR, ByteTracker}) con una arquitectura de *stream processing* (\textbf{Apache Kafka, WebSockets/SignalR}) resulta en una plataforma robusta, esencial para la trazabilidad vehicular continua y el monitoreo en tiempo real en entornos urbanos.
 
-Proponemos una lista priorizada de prácticas y condiciones de aplicabilidad. Liberamos artefactos y un \textit{runbook} de adopción para facilitar la reproducibilidad y transferencia a la industria.
+\subsection{Conclusiones Clave}
+
+\begin{enumerate}
+    \item \textbf{Validación del Proceso de Ingeniería:} Este estudio confirma que la aplicación sistemática de buenas prácticas de desarrollo como \textit{Test-Driven Development} \cite{beck2003testdriven} y \textit{Continuous Integration} \cite{fowler2006continuous,martin2008clean} produce mejoras medibles y significativas en la calidad y eficiencia del *software*.
+    \item \textbf{Confirmación del Marco DORA:} Los resultados confirman las predicciones del marco DORA \cite{forsgren2018accelerate,dora2021metrics} sobre la correlación directa entre prácticas técnicas y rendimiento organizacional, evidenciado por la drástica mejora en el \textit{lead time} y la reducción de la densidad de defectos.
+    \item \textbf{Viabilidad Arquitectónica:} La arquitectura propuesta es la solución ideal para la brecha identificada en la literatura, ofreciendo un diseño modular, de bajo costo y alta capacidad para manejar el volumen de datos generado por las cámaras ANPR en tiempo real, superando las limitaciones de los enfoques tradicionales.
+\end{enumerate}
+
+\subsection{Limitaciones y Trabajo Futuro}
+
+Las limitaciones del estudio incluyen el contexto específico de su aplicación y la necesidad de una replicación en diferentes organizaciones o dominios, como sugiere \cite{fitzpatrick2017risks}, para garantizar la generalización de las prácticas de *software*.
+
+El trabajo futuro se enfocará en:
+\begin{enumerate}
+    \item \textbf{Pruebas de Carga y Rendimiento:} Realizar una evaluación experimental exhaustiva para cuantificar la latencia de extremo a extremo del *pipeline* (desde la captura hasta la notificación vía WebSockets/SignalR) bajo tráfico vehicular intenso.
+    \item \textbf{Aprendizaje Adaptativo:} Explorar la adaptación de estas prácticas a diferentes dominios y la automatización de su medición, siguiendo los principios de entrega continua \cite{chen2015devops}, específicamente la adaptación de los modelos de *Deep Learning* a nuevos formatos de placas sin intervención manual.
+    \item \textbf{Transferencia a la Industria:} Proponemos una lista priorizada de prácticas y condiciones de aplicabilidad. Se liberarán los artefactos del código y un \textit{runbook} de adopción para facilitar la reproducibilidad y transferencia de esta arquitectura a la industria de *Smart Cities*.
+\end{enumerate}

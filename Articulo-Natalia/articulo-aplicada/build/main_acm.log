@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  6 NOV 2025 09:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  11 NOV 2025 03:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1870,10 +1870,10 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 (build/main_acm.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 23.
+(babel)             Reported on input line 14.
 )
 \openout1 = `main_acm.aux'.
 
@@ -2046,11 +2046,36 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 9.0pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 10.95pt on input line 31.
-(./sections/00_abstract.tex) (./sections/01_introduccion.tex) (./sections/02_re
-lacionados.tex
-Underfull \vbox (badness 1546) has occurred while \output is active []
+(./sections/00_abstract.tex) (./sections/01_introduccion.tex
 
-) (./sections/03_metodologia.tex
+LaTeX Warning: Reference `sec:relacionados' on page 1 undefined on input line 1
+8.
+
+
+LaTeX Warning: Reference `sec:metodologia' on page 1 undefined on input line 18
+.
+
+
+LaTeX Warning: Reference `sec:implementacion' on page 1 undefined on input line
+ 18.
+
+
+LaTeX Warning: Reference `sec:resultados' on page 1 undefined on input line 18.
+
+
+
+LaTeX Warning: Reference `sec:discusion' on page 1 undefined on input line 18.
+
+
+LaTeX Warning: Reference `sec:conclusiones' on page 1 undefined on input line 1
+8.
+
+) (./sections/02_relacionados.tex
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+[1.1
+
+]) (./sections/03_metodologia.tex
 File: graphics/comparacion_metodologias.pdf Graphic file (type pdf)
 <use graphics/comparacion_metodologias.pdf>
 
@@ -2073,9 +2098,6 @@ Overfull \hbox (3.96474pt too wide) in paragraph at lines 2--3
  \TU/LinLibertine(0)/m/it/9 pipelines\TU/LinLibertine(0)/m/n/9 . Do-
  []
 
-[1.1
-
-]
 File: graphics/correlacion_devops.pdf Graphic file (type pdf)
 <use graphics/correlacion_devops.pdf>
 
@@ -2103,7 +2125,11 @@ LaTeX Font Info:    Font shape `TU/LibertinusMath-Regular.otf(3)/m/n' will be
 (Font)              scaled to size 6.22733pt on input line 6.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 8.0pt on input line 8.
-)) (./sections/05_resultados.tex
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 19.
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 19.
+[2.2])) (./sections/05_resultados.tex
 File: graphics/metricas_dora.pdf Graphic file (type pdf)
 <use graphics/metricas_dora.pdf>
 
@@ -2124,12 +2150,8 @@ Overfull \hbox (1.87193pt too wide) in paragraph at lines 21--22
 
 Class acmart Warning: A possible image without description on input line 24.
 
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 29.
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 29.
-[2.2]) (./sections/06_discusion.tex) (./sections/07_conclusiones.tex) (./sectio
-ns/A1_apendices.tex
+) (./sections/06_discusion.tex) (./sections/07_conclusiones.tex) (./sections/A1
+_apendices.tex
 Overfull \hbox (2.15796pt too wide) in paragraph at lines 8--9
 []\TU/LinLibertine(0)/b/n/9 Resultados\TU/LinLibertine(0)/m/n/9 : tablas/figura
 s generadas automáticamente en \TU/inconsolata(0)/m/n/9 buil-
@@ -2138,6 +2160,7 @@ s generadas automáticamente en \TU/inconsolata(0)/m/n/9 buil-
 ) (build/main_acm.bbl
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
 (Font)              scaled to size 7.0pt on input line 43.
+[3.3]
 LaTeX Info: Redefining \tempurl on input line 102.
 )
 
@@ -2156,31 +2179,33 @@ rtant steps when creating your papers will ensure that the widest possible audi
 ence can ingest your work..
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+Overfull \vbox (1.13101pt too high) has occurred while \output is active []
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-) [3.3] (build/main_acm.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+) [4.4] (build/main_acm.aux
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 )
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main_acm.out' has not changed.
 (rerunfilecheck)             Checksum: 56701EE2706D216CDC9D789F72A3F575;3862.
  ) 
 Here is how much of TeX's memory you used:
- 42011 strings out of 468179
- 857958 string characters out of 5435043
- 1562993 words of memory out of 5000000
- 70062 multiletter control sequences out of 15000+600000
+ 42019 strings out of 468179
+ 858103 string characters out of 5435043
+ 1566597 words of memory out of 5000000
+ 70070 multiletter control sequences out of 15000+600000
  636677 words of font info for 157 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 105i,13n,131p,1005b,32914s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,131p,1005b,32922s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_acm.xdv (3 pages, 149656 bytes).
+Output written on build/main_acm.xdv (4 pages, 173460 bytes).

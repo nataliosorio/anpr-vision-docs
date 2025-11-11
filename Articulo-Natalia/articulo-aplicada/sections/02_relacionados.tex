@@ -1,8 +1,26 @@
-\section{Marco teórico y trabajos relacionados}
-Se sintetiza la literatura sobre prácticas de ingeniería y sus efectos reportados. Forsgren et al. \cite{forsgren2018accelerate} establecen el marco teórico de las métricas DORA (deployment frequency, lead time, change failure rate, recovery time) como indicadores clave de rendimiento en DevOps.
+\section{Trabajos Relacionados}
+\label{sec:relacionados}
 
-Beck \cite{beck2003testdriven} propone que el desarrollo dirigido por pruebas mejora la calidad del código y reduce defectos. Fowler y Foemmel \cite{fowler2006continuous} demuestran que la integración continua reduce riesgos de integración y acelera la detección de errores.
+El desarrollo de la arquitectura propuesta se sustenta en dos pilares fundamentales de la literatura: las prácticas de ingeniería de software para la entrega ágil y el estado del arte en sistemas de Reconocimiento Automático de Matrículas (ANPR) y Gestión de Parqueo Inteligente.
 
-Fitzpatrick y Storey \cite{fitzpatrick2017risks} advierten sobre los riesgos de aplicar prácticas sin considerar el contexto organizacional. Chen \cite{chen2015devops} identifica desafíos en la adopción de entrega continua, mientras que Martin \cite{martin2008clean} enfatiza la importancia de la legibilidad y mantenibilidad del código.
+\subsection{Ingeniería de Software y Prácticas de Entrega}
 
-Se identifican vacíos en estudios que combinen múltiples prácticas en contextos reales y que proporcionen guías reproducibles para la industria.
+La eficiencia en la entrega de *software* se ha transformado mediante la adopción de prácticas culturales y técnicas. \cite{forsgren2018accelerate} establecen el marco teórico de las métricas \textbf{DORA} (frecuencia de despliegue, tiempo de entrega, tasa de fallo de cambio y tiempo de recuperación) como indicadores clave de rendimiento en la práctica de \textbf{DevOps}, esencial para medir el éxito en entornos de desarrollo ágil. A nivel de calidad, \cite{beck2003testdriven} propone que el desarrollo dirigido por pruebas (\textit{Test-Driven Development}) mejora la calidad del código y reduce los defectos, mientras que \cite{fowler2006continuous} demuestran que la \textbf{Integración Continua (CI)} reduce los riesgos de integración y acelera la detección temprana de errores.
+
+Sin embargo, la adopción de estas metodologías no está exenta de desafíos. \cite{fitzpatrick2017risks} advierten sobre los riesgos de aplicar prácticas sin considerar el contexto organizacional específico. Además, \cite{chen2015devops} identifica desafíos persistentes en la adopción de la Entrega Continua, mientras que \cite{martin2008clean} enfatiza la importancia de la \textbf{legibilidad y mantenibilidad} del código, un principio que guía la elección de nuestro *stack* tecnológico.
+
+Se identifica un vacío en estudios que integren la robustez del ANPR basado en *Deep Learning* con arquitecturas de comunicación asíncrona (como Kafka) para una solución completa de \textit{Smart Parking} en tiempo real, lo que justifica la necesidad de la arquitectura propuesta.
+
+\subsection{Sistemas ANPR/ALPR y Gestión Inteligente de Parqueo}
+
+El campo del reconocimiento de matrículas ha evolucionado significativamente, pasando de métodos tradicionales basados en bordes, color y proyección, a enfoques robustos impulsados por \textbf{Deep Learning} y \textbf{Visión por Computadora} \cite{resumen_alpr_evolucion}. La literatura actual respalda el uso de arquitecturas de redes neuronales convolucionales (CNN) y modelos de detección en tiempo real (como YOLO) para superar los desafíos de iluminación, ángulos y baja resolución que afectan a las implementaciones antiguas \cite{resumen_cnns_robustez}.
+
+En el contexto específico de la gestión de estacionamientos, diversos trabajos han demostrado la viabilidad de esta tecnología:
+\begin{itemize}
+    \item La combinación de cámaras panorámicas y de alta resolución para la detección y el rastreo de vehículos ha mostrado altas tasas de precisión en la gestión de espacios disponibles \cite{resumen_doble_camara}.
+    \item Se ha propuesto la integración del reconocimiento de marca/modelo con ANPR como un avance significativo para aplicaciones de seguridad y control vehicular \cite{resumen_marca_modelo}.
+    \item Implementaciones como el sistema basado en YOLOv9, que utiliza sensores y filtros de imagen para gestionar espacios y reducir la congestión urbana, validan la necesidad de soluciones integradas en ITS \cite{resumen_yolov9}.
+    \item La necesidad de un diseño modular y escalable es crucial, destacándose soluciones que utilizan *hardware* accesible como Raspberry Pi y *software* libre (como OpenALPR y Tesseract) para adaptarse a formatos regionales específicos (ej. Mercosur) con alta precisión \cite{resumen_software_libre}.
+\end{itemize}
+
+A pesar de estos avances, existe una brecha clara en la literatura respecto a la **integración arquitectónica** de estos componentes de visión (YOLOv5, ByteTracker) con una solución de comunicación asíncrona de alto rendimiento (**Apache Kafka**), lo cual es fundamental para el monitoreo escalable en tiempo real de grandes infraestructuras de parqueo. Nuestra propuesta se centra en cerrar esta brecha mediante la definición de un *stack* tecnológico que garantiza la trazabilidad continua y la baja latencia.

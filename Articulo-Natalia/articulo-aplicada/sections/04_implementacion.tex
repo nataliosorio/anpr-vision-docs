@@ -1,50 +1,73 @@
-\section{Implementación del software}
-Describimos arquitectura, decisiones tecnológicas y \textit{pipelines}. Documentamos prácticas aplicadas: formateo, \textit{linting}, pruebas unitarias/integración, análisis estático (SAST), \textit{continuous delivery} y monitoreo. 
+\section{Implementación de la Arquitectura}
+\label{sec:implementacion}
 
-\subsection{Arquitectura del sistema}
-La arquitectura implementada sigue las mejores prácticas de DevOps \cite{forsgren2018accelerate}, integrando automatización en todo el ciclo de desarrollo. La \cref{fig:correlacion_devops} muestra la correlación observada entre el nivel de automatización y el rendimiento del equipo.
+Esta sección detalla la arquitectura de *software* implementada, las decisiones tecnológicas clave y la integración de las prácticas de automatización en el ciclo de vida del desarrollo, siguiendo los principios de \textbf{DevOps}.
+
+\subsection{Arquitectura del Sistema y Flujo de Datos}
+
+La arquitectura implementada sigue un diseño de \textbf{Microservicios} desacoplados para garantizar la escalabilidad y la gestión de fallos. Esta estructura se divide en tres *tiers* lógicos que reflejan el flujo de datos desde la captura de imagen hasta la notificación del estado del parqueo. La Figura \ref{fig:correlacion_devops} ilustra la correlación entre el nivel de automatización y el rendimiento del equipo, un principio clave que guía nuestra implementación.
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.46\textwidth]{graphics/correlacion_devops.pdf}
-    \caption{Correlación entre nivel de automatización y performance del equipo de desarrollo}
-    \label{fig:correlacion_devops}
+    \centering
+    \includegraphics[width=0.46\textwidth]{graphics/correlacion_devops.pdf}
+    \caption{Correlación entre nivel de automatización y performance del equipo de desarrollo}
+    \label{fig:correlacion_devops}
 \end{figure}
 
-\subsection{Fragmento de código}
-Ejemplo de implementación de una función con tipado estático:
+\subsubsection{Módulo de Visión (Borde)}
+Este módulo se ejecuta en el punto de captura. Utiliza \textbf{Python} y \textbf{OpenCV} para la ingesta de video. La detección se realiza con **YOLOv5**, que localiza vehículos y matrículas. Una vez detectada la placa, **EasyOCR** extrae los caracteres. **ByteTracker** rastrea el vehículo, generando un flujo constante de eventos que contienen: ID del vehículo, matrícula reconocida, coordenadas del puesto de parqueo y la marca de tiempo (timestamp).
+
+\subsubsection{Módulo de Comunicación y Procesamiento (*Stream Processing*)}
+Los eventos generados por el módulo de visión son enviados a \textbf{Apache Kafka}, que actúa como el *message broker* central. Kafka garantiza la durabilidad, el orden y la baja latencia en el transporte de datos masivos. Un servicio de \textit{stream processing} consume estos datos, gestiona la lógica de negocio (validación de matrículas, cálculo de tiempo de ocupación/infracción) y actualiza el estado persistente en la base de datos.
+
+\subsubsection{Módulo de Servicios y Notificación}
+El servicio *back-end* utiliza \textbf{WebSockets/SignalR} para notificar los cambios de estado del parqueo a las aplicaciones de gestión y al panel de usuario en tiempo real, asegurando que las interfaces reflejen el estado actual de los puestos sin demoras.
+
+\subsection{Prácticas de Calidad y Automatización (CI/CD)}
+
+La implementación sigue rigurosas prácticas de \textbf{DevOps} \cite{forsgren2018accelerate} documentadas en los \textit{pipelines} de CI/CD:
+\begin{itemize}
+    \item \textbf{Formateo y \textit{Linting}:} Herramientas como \texttt{Black} y \texttt{Flake8} se aplican automáticamente en cada *commit* para asegurar la consistencia y la legibilidad del código.
+    \item \textbf{Análisis Estático de Seguridad (SAST):} Se integran herramientas que analizan el código para identificar vulnerabilidades antes del despliegue.
+    \item \textbf{Pruebas Automatizadas:} Se ejecutan \textbf{pruebas unitarias} para los módulos de lógica de negocio y **pruebas de integración** para verificar la comunicación entre Kafka y los servicios, garantizando la estabilidad.
+    \item \textbf{Continuous Delivery:} El despliegue a entornos de prueba y producción se realiza mediante *pipelines* automatizados, minimizando el error humano.
+    \item \textbf{Monitoreo:} Se implementan soluciones de monitoreo y *logging* para rastrear métricas clave y detectar anomalías en la detección de vehículos o en la latencia de Kafka.
+\end{itemize}
+
+\subsection{Decisiones Tecnológicas y Calidad de Código}
+
+La selección de tecnologías se basó en criterios objetivos de rendimiento y escalabilidad (ver Tabla \ref{tab:frameworks}). Python fue elegido como lenguaje principal por su amplio soporte en \textit{Deep Learning} (YOLOv5) y librerías de *stream processing*. La calidad del código se mantiene con \textbf{tipado estático}, lo cual facilita la mantenibilidad y la detección temprana de errores lógicos. Un ejemplo de esta práctica es:
 
 \ifminted
 \begin{minted}[linenos]{python}
-def suma(a: int, b: int) -> int:
-    """Suma dos numeros enteros.
+def calcular_tarifa(tiempo_minutos: int, tarifa_por_hora: float) -> float:
+    """Calcula la tarifa total de parqueo.
     
     Args:
-        a: Primer operando
-        b: Segundo operando
+        tiempo_minutos: Duración total del parqueo en minutos.
+        tarifa_por_hora: Costo de una hora de parqueo.
         
     Returns:
-        La suma de a y b
+        El costo total del servicio.
     """
-    return a + b
+    horas = tiempo_minutos / 60
+    return horas * tarifa_por_hora
 \end{minted}
 \else
 \begin{lstlisting}[language=Python]
-def suma(a: int, b: int) -> int:
-    """Suma dos numeros enteros.
+def calcular_tarifa(tiempo_minutos: int, tarifa_por_hora: float) -> float:
+    """Calcula la tarifa total de parqueo.
     
     Args:
-        a: Primer operando
-        b: Segundo operando
+        tiempo_minutos: Duración total del parqueo en minutos.
+        tarifa_por_hora: Costo de una hora de parqueo.
         
     Returns:
-        La suma de a y b
+        El costo total del servicio.
     """
-    return a + b
+    horas = tiempo_minutos / 60
+    return horas * tarifa_por_hora
 \end{lstlisting}
 \fi
-
-\subsection{Comparación de tecnologías}
-La selección de tecnologías se basó en criterios objetivos. La \cref{tab:frameworks} presenta una comparación detallada de los frameworks evaluados.
 
 \input{tables/frameworks_comparison.tex}
