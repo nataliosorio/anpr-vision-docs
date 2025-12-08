@@ -1,21 +1,23 @@
 \begin{table*}[hbt]
 \ifnextchar[{\eatarg}{}
-[htbp]
-\centering
-\caption{Comparación de Frameworks de Desarrollo Web}
-\label{tab:frameworks}
-\small
-\begin{tabular}{lccc}
-\toprule
-\textbf{Framework} & \textbf{Lenguaje} & \textbf{Performance} & \textbf{Puntuación} \\
-\midrule
-React & JavaScript & Alta & 9.2 \\
-Angular & TypeScript & Alta & 8.7 \\
-Vue.js & JavaScript & Alta & 8.9 \\
-Django & Python & Media & 8.5 \\
-Spring Boot & Java & Alta & 8.8 \\
-Laravel & PHP & Media & 8.1 \\
-Express.js & JavaScript & Alta & 8.3 \\
-\bottomrule
-\end{tabular}
+[ht]
+    \centering
+    \caption{Resumen cualitativo de resultados observados en el entorno de pruebas.}
+    \label{tab:resultados_resumen}
+    \begin{tabular}{p{0.28\linewidth} p{0.64\linewidth}}
+        \hline
+        \textbf{Aspecto evaluado} & \textbf{Observaciones principales} \\
+        \hline
+        Detección de vehículos y placas &
+        El modelo YOLOv5 detectó la mayoría de los vehículos con la placa visible en videos de prueba grabados en condiciones de iluminación moderada. Se observaron fallos en casos de reflejos fuertes o placas muy sucias. \\[0.4em]
+        Reconocimiento de caracteres (OCR) &
+        EasyOCR recuperó correctamente la matrícula en un porcentaje alto de los casos con buena calidad de imagen. Las confusiones más frecuentes se dieron entre caracteres similares (por ejemplo, \texttt{O}/\texttt{0}, \texttt{B}/\texttt{8}). \\[0.4em]
+        Seguimiento de vehículos &
+        ByteTrack permitió asociar detecciones consecutivas al mismo vehículo, reduciendo lecturas duplicadas y dando soporte a la estimación de entrada y salida. \\[0.4em]
+        Latencia extremo a extremo &
+        La actualización de la interfaz web se produjo generalmente dentro de unos pocos segundos después de la captura del fotograma, suficiente para el uso operativo en el entorno de prueba. \\[0.4em]
+        Estabilidad de la arquitectura &
+        Los servicios desplegados en Docker (microservicio de visión, Kafka, backend y frontend) funcionaron de manera estable durante sesiones prolongadas de prueba, sin caídas inesperadas. \\
+        \hline
+    \end{tabular}
 \end{table*}

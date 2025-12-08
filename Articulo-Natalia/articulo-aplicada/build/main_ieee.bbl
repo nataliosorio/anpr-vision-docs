@@ -19,225 +19,694 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{forsgren2018accelerate}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=0dc9ac8a967e13c60fcfaedde74976f2}{%
-           family={Forsgren},
-           familyi={F\bibinitperiod},
-           given={Nicole},
-           giveni={N\bibinitperiod}}}%
-        {{hash=9e89d796d06f74d6551850b1c3bff900}{%
-           family={Humble},
-           familyi={H\bibinitperiod},
-           given={Jez},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8e1c949be5801a6f56b7ac5df47a58a9}{%
-           family={Kim},
+    \entry{devops_tools_2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=3107f0e7d4397248382681b9844de98b}{%
+           family={Leite},
+           familyi={L\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9027f32c5c4fccb9183316a5c2dfb03a}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aa1b6c9f1476bc0e2f4c7fed93737a5d}{%
+           family={Kon},
            familyi={K\bibinitperiod},
-           given={Gene},
-           giveni={G\bibinitperiod}}}%
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3573b1fa4c3362c5e6f9b2c7abcb1eed}{%
+           family={Milojicic},
+           familyi={M\bibinitperiod},
+           given={Dejan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=075eab7e3a0dcdcff8eb2741f0f5b6d1}{%
+           family={Meirelles},
+           familyi={M\bibinitperiod},
+           given={Paulo},
+           giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{6182ff2ce3d65afe566932add04e4d0a}
-      \strng{fullhash}{b3a03bdb03f26ee6030a135e12ea135c}
-      \strng{fullhashraw}{b3a03bdb03f26ee6030a135e12ea135c}
-      \strng{bibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
-      \strng{authorbibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
-      \strng{authornamehash}{6182ff2ce3d65afe566932add04e4d0a}
-      \strng{authorfullhash}{b3a03bdb03f26ee6030a135e12ea135c}
-      \strng{authorfullhashraw}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{namehash}{e64f8094d21861e6f256b3f0c34e97b9}
+      \strng{fullhash}{90a07c2a8fdf3ec13d742ef9b6ea9953}
+      \strng{fullhashraw}{90a07c2a8fdf3ec13d742ef9b6ea9953}
+      \strng{bibnamehash}{90a07c2a8fdf3ec13d742ef9b6ea9953}
+      \strng{authorbibnamehash}{90a07c2a8fdf3ec13d742ef9b6ea9953}
+      \strng{authornamehash}{e64f8094d21861e6f256b3f0c34e97b9}
+      \strng{authorfullhash}{90a07c2a8fdf3ec13d742ef9b6ea9953}
+      \strng{authorfullhashraw}{90a07c2a8fdf3ec13d742ef9b6ea9953}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IT Revolution}
-      \field{title}{Accelerate: The Science of Lean Software and DevOps}
-      \field{year}{2018}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{number}{6}
+      \field{title}{A Survey of DevOps Concepts and Challenges}
+      \field{volume}{52}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1145/3359981
+      \endverb
     \endentry
-    \entry{beck2003testdriven}{book}{}{}
+    \entry{ci_cd_quality_2025}{article}{}{}
       \name{author}{1}{}{%
-        {{hash=c5dcbe71f60a8d55caa11fe1493614d0}{%
-           family={Beck},
+        {{hash=41ee36ec00931ecec42a4aea91d776eb}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{fullhash}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{fullhashraw}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{bibnamehash}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{authorbibnamehash}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{authornamehash}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{authorfullhash}{41ee36ec00931ecec42a4aea91d776eb}
+      \strng{authorfullhashraw}{41ee36ec00931ecec42a4aea91d776eb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computer Signal and System Research}
+      \field{number}{3}
+      \field{title}{The Impact of Continuous Integration and Continuous Delivery on Software Development Efficiency}
+      \field{volume}{2}
+      \field{year}{2025}
+      \field{pages}{59\bibrangedash 68}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.71222/pzvfqm21
+      \endverb
+    \endentry
+    \entry{streetsavvy_2024}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=1d77b899d3b1c53b814d69a86eff088f}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Thanh-Hai},
+           giveni={T\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=4cb910424074b5cbf6840957fed076fd}{%
+           family={Bui},
            familyi={B\bibinitperiod},
-           given={Kent},
-           giveni={K\bibinitperiod}}}%
+           given={Quang-Nhat},
+           giveni={Q\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=541767debd54ee7cda366d29db71d21f}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Quang-Nhat},
+           giveni={Q\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=0ab0f66307f5004cdb195c726467e809}{%
+           family={Jo},
+           familyi={J\bibinitperiod},
+           given={Kang-Hyun},
+           giveni={K\bibinithyphendelim H\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Addison-Wesley Professional}%
-      }
-      \strng{namehash}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{fullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{fullhashraw}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{bibnamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{authorbibnamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{authornamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{authorfullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
-      \strng{authorfullhashraw}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{namehash}{6ffa2dac7f4e6856ef84944fef0f37ad}
+      \strng{fullhash}{2b2d62e780b70cdf94a42ff6539bcd77}
+      \strng{fullhashraw}{2b2d62e780b70cdf94a42ff6539bcd77}
+      \strng{bibnamehash}{2b2d62e780b70cdf94a42ff6539bcd77}
+      \strng{authorbibnamehash}{2b2d62e780b70cdf94a42ff6539bcd77}
+      \strng{authornamehash}{6ffa2dac7f4e6856ef84944fef0f37ad}
+      \strng{authorfullhash}{2b2d62e780b70cdf94a42ff6539bcd77}
+      \strng{authorfullhashraw}{2b2d62e780b70cdf94a42ff6539bcd77}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{0321146530}
-      \field{title}{Test-Driven Development: By Example}
-      \field{year}{2003}
+      \field{booktitle}{Proceedings of the Asian Conference on Computer Vision Workshops (ACCVW)}
+      \field{title}{Smart Camera-Based Parking System with Automatic Parking Spot Detection and Guidance}
+      \field{year}{2022}
     \endentry
-    \entry{fowler2006continuous}{inproceedings}{}{}
-      \name{author}{2}{}{%
-        {{hash=312ac886938a9b2be4f8eb607567fe4c}{%
-           family={Fowler},
+    \entry{campussense_2017}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=807f560bec417f77410906131bca785a}{%
+           family={Amato},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9747fbb9dfbfead3de31a1045446c4db}{%
+           family={Carrara},
+           familyi={C\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=63d738886b95169de23b6c03fb9dfff3}{%
+           family={Falchi},
            familyi={F\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=894bde5a53a8825441e5f642f623eae3}{%
-           family={Foemmel},
-           familyi={F\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod}}}%
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0c72b5975c30be401b9855d379695b6e}{%
+           family={Gennaro},
+           familyi={G\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ae31182d6e3b5f2ca3f7ad0b2b095e2f}{%
+           family={Meghini},
+           familyi={M\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=feea1f7b45cb3aac50f01c9756cc6160}{%
+           family={Vairo},
+           familyi={V\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{fullhash}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{fullhashraw}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{bibnamehash}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{authorbibnamehash}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{authornamehash}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{authorfullhash}{d7769c586ce56b5a73110d573b5398e8}
-      \strng{authorfullhashraw}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{namehash}{ee9bd65a79cab169dfbad7b07c58a700}
+      \strng{fullhash}{e998023dd5ac5ed507ad0b855f28af0d}
+      \strng{fullhashraw}{e998023dd5ac5ed507ad0b855f28af0d}
+      \strng{bibnamehash}{e998023dd5ac5ed507ad0b855f28af0d}
+      \strng{authorbibnamehash}{e998023dd5ac5ed507ad0b855f28af0d}
+      \strng{authornamehash}{ee9bd65a79cab169dfbad7b07c58a700}
+      \strng{authorfullhash}{e998023dd5ac5ed507ad0b855f28af0d}
+      \strng{authorfullhashraw}{e998023dd5ac5ed507ad0b855f28af0d}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{ThoughtWorks}
-      \field{title}{Continuous Integration}
-      \field{year}{2006}
-      \verb{urlraw}
-      \verb https://martinfowler.com/articles/continuousIntegration.html
-      \endverb
-      \verb{url}
-      \verb https://martinfowler.com/articles/continuousIntegration.html
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{Deep Learning for Decentralised Parking Lot Occupancy Detection}
+      \field{volume}{72}
+      \field{year}{2017}
+      \field{pages}{327\bibrangedash 334}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.eswa.2016.10.055
       \endverb
     \endentry
-    \entry{fitzpatrick2017risks}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=cd4f9f6fa14ca50e8d52fdf3716b4e06}{%
-           family={Fitzpatrick},
-           familyi={F\bibinitperiod},
-           given={Gerald},
-           giveni={G\bibinitperiod}}}%
-        {{hash=d88bfec92aef818de9532a68531f7f5c}{%
-           family={Storey},
-           familyi={S\bibinitperiod},
-           given={Margaret-Anne},
-           giveni={M\bibinithyphendelim A\bibinitperiod}}}%
+    \entry{iot_parking_ocr_2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=f1250a09b324e1c65fce9a6a3adf79bd}{%
+           family={Elfaki},
+           familyi={E\bibinitperiod},
+           given={Abdelrahman\bibnamedelima Osman},
+           giveni={A\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=c3128f8804e0da912c3c26e2d8b45432}{%
+           family={Messoudi},
+           familyi={M\bibinitperiod},
+           given={Wassim},
+           giveni={W\bibinitperiod}}}%
+        {{hash=849025b7f402616bc47edddcbfafc385}{%
+           family={Bushnag},
+           familyi={B\bibinitperiod},
+           given={Anas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a44ee5ad4459954d0bd4990a1d0f2d58}{%
+           family={Abuzneid},
+           familyi={A\bibinitperiod},
+           given={Shakour},
+           giveni={S\bibinitperiod}}}%
+        {{hash=634284b920b9f14876f1d2b7eac32f90}{%
+           family={Alhmiedat},
+           familyi={A\bibinitperiod},
+           given={Tareq},
+           giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{527629362ac4e660a39b24245336242c}
-      \strng{fullhash}{527629362ac4e660a39b24245336242c}
-      \strng{fullhashraw}{527629362ac4e660a39b24245336242c}
-      \strng{bibnamehash}{527629362ac4e660a39b24245336242c}
-      \strng{authorbibnamehash}{527629362ac4e660a39b24245336242c}
-      \strng{authornamehash}{527629362ac4e660a39b24245336242c}
-      \strng{authorfullhash}{527629362ac4e660a39b24245336242c}
-      \strng{authorfullhashraw}{527629362ac4e660a39b24245336242c}
+      \strng{namehash}{d6686267a67b457e55b01a49cfa3c0e5}
+      \strng{fullhash}{f9390e237e2d3f76b7bffa7b982ebf79}
+      \strng{fullhashraw}{f9390e237e2d3f76b7bffa7b982ebf79}
+      \strng{bibnamehash}{f9390e237e2d3f76b7bffa7b982ebf79}
+      \strng{authorbibnamehash}{f9390e237e2d3f76b7bffa7b982ebf79}
+      \strng{authornamehash}{d6686267a67b457e55b01a49cfa3c0e5}
+      \strng{authorfullhash}{f9390e237e2d3f76b7bffa7b982ebf79}
+      \strng{authorfullhashraw}{f9390e237e2d3f76b7bffa7b982ebf79}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Software}
-      \field{number}{6}
-      \field{title}{The Risks of Good Enough Software Engineering}
-      \field{volume}{34}
-      \field{year}{2017}
-      \field{pages}{14\bibrangedash 19}
-      \range{pages}{6}
+      \field{journaltitle}{Sensors}
+      \field{number}{24}
+      \field{title}{A Smart Real-Time Parking Control and Monitoring System}
+      \field{volume}{23}
+      \field{year}{2023}
       \verb{doi}
-      \verb 10.1109/MS.2017.4121224
+      \verb 10.3390/s23249741
       \endverb
     \endentry
-    \entry{chen2015devops}{inproceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=d1bcd5ec0d9d6dc0db914feb770b5b2e}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Lianping},
-           giveni={L\bibinitperiod}}}%
+    \entry{smart_parking_wrongly_parked_2023}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=3c77fd118b3bb34e7ef6e1db2508d46d}{%
+           family={Alfathani},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=70d2e762505c31c7bc20fbec777d69cf}{%
+           family={Maulana},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=154db674e55a090c647bce5868feb63f}{%
+           family={Darmawan},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{fullhash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{fullhashraw}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{bibnamehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{authorbibnamehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{authornamehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{authorfullhash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
-      \strng{authorfullhashraw}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{namehash}{974475cbffca319f9a54ba49899d6d1c}
+      \strng{fullhash}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{fullhashraw}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{bibnamehash}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{authorbibnamehash}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{authornamehash}{974475cbffca319f9a54ba49899d6d1c}
+      \strng{authorfullhash}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{authorfullhashraw}{a05d9d8f42212bb5792f89c1c8af3f76}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{IEEE Software}
-      \field{number}{2}
-      \field{title}{Continuous Delivery: Huge Benefits, but Challenges Too}
-      \field{volume}{32}
-      \field{year}{2015}
-      \field{pages}{50\bibrangedash 54}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1109/MS.2015.27
-      \endverb
+      \field{journaltitle}{International Journal of Science, Technology and Management}
+      \field{number}{5}
+      \field{title}{Automatic Alert and Recall System Generates Warning Signals Based on Number Plate Recognition to Prevent Parking Violations}
+      \field{volume}{4}
+      \field{year}{2023}
+      \field{pages}{1096\bibrangedash 1103}
+      \range{pages}{8}
     \endentry
-    \entry{martin2008clean}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=6f41df64eb0dc4855be70172368604c2}{%
-           family={Martin},
-           familyi={M\bibinitperiod},
-           given={Robert\bibnamedelima C.},
-           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+    \entry{realtime_parking_two_cameras_2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=479ceeb906deeaa956446fc2325be0d9}{%
+           family={Sujatha},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=887ea14ff61f299c33ea0419b9ae0931}{%
+           family={Ramasamy},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Prentice Hall}%
-      }
-      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
-      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
-      \strng{fullhashraw}{6f41df64eb0dc4855be70172368604c2}
-      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
-      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
-      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
-      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
-      \strng{authorfullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \strng{namehash}{adb179cb4af928e389afe766b988c660}
+      \strng{fullhash}{adb179cb4af928e389afe766b988c660}
+      \strng{fullhashraw}{adb179cb4af928e389afe766b988c660}
+      \strng{bibnamehash}{adb179cb4af928e389afe766b988c660}
+      \strng{authorbibnamehash}{adb179cb4af928e389afe766b988c660}
+      \strng{authornamehash}{adb179cb4af928e389afe766b988c660}
+      \strng{authorfullhash}{adb179cb4af928e389afe766b988c660}
+      \strng{authorfullhashraw}{adb179cb4af928e389afe766b988c660}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9780132350884}
-      \field{title}{Clean Code: A Handbook of Agile Software Craftsmanship}
-      \field{year}{2008}
+      \field{journaltitle}{Journal of Information Science and Technology}
+      \field{number}{2}
+      \field{title}{Proposing Real-Time Parking System for Smart Cities Using Two Cameras}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{pages}{34\bibrangedash 41}
+      \range{pages}{8}
     \endentry
-    \entry{dora2021metrics}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=0dc9ac8a967e13c60fcfaedde74976f2}{%
-           family={Forsgren},
-           familyi={F\bibinitperiod},
-           given={Nicole},
-           giveni={N\bibinitperiod}}}%
+    \entry{smart_parking_lpr_efficiency_2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9e429e5f0773e5bcd92cadc202bbd82a}{%
+           family={Ala'anzy},
+           familyi={A\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c03301fac81473b78aa03ef3bc0db7d9}{%
+           family={Olesen},
+           familyi={O\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{fullhash}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{fullhashraw}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{bibnamehash}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{authorbibnamehash}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{authornamehash}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{authorfullhash}{0dc9ac8a967e13c60fcfaedde74976f2}
-      \strng{authorfullhashraw}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{namehash}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{fullhash}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{fullhashraw}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{bibnamehash}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{authorbibnamehash}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{authornamehash}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{authorfullhash}{f078736b99d15a536d2dd222b0cb65cd}
+      \strng{authorfullhashraw}{f078736b99d15a536d2dd222b0cb65cd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Real Time Smart Parking System Based on IoT and Fog Computing Evaluated Through a Practical Case Study}
+      \field{volume}{15}
+      \field{year}{2025}
+    \endentry
+    \entry{realtime_ocr_wsn_its_2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9d23ac40107ae1c7e479df414e3156d3}{%
+           family={Dalarmelina},
+           familyi={D\bibinitperiod},
+           given={Nicole\bibnamedelimb do\bibnamedelima Vale},
+           giveni={N\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=6c95b0d8cead3d233eb323e28e097623}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={Marcio\bibnamedelima Andrey},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=928edacf1be9395722bad676f2c74b0a}{%
+           family={Meneguette},
+           familyi={M\bibinitperiod},
+           given={Rodolfo\bibnamedelima I.},
+           giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{63e0eb5c8ea751a717c406fb89895a19}
+      \strng{fullhash}{3b622b8bd24cab8993e445cf262f81c4}
+      \strng{fullhashraw}{3b622b8bd24cab8993e445cf262f81c4}
+      \strng{bibnamehash}{3b622b8bd24cab8993e445cf262f81c4}
+      \strng{authorbibnamehash}{3b622b8bd24cab8993e445cf262f81c4}
+      \strng{authornamehash}{63e0eb5c8ea751a717c406fb89895a19}
+      \strng{authorfullhash}{3b622b8bd24cab8993e445cf262f81c4}
+      \strng{authorfullhashraw}{3b622b8bd24cab8993e445cf262f81c4}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{ACM Queue}
-      \field{title}{DORA Metrics in Practice}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://queue.acm.org/
+      \field{journaltitle}{Sensors}
+      \field{number}{1}
+      \field{title}{A Real-Time Automatic Plate Recognition System Based on Optical Character Recognition and Wireless Sensor Networks for ITS}
+      \field{volume}{20}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.3390/s20010055
       \endverb
-      \verb{url}
-      \verb https://queue.acm.org/
+    \endentry
+    \entry{anpr_pakistan_2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=8049188942eacd195d332a19d6395095}{%
+           family={Rehman},
+           familyi={R\bibinitperiod},
+           given={Fawad\bibnamedelima Ur},
+           giveni={F\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=f2f923ea66e22892338e7614e8f3fe07}{%
+           family={Pervaiz},
+           familyi={P\bibinitperiod},
+           given={Farooq},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4193a37ff650fac027f816b96b23859c}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Salman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b52808e5175b2da5a142aaff3f1dfd06}{%
+           family={Jamil},
+           familyi={J\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{78f8a6bb25d93dc56e744df3a38acf9d}
+      \strng{fullhash}{2418ab8502e82b80a95668308b3c8e6b}
+      \strng{fullhashraw}{2418ab8502e82b80a95668308b3c8e6b}
+      \strng{bibnamehash}{2418ab8502e82b80a95668308b3c8e6b}
+      \strng{authorbibnamehash}{2418ab8502e82b80a95668308b3c8e6b}
+      \strng{authornamehash}{78f8a6bb25d93dc56e744df3a38acf9d}
+      \strng{authorfullhash}{2418ab8502e82b80a95668308b3c8e6b}
+      \strng{authorfullhashraw}{2418ab8502e82b80a95668308b3c8e6b}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Open Artificial Intelligence Journal}
+      \field{number}{1}
+      \field{title}{Automatic Vehicle Number Plate Recognition Approach for Pakistan}
+      \field{volume}{2}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.2174/2666085820666200303122935
       \endverb
+    \endentry
+    \entry{yolo_high_precision_lpr_2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=dc91573f1e42d1ff919f6a573e0d5007}{%
+           family={Safran},
+           familyi={S\bibinitperiod},
+           given={Mejdl},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b2a60ea27d2653450a017e88d4c0fe56}{%
+           family={Alajmi},
+           familyi={A\bibinitperiod},
+           given={Abdulmalik},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1e020fecf1476c01d0ffae0dc08bf30b}{%
+           family={Alfarhood},
+           familyi={A\bibinitperiod},
+           given={Sultan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{48f8e3ac0680a30137838a1eb23e35a7}
+      \strng{fullhash}{8b401fb00c34182998158fb39d55150f}
+      \strng{fullhashraw}{8b401fb00c34182998158fb39d55150f}
+      \strng{bibnamehash}{8b401fb00c34182998158fb39d55150f}
+      \strng{authorbibnamehash}{8b401fb00c34182998158fb39d55150f}
+      \strng{authornamehash}{48f8e3ac0680a30137838a1eb23e35a7}
+      \strng{authorfullhash}{8b401fb00c34182998158fb39d55150f}
+      \strng{authorfullhashraw}{8b401fb00c34182998158fb39d55150f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{4}
+      \field{title}{Efficient Multistage License Plate Detection and Recognition Using YOLOv8 and CNN for Smart Parking Systems}
+      \field{volume}{24}
+      \field{year}{2024}
+    \endentry
+    \entry{car_model_plate_dl_2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ec615283638238c5770f374a5a96b412}{%
+           family={Mustafa},
+           familyi={M\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod}}}%
+        {{hash=96d238169b17fe3c5543fee47dbd3d04}{%
+           family={Karabatak},
+           familyi={K\bibinitperiod},
+           given={Murat},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{fullhash}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{fullhashraw}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{bibnamehash}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{authorbibnamehash}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{authornamehash}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{authorfullhash}{98b77e76a2ba77761382e2180cb42e6d}
+      \strng{authorfullhashraw}{98b77e76a2ba77761382e2180cb42e6d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Real Time Car Model and Plate Detection System by Using Deep Learning Architectures}
+      \field{year}{2024}
+    \endentry
+    \entry{deep_anpr_pipeline_access_control_2022}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=0c3439a5e219524b586d4f83feb220d6}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Muhammad\bibnamedelima Gufran},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2aef3a00febc862d2354224aac9e1032}{%
+           family={Salma},
+           familyi={S\bibinitperiod}}}%
+        {{hash=3025e8b81e8e7af24473eabdbfa41cf0}{%
+           family={Saeed},
+           familyi={S\bibinitperiod},
+           given={Maham},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f19754a5d714caa1f87a90994d65653a}{%
+           family={Zulfiqar},
+           familyi={Z\bibinitperiod},
+           given={Adil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=71c17273fdfce94a3787a048324d35a7}{%
+           family={Ghadi},
+           familyi={G\bibinitperiod},
+           given={Yazeed},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c0279004272b887bf96dd912b1b6c663}{%
+           family={Adnan},
+           familyi={A\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a89d7c1287a173b8972e09741ba6d65e}
+      \strng{fullhash}{e504d4c4db4cd5d77dde9dcc5fb12257}
+      \strng{fullhashraw}{e504d4c4db4cd5d77dde9dcc5fb12257}
+      \strng{bibnamehash}{e504d4c4db4cd5d77dde9dcc5fb12257}
+      \strng{authorbibnamehash}{e504d4c4db4cd5d77dde9dcc5fb12257}
+      \strng{authornamehash}{a89d7c1287a173b8972e09741ba6d65e}
+      \strng{authorfullhash}{e504d4c4db4cd5d77dde9dcc5fb12257}
+      \strng{authorfullhashraw}{e504d4c4db4cd5d77dde9dcc5fb12257}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A Novel Deep Learning Based ANPR Pipeline for Vehicle Access Control}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{64172\bibrangedash 64184}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2022.3183101
+      \endverb
+    \endentry
+    \entry{lpr_ai_dl_2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=cbac4ac7bcd950dbdad96c0c6ac34b5b}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={Darwin},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9c8cbe201fdda7c34016f1aecefe0fcb}{%
+           family={Insuasti},
+           familyi={I\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{fullhash}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{fullhashraw}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{bibnamehash}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{authorbibnamehash}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{authornamehash}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{authorfullhash}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \strng{authorfullhashraw}{fcedfaa418df4e4fbdfb342467d8edc6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Computing and Informatics}
+      \field{title}{Artificial Intelligence and Vehicle License Plate Recognition: A Literature Review}
+      \field{year}{2025}
+    \endentry
+    \entry{cv_system_lpr_tutorial}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e475ef13b514d5f16101b624da8656db}{%
+           family={Khaparde},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9b6f76c4cc569f3723ffec12f5d1c7f2}{%
+           family={Detroja},
+           familyi={D\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d25df53da6b5b0ebaac2fee61d9c7a05}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5adf9ff8442eebf32c6a6abd2279485d}{%
+           family={Dikey},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a940ba7f1429b41ffb94a4dd98eb8604}{%
+           family={Thakare},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{435dbffcf08364ba0a6895d5136c1751}
+      \strng{fullhash}{b794d51142fa7f9884b216e9e0dfbb26}
+      \strng{fullhashraw}{b794d51142fa7f9884b216e9e0dfbb26}
+      \strng{bibnamehash}{b794d51142fa7f9884b216e9e0dfbb26}
+      \strng{authorbibnamehash}{b794d51142fa7f9884b216e9e0dfbb26}
+      \strng{authornamehash}{435dbffcf08364ba0a6895d5136c1751}
+      \strng{authorfullhash}{b794d51142fa7f9884b216e9e0dfbb26}
+      \strng{authorfullhashraw}{b794d51142fa7f9884b216e9e0dfbb26}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Applications}
+      \field{number}{15}
+      \field{title}{Survey on Automatic Number Plate Recognition System}
+      \field{volume}{180}
+      \field{year}{2018}
+      \field{pages}{28\bibrangedash 32}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.5120/ijca2018916775
+      \endverb
+    \endentry
+    \entry{software_libre_mercosur_2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2ef9220854a0f6324f682da7f1f61272}{%
+           family={Moretti},
+           familyi={M\bibinitperiod},
+           given={Álvaro},
+           giveni={Á\bibinitperiod}}}%
+        {{hash=3fefa4bda6aaf3b395ab41218ac675d4}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Ramiro},
+           giveni={R\bibinitperiod}}}%
+        {{hash=652eb7424a14c911ee152df3e4392085}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca4d330f31df50a1efc6b891449cad00}
+      \strng{fullhash}{65aba7aa238ecb93d2713a8eaa34125e}
+      \strng{fullhashraw}{65aba7aa238ecb93d2713a8eaa34125e}
+      \strng{bibnamehash}{65aba7aa238ecb93d2713a8eaa34125e}
+      \strng{authorbibnamehash}{65aba7aa238ecb93d2713a8eaa34125e}
+      \strng{authornamehash}{ca4d330f31df50a1efc6b891449cad00}
+      \strng{authorfullhash}{65aba7aa238ecb93d2713a8eaa34125e}
+      \strng{authorfullhashraw}{65aba7aa238ecb93d2713a8eaa34125e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Informática y Sistemas}
+      \field{number}{1}
+      \field{title}{Software Libre para Reconocimiento Automático de las Nuevas Patentes del Mercosur}
+      \field{volume}{32}
+      \field{year}{2018}
+      \field{pages}{45\bibrangedash 54}
+      \range{pages}{10}
+    \endentry
+    \entry{anpr_security_bangladesh_2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=4c02c4d329f82ff44efaeac2fc8215ea}{%
+           family={Fatema},
+           familyi={F\bibinitperiod},
+           given={Kanij},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1e19030cd0f5c8c5def96828efbdb565}{%
+           family={Shawon},
+           familyi={S\bibinitperiod},
+           given={Md},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9a92b612f2812d36ec38affc1461f21d}{%
+           family={Molla},
+           familyi={M\bibinitperiod},
+           given={Sohan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e47445a35b098341738dda760e18d04f}{%
+           family={Emon},
+           familyi={E\bibinitperiod},
+           given={Asif\bibnamedelima Eakball},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d74a1148374b8aedb30b8450a56d4af}
+      \strng{fullhash}{d4e407fff238f4a3738e10a17652f68f}
+      \strng{fullhashraw}{d4e407fff238f4a3738e10a17652f68f}
+      \strng{bibnamehash}{d4e407fff238f4a3738e10a17652f68f}
+      \strng{authorbibnamehash}{d4e407fff238f4a3738e10a17652f68f}
+      \strng{authornamehash}{6d74a1148374b8aedb30b8450a56d4af}
+      \strng{authorfullhash}{d4e407fff238f4a3738e10a17652f68f}
+      \strng{authorfullhashraw}{d4e407fff238f4a3738e10a17652f68f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computer and Information Security}
+      \field{title}{Automatic Number Plate Recognition (ANPR) System Enhancing Security in Bangladesh}
+      \field{year}{2025}
     \endentry
   \enddatalist
 \endrefsection

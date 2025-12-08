@@ -1,39 +1,182 @@
 \appendix
-\section{Apéndices}
-\label{sec:apendices}
 
-\subsection{Checklist de Reproducibilidad}
-Para garantizar la transferencia y la validez externa de los hallazgos de proceso y la arquitectura propuesta, se proporciona el siguiente checklist de reproducibilidad.
+\section*{Apéndices}
+\addcontentsline{toc}{section}{Apéndices}
 
-\begin{itemize}[leftmargin=*]
-  \item \textbf{Datos}: Fuente (ej. Colección de imágenes de parqueos urbanos y datasets públicos como COCO/PASCAL VOC para YOLOv5), versión, licencias (ej. Creative Commons para imágenes públicas), protocolo de anonimización (ej. anonimización de matrículas no estándar).
-  \item \textbf{Código}: Repositorio Git (URL), *commit hash* específico de la versión final del artículo, instrucciones detalladas de ejecución (incluyendo el uso de \texttt{Docker-compose.yaml}).
-  \item \textbf{Entorno}: Sistema Operativo (ej. Ubuntu 20.04), versión de compiladores (ej. Python 3.9), dependencias principales (\texttt{requirements.txt}), semillas usadas para entrenamiento (si aplica) o configuración base de \texttt{Apache Kafka}.
-  \item \textbf{Procedimiento}: Pasos exactos documentados en el \textit{runbook} de adopción (referenciado en \texttt{README.md}) para replicar el entorno de despliegue de los Microservicios.
-  \item \textbf{Resultados}: Tablas y figuras que resumen las métricas DORA y de rendimiento (ej. latencia de Kafka) generadas automáticamente en el directorio \texttt{build/}.
-\end{itemize}
+\section{Resumen de tecnologías y componentes principales}
+\label{ap:tecnologias}
 
-\subsection{Especificaciones Técnicas del Stack de Comunicación}
+En la Tabla~\ref{tab:tecnologias_componentes} se presenta un resumen de las
+principales tecnologías utilizadas en ANPR-VISION y el rol que cumplen dentro
+de la arquitectura. Los números de versión corresponden a las configuraciones
+empleadas durante el desarrollo del trabajo de grado y pueden variar en
+implementaciones posteriores.
 
-Para complementar la descripción de la arquitectura, la Tabla \ref{tab:kafka_config} detalla la configuración inicial de los componentes críticos de *stream processing* y comunicación, vital para replicar la arquitectura de baja latencia.
-
-\begin{table}[htbp]
+\begin{table}[ht]
     \centering
-    \caption{Configuración Detallada de los Componentes de Comunicación}
-    \label{tab:kafka_config}
-    \begin{tabular}{|l|l|l|}
+    \caption{Resumen de tecnologías y componentes empleados en ANPR-VISION.}
+    \label{tab:tecnologias_componentes}
+    \begin{tabular}{p{0.22\linewidth} p{0.22\linewidth} p{0.46\linewidth}}
         \hline
-        \textbf{Componente} & \textbf{Herramienta} & \textbf{Propósito/Versión Clave} \\
+        \textbf{Componente} & \textbf{Tecnología} & \textbf{Rol en el sistema} \\
         \hline
-        *Message Broker* & Apache Kafka & Versión 3.x \\
-        \hline
-        Productor & Python (librería \texttt{confluent-kafka}) & Envío asíncrono de eventos ANPR \\
-        \hline
-        Consumidor & Servicio de Lógica de Negocio & Consumo y actualización de DB \\
-        \hline
-        *Tracker* & ByteTracker & Seguimiento continuo de vehículo por ID \\
-        \hline
-        Tiempo Real Web & WebSockets / SignalR & Notificación inmediata de puestos libres \\
+        Microservicio de visión &
+        Python + YOLOv5 + EasyOCR + ByteTrack &
+        Procesamiento de video, detección de vehículos y matrículas, OCR y seguimiento de objetos. \\[0.4em]
+
+        Bus de mensajería &
+        Apache Kafka &
+        Transporte asíncrono de eventos de detección entre el microservicio de visión y el backend de gestión. \\[0.4em]
+
+        Backend de gestión &
+        .NET (API REST) &
+        Lógica de negocio para registrar visitas, gestionar parqueaderos, vehículos, tarifas y notificaciones. \\[0.4em]
+
+        Portal web &
+        Angular &
+        Interfaz para operadores y administradores: monitoreo de detecciones, consultas de visitas y configuración del sistema. \\[0.4em]
+
+        Aplicación móvil &
+        Tecnologías basadas en Angular/Ionic (según implementación) &
+        Interfaz para usuarios finales: consulta de vehículos, historial de accesos y saldos asociados. \\[0.4em]
+
+        Comunicación en tiempo cercano al real &
+        SignalR &
+        Envío de notificaciones desde el backend hacia los clientes web y móviles cuando se produce un evento relevante. \\[0.4em]
+
+        Base de datos (desarrollo / pruebas) &
+        Motor relacional en contenedor Docker &
+        Almacenamiento de datos maestros (parqueaderos, cámaras, usuarios, vehículos) y transacciones (visitas, notificaciones). \\[0.4em]
+
+        Base de datos (producción) &
+        Amazon RDS (motor relacional) &
+        Almacenamiento persistente y administrado de la información en el entorno productivo. \\[0.4em]
+
+        Infraestructura de despliegue &
+        Docker, \texttt{docker-compose}, máquina virtual en AWS &
+        Contenerización de servicios, orquestación básica por entorno y despliegue en la nube. \\[0.4em]
+
+        Integración y entrega continua &
+        Jenkins &
+        Automatización de compilación, construcción de imágenes Docker y despliegue por entornos (develop, QA, staging, prod). \\
         \hline
     \end{tabular}
 \end{table}
+
+\section{Ejemplo de evento de detección enviado por el microservicio}
+\label{ap:evento_kafka}
+
+El Listado~\ref{lst:evento_kafka} muestra un ejemplo simplificado del mensaje
+JSON que el microservicio de visión envía al tópico de detecciones en Apache
+Kafka. Este formato se utiliza como contrato de integración entre la capa de
+visión y el backend de gestión.
+
+\begin{lstlisting}[language=json,caption={Ejemplo de evento de detección publicado en Kafka.},label={lst:evento_kafka}]
+{
+  "eventId": "b3a9f1c0-4f8a-4f1b-9d93-8b0c1f5a1234",
+  "plate": "ABC123",
+  "confidence": 0.92,
+  "cameraId": "CAM-ENTRADA-01",
+  "parkingId": 1,
+  "timestampUtc": "2025-05-12T15:43:21Z",
+  "trackId": 37,
+  "eventType": "DETECTION",
+  "imageMeta": {
+    "frameIndex": 1542,
+    "resolution": "1280x720"
+  }
+}
+\end{lstlisting}
+
+En el backend, un componente consumidor de Kafka interpreta este mensaje,
+verifica la validez de la matrícula, determina si corresponde al inicio o a
+la actualización de una visita, y actualiza la base de datos en consecuencia.
+
+\section{Ejemplo de endpoints de la API de gestión}
+\label{ap:endpoints_api}
+
+A modo de referencia, en la Tabla~\ref{tab:endpoints_api} se resumen algunos
+de los endpoints más relevantes expuestos por la API de gestión de
+parqueaderos. La lista no es exhaustiva, pero ilustra el tipo de operaciones
+que consumen el portal web y la aplicación móvil.
+
+\begin{table}[ht]
+    \centering
+    \caption{Ejemplos de endpoints de la API de gestión.}
+    \label{tab:endpoints_api}
+    \begin{tabular}{p{0.22\linewidth} p{0.30\linewidth} p{0.40\linewidth}}
+        \hline
+        \textbf{Método HTTP} & \textbf{Ruta} & \textbf{Descripción} \\
+        \hline
+        GET & \texttt{/api/visits/by-parking/\{parkingId\}} &
+        Obtiene el listado de visitas (entradas y salidas) registradas para un parqueadero. \\[0.4em]
+
+        GET & \texttt{/api/visits/by-vehicle/\{plate\}} &
+        Devuelve el historial de visitas asociadas a una matrícula específica. \\[0.4em]
+
+        GET & \texttt{/api/parking/\{id\}} &
+        Obtiene la información básica de un parqueadero (nombre, dirección, parámetros de configuración). \\[0.4em]
+
+        GET & \texttt{/api/camera/by-parking/\{parkingId\}} &
+        Lista las cámaras configuradas para un parqueadero, incluyendo sus URLs de conexión. \\[0.4em]
+
+        GET & \texttt{/api/notifications/by-parking/\{parkingId\}} &
+        Recupera las notificaciones pendientes o recientes relacionadas con un parqueadero. \\[0.4em]
+
+        PUT & \texttt{/api/notifications/\{id\}/read} &
+        Marca una notificación como leída en nombre de un usuario o rol específico. \\[0.4em]
+
+        GET & \texttt{/api/users/me} &
+        Devuelve la información básica del usuario autenticado y sus roles. \\[0.4em]
+
+        GET & \texttt{/api/reports/summary/\{parkingId\}} &
+        Entrega un resumen de visitas y ocupación en un intervalo de tiempo dado (según la implementación). \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Configuración básica de la fuente de video con \textit{IP Webcam}}
+\label{ap:ip_webcam}
+
+Como se describe en la Sección~\ref{sec:resultados}, las pruebas del
+prototipo se realizaron utilizando un teléfono móvil Android con la
+aplicación \textit{IP Webcam} como fuente de video, emulando el comportamiento
+de una cámara IP. A continuación se resumen los pasos básicos seguidos para
+la configuración, con el fin de que otros grupos puedan reproducir el
+montaje experimental:
+
+\begin{enumerate}
+    \item Instalar la aplicación \textit{IP Webcam} desde la tienda oficial de aplicaciones del dispositivo.
+    \item Conectar el teléfono y el servidor donde se ejecuta el microservicio de visión a la misma red local (por ejemplo, una red Wi-Fi institucional).
+    \item En \textit{IP Webcam}, configurar la resolución de video y la orientación de la cámara según el escenario de prueba (entrada de parqueadero, distancia aproximada al vehículo, etc.).
+    \item Iniciar el servidor de video en la aplicación y anotar la URL generada (por ejemplo, \texttt{http://\textit{IP\_DEL\_TELEFONO}:8080/video}).
+    \item Registrar dicha URL en el módulo de configuración de cámaras del sistema ANPR-VISION, de manera que el microservicio de visión consuma este flujo igual que consumiría el de una cámara IP dedicada.
+\end{enumerate}
+
+Desde el punto de vista de la arquitectura, esta configuración no requiere
+cambios en el código del microservicio: la diferencia entre una cámara IP
+física y el teléfono con \textit{IP Webcam} se limita a la dirección y a los
+parámetros de la fuente de video. Esto permite validar el sistema en contextos
+educativos sin necesidad de adquirir cámaras especializadas.
+
+\section{Notas sobre reproducción del entorno de despliegue}
+\label{ap:reproduccion_entorno}
+
+Para facilitar la reproducción del entorno de despliegue utilizado en el
+proyecto, se elaboraron archivos \texttt{docker-compose} específicos para los
+entornos de desarrollo, QA, \textit{staging} y producción. Aunque los
+archivos completos se omiten aquí por extensión, su estructura general es la
+siguiente:
+
+\begin{itemize}
+    \item Definición de servicios para el backend .NET, el portal web Angular y la base de datos relacional.
+    \item Definición opcional de servicios para Apache Kafka, su coordinador (cuando aplica) y el microservicio de visión.
+    \item Configuración de redes internas (por ejemplo, \texttt{anpr-net-develop}, \texttt{anpr-net-prod}) para aislar los servicios por entorno.
+    \item Uso de ficheros \texttt{.env} por entorno para gestionar credenciales, cadenas de conexión y parámetros específicos (URLs de cámaras, tópicos de Kafka, claves de JWT, etc.).
+\end{itemize}
+
+La combinación de estos archivos con las canalizaciones de Jenkins descritas
+en el cuerpo del artículo permite reconstruir el entorno con un esfuerzo
+moderado, constituyendo un recurso útil para futuras cohortes que deseen
+utilizar ANPR-VISION como base para nuevas actividades académicas o
+investigaciones aplicadas.

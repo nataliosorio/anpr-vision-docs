@@ -12,57 +12,67 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty address in beck2003testdriven
-Warning--can't use both volume and number fields in chen2015devops
-Warning--empty publisher in chen2015devops
-Warning--empty address in chen2015devops
-Warning--no number and no volume in dora2021metrics
-Warning--page numbers missing in both pages and numpages fields in dora2021metrics
-Warning--no number and no volume in forsgren2018accelerate
-Warning--page numbers missing in both pages and numpages fields in forsgren2018accelerate
-Warning--empty publisher in fowler2006continuous
-Warning--empty address in fowler2006continuous
-Warning--page numbers missing in both pages and numpages fields in fowler2006continuous
-Warning--empty address in martin2008clean
-You've used 7 entries,
+Warning--page numbers missing in both pages and numpages fields in smart_parking_lpr_efficiency_2024
+Warning--articleno or eid field, but no numpages field, in realtime_ocr_wsn_its_2019
+Warning--page numbers missing in both pages and numpages fields in realtime_ocr_wsn_its_2019
+Warning--articleno or eid, but no pages or numpages field in realtime_ocr_wsn_its_2019
+Warning--articleno or eid field, but no numpages field, in iot_parking_ocr_2023
+Warning--page numbers missing in both pages and numpages fields in iot_parking_ocr_2023
+Warning--articleno or eid, but no pages or numpages field in iot_parking_ocr_2023
+Warning--no number and no volume in anpr_security_bangladesh_2025
+Warning--page numbers missing in both pages and numpages fields in anpr_security_bangladesh_2025
+Warning--articleno or eid field, but no numpages field, in devops_tools_2019
+Warning--page numbers missing in both pages and numpages fields in devops_tools_2019
+Warning--articleno or eid, but no pages or numpages field in devops_tools_2019
+Warning--no number and no volume in lpr_ai_dl_2025
+Warning--page numbers missing in both pages and numpages fields in lpr_ai_dl_2025
+Warning--no number and no volume in car_model_plate_dl_2024
+Warning--page numbers missing in both pages and numpages fields in car_model_plate_dl_2024
+Warning--empty publisher in streetsavvy_2024
+Warning--empty address in streetsavvy_2024
+Warning--page numbers missing in both pages and numpages fields in streetsavvy_2024
+Warning--articleno or eid field, but no numpages field, in yolo_high_precision_lpr_2024
+Warning--page numbers missing in both pages and numpages fields in yolo_high_precision_lpr_2024
+Warning--articleno or eid, but no pages or numpages field in yolo_high_precision_lpr_2024
+You've used 17 entries,
             6273 wiz_defined-function locations,
-            1560 strings with 19018 characters,
-and the built_in function-call counts, 6823 in all, are:
-= -- 878
-> -- 161
+            1618 strings with 21847 characters,
+and the built_in function-call counts, 19887 in all, are:
+= -- 3039
+> -- 641
 < -- 0
-+ -- 50
-- -- 65
-* -- 425
-:= -- 645
-add.period$ -- 36
-call.type$ -- 7
-change.case$ -- 39
-chr.to.int$ -- 7
-cite$ -- 19
-duplicate$ -- 640
-empty$ -- 456
-format.name$ -- 77
-if$ -- 1669
++ -- 225
+- -- 214
+* -- 1439
+:= -- 1811
+add.period$ -- 84
+call.type$ -- 17
+change.case$ -- 128
+chr.to.int$ -- 17
+cite$ -- 39
+duplicate$ -- 1596
+empty$ -- 1155
+format.name$ -- 278
+if$ -- 5176
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 26
-newline$ -- 105
-num.names$ -- 49
-pop$ -- 270
+missing$ -- 65
+newline$ -- 182
+num.names$ -- 119
+pop$ -- 635
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 264
 quote$ -- 0
-skip$ -- 218
+skip$ -- 508
 stack$ -- 0
-substring$ -- 455
-swap$ -- 47
+substring$ -- 1366
+swap$ -- 127
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
-warning$ -- 12
-while$ -- 51
+type$ -- 286
+warning$ -- 22
+while$ -- 91
 width$ -- 0
-write$ -- 179
-(There were 12 warnings)
+write$ -- 359
+(There were 22 warnings)

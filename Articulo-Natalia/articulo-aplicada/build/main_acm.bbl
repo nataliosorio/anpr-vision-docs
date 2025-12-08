@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{7}
+\begin{thebibliography}{17}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,83 +36,219 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[Beck(2003)]%
-        {beck2003testdriven}
-\bibfield{author}{\bibinfo{person}{Kent Beck}.}
-  \bibinfo{year}{2003}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Test-Driven Development: By Example}}.
-\newblock \bibinfo{publisher}{Addison-Wesley Professional}.
-\newblock
-\showISBNx{0321146530}
-
-
-\bibitem[Chen(2015)]%
-        {chen2015devops}
-\bibfield{author}{\bibinfo{person}{Lianping Chen}.}
-  \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{Continuous Delivery: Huge Benefits, but Challenges
-  Too}. In \bibinfo{booktitle}{\emph{IEEE Software}},
-  Vol.~\bibinfo{volume}{32}. \bibinfo{pages}{50--54}.
-\newblock
-\href{https://doi.org/10.1109/MS.2015.27}{doi:\nolinkurl{10.1109/MS.2015.27}}
-
-
-\bibitem[Fitzpatrick and Storey(2017)]%
-        {fitzpatrick2017risks}
-\bibfield{author}{\bibinfo{person}{Gerald Fitzpatrick} {and}
-  \bibinfo{person}{Margaret-Anne Storey}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{The Risks of Good Enough Software Engineering}.
-\newblock \bibinfo{journal}{\emph{IEEE Software}} \bibinfo{volume}{34},
-  \bibinfo{number}{6} (\bibinfo{year}{2017}), \bibinfo{pages}{14--19}.
-\newblock
-\href{https://doi.org/10.1109/MS.2017.4121224}{doi:\nolinkurl{10.1109/MS.2017.4121224}}
-
-
-\bibitem[Forsgren(2021)]%
-        {dora2021metrics}
-\bibfield{author}{\bibinfo{person}{Nicole Forsgren}.}
-  \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{DORA Metrics in Practice}.
-\newblock \bibinfo{journal}{\emph{ACM Queue}} (\bibinfo{year}{2021}).
-\newblock
-\urldef\tempurl%
-\url{https://queue.acm.org/}
-\showURL{%
-\tempurl}
-
-
-\bibitem[Forsgren et~al\mbox{.}(2018)]%
-        {forsgren2018accelerate}
-\bibfield{author}{\bibinfo{person}{Nicole Forsgren}, \bibinfo{person}{Jez
-  Humble}, {and} \bibinfo{person}{Gene Kim}.} \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Accelerate: The Science of Lean Software and
-  DevOps}.
-\newblock \bibinfo{journal}{\emph{IT Revolution}} (\bibinfo{year}{2018}).
+\bibitem[Ala'anzy and Olesen(2025)]%
+        {smart_parking_lpr_efficiency_2024}
+\bibfield{author}{\bibinfo{person}{Mohammed Ala'anzy} {and}
+  \bibinfo{person}{Henning Olesen}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Real Time Smart Parking System Based on IoT and Fog
+  Computing Evaluated Through a Practical Case Study}.
+\newblock \bibinfo{journal}{\emph{Scientific Reports}} \bibinfo{volume}{15},
+  \bibinfo{number}{1} (\bibinfo{year}{2025}).
 \newblock
 
 
-\bibitem[Fowler and Foemmel(2006)]%
-        {fowler2006continuous}
-\bibfield{author}{\bibinfo{person}{Martin Fowler} {and}
-  \bibinfo{person}{Matthew Foemmel}.} \bibinfo{year}{2006}\natexlab{}.
-\newblock \showarticletitle{Continuous Integration}. In
-  \bibinfo{booktitle}{\emph{ThoughtWorks}}.
+\bibitem[Alfathani et~al\mbox{.}(2023)]%
+        {smart_parking_wrongly_parked_2023}
+\bibfield{author}{\bibinfo{person}{A.~S. Alfathani}, \bibinfo{person}{R.
+  Maulana}, \bibinfo{person}{S. Darmawan}, {et~al\mbox{.}}}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Automatic Alert and Recall System Generates Warning
+  Signals Based on Number Plate Recognition to Prevent Parking Violations}.
+\newblock \bibinfo{journal}{\emph{International Journal of Science, Technology
+  and Management}} \bibinfo{volume}{4}, \bibinfo{number}{5}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{1096--1103}.
 \newblock
-\urldef\tempurl%
-\url{https://martinfowler.com/articles/continuousIntegration.html}
-\showURL{%
-\tempurl}
 
 
-\bibitem[Martin(2008)]%
-        {martin2008clean}
-\bibfield{author}{\bibinfo{person}{Robert~C. Martin}.}
-  \bibinfo{year}{2008}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Clean Code: A Handbook of Agile Software
-  Craftsmanship}}.
-\newblock \bibinfo{publisher}{Prentice Hall}.
+\bibitem[Amato et~al\mbox{.}(2017)]%
+        {campussense_2017}
+\bibfield{author}{\bibinfo{person}{Giuseppe Amato}, \bibinfo{person}{Fabio
+  Carrara}, \bibinfo{person}{Fabrizio Falchi}, \bibinfo{person}{Claudio
+  Gennaro}, \bibinfo{person}{Carlo Meghini}, {and} \bibinfo{person}{Claudio
+  Vairo}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Deep Learning for Decentralised Parking Lot
+  Occupancy Detection}.
+\newblock \bibinfo{journal}{\emph{Expert Systems with Applications}}
+  \bibinfo{volume}{72} (\bibinfo{year}{2017}), \bibinfo{pages}{327--334}.
 \newblock
-\showISBNx{9780132350884}
+\href{https://doi.org/10.1016/j.eswa.2016.10.055}{doi:\nolinkurl{10.1016/j.eswa.2016.10.055}}
+
+
+\bibitem[Dalarmelina et~al\mbox{.}(2020)]%
+        {realtime_ocr_wsn_its_2019}
+\bibfield{author}{\bibinfo{person}{Nicole do~Vale Dalarmelina},
+  \bibinfo{person}{Marcio~Andrey Teixeira}, {and} \bibinfo{person}{Rodolfo~I.
+  Meneguette}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{A Real-Time Automatic Plate Recognition System
+  Based on Optical Character Recognition and Wireless Sensor Networks for ITS}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{20},
+  \bibinfo{number}{1}, Article \bibinfo{articleno}{55} (\bibinfo{year}{2020}).
+\newblock
+\href{https://doi.org/10.3390/s20010055}{doi:\nolinkurl{10.3390/s20010055}}
+
+
+\bibitem[Elfaki et~al\mbox{.}(2023)]%
+        {iot_parking_ocr_2023}
+\bibfield{author}{\bibinfo{person}{Abdelrahman~Osman Elfaki},
+  \bibinfo{person}{Wassim Messoudi}, \bibinfo{person}{Anas Bushnag},
+  \bibinfo{person}{Shakour Abuzneid}, {and} \bibinfo{person}{Tareq Alhmiedat}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{A Smart Real-Time Parking Control and Monitoring
+  System}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{23},
+  \bibinfo{number}{24}, Article \bibinfo{articleno}{9741}
+  (\bibinfo{year}{2023}).
+\newblock
+\href{https://doi.org/10.3390/s23249741}{doi:\nolinkurl{10.3390/s23249741}}
+
+
+\bibitem[Fatema et~al\mbox{.}(2025)]%
+        {anpr_security_bangladesh_2025}
+\bibfield{author}{\bibinfo{person}{Kanij Fatema}, \bibinfo{person}{Md Shawon},
+  \bibinfo{person}{Sohan Molla}, {and} \bibinfo{person}{Asif~Eakball Emon}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Automatic Number Plate Recognition (ANPR) System
+  Enhancing Security in Bangladesh}.
+\newblock \bibinfo{journal}{\emph{Journal of Computer and Information
+  Security}} (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Khan et~al\mbox{.}(2022)]%
+        {deep_anpr_pipeline_access_control_2022}
+\bibfield{author}{\bibinfo{person}{Muhammad~Gufran Khan},
+  \bibinfo{person}{Salma}, \bibinfo{person}{Maham Saeed}, \bibinfo{person}{Adil
+  Zulfiqar}, \bibinfo{person}{Yazeed Ghadi}, {and} \bibinfo{person}{Muhammad
+  Adnan}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A Novel Deep Learning Based ANPR Pipeline for
+  Vehicle Access Control}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}}  \bibinfo{volume}{10}
+  (\bibinfo{year}{2022}), \bibinfo{pages}{64172--64184}.
+\newblock
+\href{https://doi.org/10.1109/ACCESS.2022.3183101}{doi:\nolinkurl{10.1109/ACCESS.2022.3183101}}
+
+
+\bibitem[Khaparde et~al\mbox{.}(2018)]%
+        {cv_system_lpr_tutorial}
+\bibfield{author}{\bibinfo{person}{D. Khaparde}, \bibinfo{person}{H. Detroja},
+  \bibinfo{person}{J. Shah}, \bibinfo{person}{R. Dikey}, {and}
+  \bibinfo{person}{B. Thakare}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Survey on Automatic Number Plate Recognition
+  System}.
+\newblock \bibinfo{journal}{\emph{International Journal of Computer
+  Applications}} \bibinfo{volume}{180}, \bibinfo{number}{15}
+  (\bibinfo{year}{2018}), \bibinfo{pages}{28--32}.
+\newblock
+\href{https://doi.org/10.5120/ijca2018916775}{doi:\nolinkurl{10.5120/ijca2018916775}}
+
+
+\bibitem[Leite et~al\mbox{.}(2019)]%
+        {devops_tools_2019}
+\bibfield{author}{\bibinfo{person}{Leonardo Leite}, \bibinfo{person}{Carla
+  Rocha}, \bibinfo{person}{Fabio Kon}, \bibinfo{person}{Dejan Milojicic}, {and}
+  \bibinfo{person}{Paulo Meirelles}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A Survey of DevOps Concepts and Challenges}.
+\newblock \bibinfo{journal}{\emph{Comput. Surveys}} \bibinfo{volume}{52},
+  \bibinfo{number}{6}, Article \bibinfo{articleno}{127} (\bibinfo{year}{2019}).
+\newblock
+\href{https://doi.org/10.1145/3359981}{doi:\nolinkurl{10.1145/3359981}}
+
+
+\bibitem[Mart{\'i}nez and Insuasti(2025)]%
+        {lpr_ai_dl_2025}
+\bibfield{author}{\bibinfo{person}{Darwin Mart{\'i}nez} {and}
+  \bibinfo{person}{Juan Insuasti}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Artificial Intelligence and Vehicle License Plate
+  Recognition: A Literature Review}.
+\newblock \bibinfo{journal}{\emph{Applied Computing and Informatics}}
+  (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Moretti et~al\mbox{.}(2018)]%
+        {software_libre_mercosur_2016}
+\bibfield{author}{\bibinfo{person}{{\'A}lvaro Moretti}, \bibinfo{person}{Ramiro
+  G{\'o}mez}, {and} \bibinfo{person}{Jorge Cabrera}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Software Libre para Reconocimiento Autom{\'a}tico
+  de las Nuevas Patentes del Mercosur}.
+\newblock \bibinfo{journal}{\emph{Revista de Inform{\'a}tica y Sistemas}}
+  \bibinfo{volume}{32}, \bibinfo{number}{1} (\bibinfo{year}{2018}),
+  \bibinfo{pages}{45--54}.
+\newblock
+
+
+\bibitem[Mustafa and Karabatak(2024)]%
+        {car_model_plate_dl_2024}
+\bibfield{author}{\bibinfo{person}{Taha Mustafa} {and} \bibinfo{person}{Murat
+  Karabatak}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Real Time Car Model and Plate Detection System by
+  Using Deep Learning Architectures}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Nguyen et~al\mbox{.}(2022)]%
+        {streetsavvy_2024}
+\bibfield{author}{\bibinfo{person}{Thanh-Hai Nguyen},
+  \bibinfo{person}{Quang-Nhat Bui}, \bibinfo{person}{Quang-Nhat Pham}, {and}
+  \bibinfo{person}{Kang-Hyun Jo}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Smart Camera-Based Parking System with Automatic
+  Parking Spot Detection and Guidance}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the Asian Conference on Computer
+  Vision Workshops (ACCVW)}}.
+\newblock
+
+
+\bibitem[Rehman et~al\mbox{.}(2020)]%
+        {anpr_pakistan_2020}
+\bibfield{author}{\bibinfo{person}{Fawad~Ur Rehman}, \bibinfo{person}{Farooq
+  Pervaiz}, \bibinfo{person}{Salman Ali}, {and} \bibinfo{person}{Muhammad
+  Jamil}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Automatic Vehicle Number Plate Recognition Approach
+  for Pakistan}.
+\newblock \bibinfo{journal}{\emph{The Open Artificial Intelligence Journal}}
+  \bibinfo{volume}{2}, \bibinfo{number}{1} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{1--10}.
+\newblock
+\href{https://doi.org/10.2174/2666085820666200303122935}{doi:\nolinkurl{10.2174/2666085820666200303122935}}
+
+
+\bibitem[Safran et~al\mbox{.}(2024)]%
+        {yolo_high_precision_lpr_2024}
+\bibfield{author}{\bibinfo{person}{Mejdl Safran}, \bibinfo{person}{Abdulmalik
+  Alajmi}, {and} \bibinfo{person}{Sultan Alfarhood}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Efficient Multistage License Plate Detection and
+  Recognition Using YOLOv8 and CNN for Smart Parking Systems}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{24},
+  \bibinfo{number}{4}, Article \bibinfo{articleno}{2120}
+  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Sujatha et~al\mbox{.}(2021)]%
+        {realtime_parking_two_cameras_2024}
+\bibfield{author}{\bibinfo{person}{K. Sujatha}, \bibinfo{person}{M. Ramasamy},
+  {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Proposing Real-Time Parking System for Smart Cities
+  Using Two Cameras}.
+\newblock \bibinfo{journal}{\emph{Journal of Information Science and
+  Technology}} \bibinfo{volume}{3}, \bibinfo{number}{2} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{34--41}.
+\newblock
+
+
+\bibitem[Yang(2025)]%
+        {ci_cd_quality_2025}
+\bibfield{author}{\bibinfo{person}{S. Yang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{The Impact of Continuous Integration and Continuous
+  Delivery on Software Development Efficiency}.
+\newblock \bibinfo{journal}{\emph{Journal of Computer Signal and System
+  Research}} \bibinfo{volume}{2}, \bibinfo{number}{3} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{59--68}.
+\newblock
+\href{https://doi.org/10.71222/pzvfqm21}{doi:\nolinkurl{10.71222/pzvfqm21}}
 
 
 \end{thebibliography}

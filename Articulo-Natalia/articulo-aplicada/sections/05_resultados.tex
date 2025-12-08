@@ -1,33 +1,111 @@
-\section{Evaluación y Resultados del Proceso de Ingeniería}
+\section{Resultados}
 \label{sec:resultados}
 
-Esta sección presenta los resultados de la \textbf{evaluación del proceso de ingeniería} utilizado para el diseño e implementación de la arquitectura ANPR/ALPR. La evaluación se centra en la eficiencia del equipo de desarrollo y la calidad del *software* producido. El diseño de evaluación se basa en las métricas DORA \cite{dora2021metrics} y principios de código limpio \cite{martin2008clean}. Las métricas incluyen: mantenibilidad, defectos por KLOC, tiempo de ciclo, frecuencia de *deployment*, y *lead time* para cambios.
+Esta sección presenta los resultados obtenidos a partir de la implementación del prototipo ANPR-VISION descrito en la Sección~\ref{sec:implementacion}. Dado que el proyecto se desarrolló como trabajo de grado en el marco del SENA, con recursos limitados y un énfasis formativo, los resultados se centran en la validación funcional de la arquitectura, en observaciones de rendimiento en un entorno controlado y en la experiencia de despliegue en múltiples entornos, más que en una evaluación estadística exhaustiva.
 
-\subsection{Métricas DORA y Calidad del Código}
-Los resultados demuestran el impacto directo de las prácticas de desarrollo aplicadas. La aplicación sistemática de \textbf{TDD} (\textit{Test-Driven Development}) \cite{beck2003testdriven} redujo la densidad de defectos en un **40\%**. De manera similar, la implementación de \textbf{CI/CD} (\textit{Continuous Integration/Continuous Delivery}) \cite{fowler2006continuous,chen2015devops} mejoró drásticamente el *lead time* (tiempo de entrega de un cambio) de 5 días a solo **2 horas**.
+\subsection{Entorno de pruebas y configuración experimental}
 
-La Figura \ref{fig:metricas_dora} presenta las métricas DORA recolectadas durante el período de evaluación, mostrando variaciones significativas en la eficiencia y estabilidad del *pipeline* entre los equipos o fases del proyecto.
+Las pruebas se realizaron en un entorno controlado que simula el acceso a un parqueadero. Por razones de tiempo y de disponibilidad de hardware, en lugar de utilizar una cámara IP dedicada se empleó un \textit{smartphone} Android configurado con la aplicación \textit{IP Webcam}. Esta aplicación convierte el teléfono en una cámara de red, exponiendo el flujo de video a través de la red local mediante una URL de tipo HTTP/RTSP, de forma equivalente a una cámara IP convencional.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.48\textwidth]{graphics/metricas_dora.pdf}
-    \caption{Métricas DORA por equipo: frecuencia de deployment y lead time}
-    \label{fig:metricas_dora}
-\end{figure}
+El montaje experimental incluyó:
 
-\subsection{Evolución Temporal de Métricas Clave}
-Siguiendo las recomendaciones de \cite{forsgren2018accelerate}, se observó una correlación positiva y continua entre la frecuencia de *deployment* y la estabilidad del sistema, confirmando que los despliegues pequeños y frecuentes no comprometen la calidad.
+\begin{itemize}
+    \item Un teléfono móvil con la aplicación \textit{IP Webcam} actuando como cámara IP, ubicado a la entrada de un espacio de parqueo y orientado de manera que capturara el frontal de los vehículos a una distancia y ángulo moderados.
+    \item Un servidor local (o máquina virtual) ejecutando los contenedores de Docker correspondientes al microservicio de visión, al \textit{broker} de Apache Kafka, al backend .NET y al portal web Angular.
+    \item La base de datos relacional desplegada como contenedor en los entornos de desarrollo y pruebas, y una instancia adicional en Amazon RDS para validar la conectividad con el entorno de producción.
+\end{itemize}
 
-Los datos muestran una mejora sostenida en la \textbf{cobertura de pruebas} (pasando del 68\% al 95\%) y una reducción drástica en defectos de producción (de 28 a 4 por mes). Simultáneamente, la velocidad del equipo, medida en \textit{story points} por *sprint*, se incrementó consistentemente de 32 a 65.
+En la práctica, el microservicio de visión consume la URL de video generada por \textit{IP Webcam} igual que consumiría el flujo de una cámara IP física, por lo que la forma en que se configuró el experimento no modifica la arquitectura ni el código del sistema, sino únicamente la fuente de video utilizada.
 
-La Figura \ref{fig:evolucion_metricas} ilustra la evolución temporal de métricas clave (cobertura de pruebas, defectos, velocidad del equipo) durante el período de estudio.
+Se realizaron pruebas tanto con flujos de video en tiempo real provenientes del teléfono (a través de \textit{IP Webcam}) como con archivos de video previamente grabados, que permitieron reproducir varias veces las mismas secuencias de vehículos para observar el comportamiento del sistema bajo condiciones equivalentes.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.48\textwidth]{graphics/evolucion_metricas.pdf}
-    \caption{Evolución temporal de métricas de calidad durante el año 2024}
-    \label{fig:evolucion_metricas}
-\end{figure}
+En cada sesión de prueba se registraron:
 
-\subsection{Interpretación de Resultados}
-Como advierte \cite{fitzpatrick2017risks}, estos resultados deben interpretarse considerando el contexto específico del proyecto. El éxito en la reducción de defectos y el aumento de la velocidad se atribuye directamente a la implementación rigurosa del *stack* de automatización (CI/CD) y las prácticas de calidad de código detalladas en la Sección \ref{sec:implementacion}. Se presentan intervalos de confianza cuando aplica y se analiza la significancia práctica siguiendo las mejores prácticas de investigación empírica en ingeniería de *software*.
+\begin{itemize}
+    \item El número de vehículos que pasaron por el campo de visión de la cámara simulada y sus matrículas.
+    \item Las detecciones generadas por el microservicio de visión.
+    \item Los registros de visitas creados en la base de datos.
+    \item La latencia aproximada entre la captura de la imagen y la visualización de la detección en el portal web.
+\end{itemize}
+
+Aunque las pruebas se realizaron con un teléfono actuando como cámara IP, la forma en que se diseñó la arquitectura (uso de direcciones RTSP/HTTP como fuentes de video) permite sustituir esta fuente por cámaras IP reales sin cambios estructurales en el sistema, limitándose a ajustar las URL y parámetros de conexión.
+
+\subsection{Validación funcional de la arquitectura}
+
+Desde el punto de vista funcional, el objetivo principal era verificar que la canalización completa ---desde la captura del flujo de video hasta el registro de visitas y la notificación en las interfaces--- se comportara según lo especificado.
+
+De manera general, las pruebas mostraron que:
+
+\begin{itemize}
+    \item El microservicio de visión fue capaz de detectar vehículos y localizar la región de la placa en la mayoría de los fotogramas en los que la matrícula era claramente visible en el flujo generado por \textit{IP Webcam}.
+    \item En las secuencias de prueba, el OCR basado en EasyOCR logró recuperar correctamente la cadena de caracteres de la matrícula en un porcentaje alto de los casos, especialmente cuando la placa no presentaba suciedad notable ni reflejos intensos.
+    \item El algoritmo de seguimiento ByteTrack permitió mantener la identidad del vehículo durante el tiempo que permanecía en el campo de visión, evitando que pequeñas variaciones en la detección generaran múltiples visitas falsas.
+    \item Por cada vehículo que cruzó el punto de acceso, el backend .NET registró al menos una visita en la base de datos, asociando correctamente la matrícula detectada, la cámara (en este caso, el teléfono configurado como cámara IP), la hora de entrada y, cuando se completó el ciclo, la hora de salida.
+    \item El portal web Angular actualizó su vista de monitoreo pocos instantes después de cada detección, mostrando al operador la nueva visita en la lista de eventos recientes.
+\end{itemize}
+
+En términos generales, el comportamiento observado confirma que la arquitectura propuesta es funcional: los componentes se comunican correctamente a través de Kafka, el backend procesa los eventos como se esperaba y las interfaces reflejan el estado del sistema de forma coherente, independientemente de que la fuente de video sea una cámara IP dedicada o un teléfono configurado como tal.
+
+\subsection{Observaciones sobre rendimiento y latencia}
+
+Aunque no se realizó una medición de rendimiento de tipo industrial, sí se recopilaron observaciones cualitativas y algunas estimaciones aproximadas que permiten tener una idea del comportamiento del prototipo en el entorno de pruebas.
+
+En las secuencias evaluadas se observó que:
+
+\begin{itemize}
+    \item El tiempo de procesamiento por fotograma en el microservicio de visión se mantuvo dentro de un orden de magnitud compatible con aplicaciones en tiempo casi real, tomando en cuenta la resolución del video y el hardware disponible. Para reducir la carga, se configuró el sistema para procesar solo una fracción de los fotogramas (por ejemplo, uno de cada varios), lo que resultó suficiente para capturar las matrículas de vehículos que pasaban a baja velocidad frente a la cámara simulada.
+    \item La latencia observable entre el momento en que un vehículo entraba en el campo de visión y el momento en que la detección aparecía en el portal web fue, en la mayoría de los casos, de unos pocos segundos. Esta latencia incluye el tiempo de captura, inferencia con YOLOv5, OCR, envío del evento a Kafka, procesamiento en el backend y actualización de la interfaz vía SignalR.
+    \item No se detectaron cuellos de botella significativos en Kafka en el escenario de prueba, dado el volumen relativamente bajo de eventos. El \textit{broker} funcionó de manera estable y permitió repetir las pruebas utilizando los mismos mensajes almacenados.
+\end{itemize}
+
+Cuando se trabajó con videos de prueba que incluían condiciones menos favorables (movimiento más rápido del vehículo, variaciones de iluminación o pequeñas oclusiones), se observó un aumento de errores de reconocimiento (por ejemplo, confusiones entre letras y números visualmente similares). Estos casos pusieron de manifiesto la necesidad de contar con datos de entrenamiento específicos para el tipo de placas y condiciones locales si se quiere alcanzar niveles de precisión más altos en un despliegue real, ya sea con cámaras IP físicas o con dispositivos móviles actuando como tales.
+
+La Tabla~\ref{tab:resultados_resumen} resume, de manera estructurada, los principales aspectos observados. Los valores numéricos pueden ajustarse con datos medidos más precisos en caso de que se realicen campañas de pruebas adicionales.
+
+\begin{table}[ht]
+    \centering
+    \caption{Resumen cualitativo de resultados observados en el entorno de pruebas.}
+    \label{tab:resultados_resumen}
+    \begin{tabular}{p{0.28\linewidth} p{0.64\linewidth}}
+        \hline
+        \textbf{Aspecto evaluado} & \textbf{Observaciones principales} \\
+        \hline
+        Detección de vehículos y placas &
+        El modelo YOLOv5 detectó la mayoría de los vehículos con la placa visible en videos de prueba grabados en condiciones de iluminación moderada. Se observaron fallos en casos de reflejos fuertes o placas muy sucias. \\[0.4em]
+        Reconocimiento de caracteres (OCR) &
+        EasyOCR recuperó correctamente la matrícula en un porcentaje alto de los casos con buena calidad de imagen. Las confusiones más frecuentes se dieron entre caracteres similares (por ejemplo, \texttt{O}/\texttt{0}, \texttt{B}/\texttt{8}). \\[0.4em]
+        Seguimiento de vehículos &
+        ByteTrack permitió asociar detecciones consecutivas al mismo vehículo, reduciendo lecturas duplicadas y dando soporte a la estimación de entrada y salida. \\[0.4em]
+        Latencia extremo a extremo &
+        La actualización de la interfaz web se produjo generalmente dentro de unos pocos segundos después de la captura del fotograma, suficiente para el uso operativo en el entorno de prueba. \\[0.4em]
+        Estabilidad de la arquitectura &
+        Los servicios desplegados en Docker (microservicio de visión, Kafka, backend y frontend) funcionaron de manera estable durante sesiones prolongadas de prueba, sin caídas inesperadas. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Experiencia de despliegue en múltiples entornos}
+
+Además del comportamiento funcional, se evaluó la capacidad del sistema para ser desplegado y actualizado en los distintos entornos definidos (desarrollo, QA, \textit{staging} y producción). En este aspecto, los resultados fueron los siguientes:
+
+\begin{itemize}
+    \item La definición de archivos \texttt{docker-compose} por entorno permitió reproducir de manera consistente la pila de servicios (backend, frontend, base de datos y servicios auxiliares) en cada servidor, reduciendo la variabilidad entre instalaciones.
+    \item La integración con Jenkins facilitó la automatización de compilación, construcción de imágenes Docker y despliegue de nuevas versiones del backend y del portal web. Cada cambio en el repositorio activaba un \textit{pipeline} que, tras pasar las etapas básicas de verificación, actualizaba el entorno correspondiente.
+    \item En el caso particular de producción, la combinación de una máquina virtual en AWS para los contenedores y una instancia de base de datos en Amazon RDS permitió simular un escenario de despliegue cercano a una solución real, manteniendo a la vez el control necesario para fines educativos.
+    \item El microservicio de visión se desplegó principalmente en entornos de desarrollo y prueba, donde se validó la comunicación extremo a extremo. Su despliegue permanente en producción se dejó como trabajo futuro, condicionado a una evaluación más amplia de comportamiento y consumo de recursos.
+\end{itemize}
+
+Desde el punto de vista formativo, la existencia de estos entornos y \textit{pipelines} contribuyó a que el equipo de desarrollo experimentara con prácticas de despliegue automatizado y de gestión de configuraciones por ambiente, aun cuando el foco principal del trabajo recayera en la arquitectura ANPR.
+
+\subsection{Síntesis de hallazgos}
+
+En síntesis, los resultados obtenidos permiten extraer los siguientes puntos clave:
+
+\begin{itemize}
+    \item La arquitectura propuesta es técnicamente viable: el flujo completo desde la captura de video (ya sea desde una cámara IP dedicada o desde un teléfono configurado con \textit{IP Webcam}) hasta la visualización en las interfaces se ejecuta de manera coherente, y los componentes se encuentran adecuadamente desacoplados gracias al uso de Apache Kafka.
+    \item El prototipo ANPR-VISION cumple con el objetivo de servir como plataforma educativa y de experimentación, al integrar conceptos de visión por computador, microservicios, mensajería distribuida y desarrollo web y móvil en un caso de uso concreto.
+    \item El desempeño observado en el entorno de pruebas es adecuado para un escenario controlado, pero se identifican limitaciones en la precisión del reconocimiento bajo condiciones adversas y en la ausencia de una evaluación cuantitativa más amplia.
+    \item El esquema de despliegue basado en contenedores y \textit{pipelines} de Jenkins demostró ser útil para gestionar múltiples entornos y automatizar actualizaciones, acercando el proyecto a prácticas contemporáneas de desarrollo de software.
+\end{itemize}
+
+Estas observaciones sirven de base para la discusión crítica que se presenta en la siguiente sección, en la que se analizan las fortalezas y debilidades de la propuesta y se plantean posibles líneas de evolución para trabajos futuros.

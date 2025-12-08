@@ -1,23 +1,44 @@
-\section{Conclusiones y Trabajo Futuro}
+\section{Conclusiones y trabajo futuro}
 \label{sec:conclusiones}
 
-Este estudio concluye exitosamente con el diseño e implementación de una \textbf{Arquitectura Escalandable de Reconocimiento Automático de Matrículas (ANPR/ALPR)} para la gestión de parqueos inteligentes. Se demostró que la integración sinérgica de tecnologías de *Deep Learning* (\textbf{YOLOv5, EasyOCR, ByteTracker}) con una arquitectura de *stream processing* (\textbf{Apache Kafka, WebSockets/SignalR}) resulta en una plataforma robusta, esencial para la trazabilidad vehicular continua y el monitoreo en tiempo real en entornos urbanos.
+\subsection{Conclusiones}
 
-\subsection{Conclusiones Clave}
+El trabajo presentado describe el diseño e implementación de ANPR-VISION, un sistema de Reconocimiento Automático de Matrículas orientado a la gestión de parqueaderos, desarrollado como trabajo de grado en el marco del Servicio Nacional de Aprendizaje (SENA). Más que proponer un nuevo algoritmo de visión por computador, el objetivo ha sido construir y documentar una arquitectura integral que integre componentes de visión, mensajería distribuida, gestión de datos y interfaces de usuario, utilizando herramientas de código abierto y prácticas actuales de ingeniería de software.
 
-\begin{enumerate}
-    \item \textbf{Validación del Proceso de Ingeniería:} Este estudio confirma que la aplicación sistemática de buenas prácticas de desarrollo como \textit{Test-Driven Development} \cite{beck2003testdriven} y \textit{Continuous Integration} \cite{fowler2006continuous,martin2008clean} produce mejoras medibles y significativas en la calidad y eficiencia del *software*.
-    \item \textbf{Confirmación del Marco DORA:} Los resultados confirman las predicciones del marco DORA \cite{forsgren2018accelerate,dora2021metrics} sobre la correlación directa entre prácticas técnicas y rendimiento organizacional, evidenciado por la drástica mejora en el \textit{lead time} y la reducción de la densidad de defectos.
-    \item \textbf{Viabilidad Arquitectónica:} La arquitectura propuesta es la solución ideal para la brecha identificada en la literatura, ofreciendo un diseño modular, de bajo costo y alta capacidad para manejar el volumen de datos generado por las cámaras ANPR en tiempo real, superando las limitaciones de los enfoques tradicionales.
-\end{enumerate}
+En primer lugar, se logró diseñar y materializar una arquitectura modular basada en un microservicio de visión implementado en Python, un backend de gestión desarrollado en .NET, un bus de mensajería construido sobre Apache Kafka y frontends web y móvil desarrollados con tecnologías tipo Angular. Esta organización permite desacoplar la capa de visión por computador de la lógica de negocio, favoreciendo la extensibilidad del sistema y alineándose con propuestas de arquitecturas orientadas a eventos en entornos de aparcamiento inteligente.
 
-\subsection{Limitaciones y Trabajo Futuro}
+En segundo lugar, se implementó un prototipo funcional que integra modelos de la familia YOLOv5 para la detección de vehículos y matrículas, EasyOCR para el reconocimiento de caracteres y ByteTrack para el seguimiento de objetos, combinados en una canalización de procesamiento capaz de operar en tiempo casi real en un entorno controlado. Aunque las pruebas se realizaron utilizando un \textit{smartphone} con la aplicación \textit{IP Webcam} como fuente de video en lugar de cámaras IP dedicadas, la arquitectura se diseñó para consumir flujos RTSP/HTTP de forma genérica, por lo que el sistema es fácilmente adaptable a cámaras de red reales cambiando únicamente la configuración.
 
-Las limitaciones del estudio incluyen el contexto específico de su aplicación y la necesidad de una replicación en diferentes organizaciones o dominios, como sugiere \cite{fitzpatrick2017risks}, para garantizar la generalización de las prácticas de *software*.
+En tercer lugar, se demostró la viabilidad de desplegar la solución en múltiples entornos (desarrollo, QA, \textit{staging} y producción), utilizando contenedores Docker, archivos \texttt{docker-compose} por ambiente y canalizaciones de integración y entrega continua con Jenkins. El uso de una máquina virtual en Amazon Web Services (AWS) y de una base de datos administrada en Amazon RDS permitió simular un escenario de despliegue cercano a un entorno productivo, manteniendo un control acorde con el carácter educativo del proyecto.
 
-El trabajo futuro se enfocará en:
-\begin{enumerate}
-    \item \textbf{Pruebas de Carga y Rendimiento:} Realizar una evaluación experimental exhaustiva para cuantificar la latencia de extremo a extremo del *pipeline* (desde la captura hasta la notificación vía WebSockets/SignalR) bajo tráfico vehicular intenso.
-    \item \textbf{Aprendizaje Adaptativo:} Explorar la adaptación de estas prácticas a diferentes dominios y la automatización de su medición, siguiendo los principios de entrega continua \cite{chen2015devops}, específicamente la adaptación de los modelos de *Deep Learning* a nuevos formatos de placas sin intervención manual.
-    \item \textbf{Transferencia a la Industria:} Proponemos una lista priorizada de prácticas y condiciones de aplicabilidad. Se liberarán los artefactos del código y un \textit{runbook} de adopción para facilitar la reproducibilidad y transferencia de esta arquitectura a la industria de *Smart Cities*.
-\end{enumerate}
+En cuarto lugar, las pruebas realizadas en el entorno controlado mostraron que la arquitectura propuesta es funcional: el flujo completo desde la captura del video hasta el registro de visitas y la notificación en el portal web se ejecuta de manera coherente, con latencias de unos pocos segundos y un nivel de estabilidad adecuado para sesiones prolongadas. Sin embargo, también se evidenciaron limitaciones en la precisión del reconocimiento bajo condiciones adversas (iluminación variable, reflejos, suciedad en las placas) y en la ausencia de una evaluación cuantitativa sistemática con métricas estándar.
+
+Finalmente, desde la perspectiva formativa, ANPR-VISION permitió a los aprendices trabajar con un problema realista que combina visión por computador, arquitectura de software, bases de datos, desarrollo web y móvil, y despliegue en la nube. El proyecto ilustra que, incluso con recursos limitados, es posible abordar tecnologías contemporáneas y producir una arquitectura documentada que sirva como referencia para futuros trabajos en el ámbito del análisis y desarrollo de software.
+
+En conjunto, ANPR-VISION debe entenderse como una arquitectura de referencia y un caso de estudio educativo para sistemas ANPR orientados a la gestión de parqueaderos, más que como un producto listo para explotación comercial inmediata. Su principal aporte radica en la integración coherente de tecnologías abiertas, en la separación clara de responsabilidades entre componentes y en la documentación del proceso seguido.
+
+\subsection{Trabajo futuro}
+
+A partir de las conclusiones anteriores y de las limitaciones identificadas, se plantean diversas líneas de trabajo futuro que podrían ampliar y profundizar los resultados obtenidos:
+
+\begin{itemize}
+    \item \textbf{Evaluación cuantitativa sistemática}: diseñar y ejecutar campañas de pruebas con conjuntos de datos más amplios, preferiblemente capturados en contextos locales (parqueaderos reales, diferentes tipos de vehículos y condiciones de iluminación). Sobre esta base, calcular métricas estándar (precisión, \textit{recall}, F1, tasas de falsos positivos y negativos) que permitan comparar de manera rigurosa el desempeño del sistema con el de otros enfoques reportados en la literatura.
+    
+    \item \textbf{Adaptación del modelo a placas locales}: entrenar o ajustar modelos de detección y reconocimiento específicamente para placas colombianas (u otras regiones de interés), incorporando variaciones de diseño, desgaste y condiciones ambientales. Esto podría incluir la creación de un conjunto de datos anotado propio y la exploración de técnicas de \textit{fine-tuning} sobre modelos preentrenados.
+    
+    \item \textbf{Robustez frente a condiciones adversas}: estudiar estrategias para mejorar la tolerancia a iluminación extrema, reflejos, suciedad y oclusiones parciales. Entre las posibilidades se incluyen técnicas de preprocesamiento de imagen más avanzadas, uso de filtros específicos, control de exposición en las cámaras y exploración de arquitecturas de red más robustas al ruido.
+    
+    \item \textbf{Despliegue del microservicio de visión en producción y en el borde}: llevar el microservicio de visión a un entorno de producción real, monitorizando su comportamiento de forma continua y analizando consumo de recursos, estabilidad y mantenimiento. En paralelo, explorar su ejecución en dispositivos de borde (por ejemplo, minicomputadores cercanos a las cámaras), con el fin de reducir la latencia y la dependencia de enlaces de red de alta capacidad.
+    
+    \item \textbf{Extensión a escenarios multi\-parqueadero y multi\-arrendatario}: generalizar el modelo de datos y la lógica de negocio para soportar múltiples parqueaderos gestionados desde una misma plataforma, incluyendo mecanismos de separación lógica (\textit{multi-tenant}) y de configuración específica por sitio (tarifas, horarios, políticas de acceso).
+    
+    \item \textbf{Módulos de analítica y visualización avanzada}: construir sobre la base de datos de visitas y eventos para desarrollar paneles de analítica que ofrezcan indicadores de ocupación, patrones horarios, detección de horas pico y recomendaciones de mejora operativa. La arquitectura basada en Kafka facilita que estos módulos se implementen como consumidores adicionales de eventos, sin alterar el microservicio de visión ni el backend principal.
+    
+    \item \textbf{Ampliación de funcionalidades en la aplicación móvil}: extender la aplicación dirigida al usuario final para incluir funciones como reserva de plazas, notificaciones personalizadas, integración con métodos de pago o visualización de recomendaciones de horarios y sitios con menor ocupación, siempre teniendo en cuenta las restricciones y necesidades del contexto institucional.
+    
+    \item \textbf{Seguridad y aspectos éticos}: profundizar en mecanismos de seguridad y privacidad, incluyendo la gestión de listas negras o blancas de vehículos, la detección de patrones anómalos de acceso, y el tratamiento adecuado de los datos personales asociados a las matrículas y a los usuarios. Esto es especialmente relevante si se contempla el uso del sistema en entornos fuera del ámbito estrictamente educativo.
+    
+    \item \textbf{Documentación y transferencia académica}: consolidar guías, manuales y material docente basados en ANPR-VISION, de manera que el sistema pueda ser reutilizado en futuras cohortes del SENA como plataforma de aprendizaje. Esto podría incluir prácticas guiadas sobre visión por computador, microservicios, mensajería distribuida, despliegue en la nube y pruebas de software.
+\end{itemize}
+
+El desarrollo de estas líneas de trabajo no solo permitiría mejorar técnicamente el prototipo, sino también consolidar a ANPR-VISION como un punto de partida para investigaciones más profundas y para experiencias formativas que acerquen a los aprendices a los desafíos reales de la ingeniería de software en sistemas distribuidos y de visión por computador.
