@@ -56,8 +56,6 @@
       \field{year}{2025}
     \endentry
     \entry{smart_parking_wrongly_parked_2023}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=3c77fd118b3bb34e7ef6e1db2508d46d}{%
            family={Alfathani},
@@ -79,13 +77,13 @@
            givenun=0}}%
       }
       \strng{namehash}{974475cbffca319f9a54ba49899d6d1c}
-      \strng{fullhash}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{fullhashraw}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{bibnamehash}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{authorbibnamehash}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{fullhash}{2c12793b5236a94436e07ec7901063de}
+      \strng{fullhashraw}{2c12793b5236a94436e07ec7901063de}
+      \strng{bibnamehash}{2c12793b5236a94436e07ec7901063de}
+      \strng{authorbibnamehash}{2c12793b5236a94436e07ec7901063de}
       \strng{authornamehash}{974475cbffca319f9a54ba49899d6d1c}
-      \strng{authorfullhash}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{authorfullhashraw}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{authorfullhash}{2c12793b5236a94436e07ec7901063de}
+      \strng{authorfullhashraw}{2c12793b5236a94436e07ec7901063de}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -311,6 +309,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computer and Information Security}
       \field{title}{Automatic Number Plate Recognition (ANPR) System Enhancing Security in Bangladesh}
+      \field{volume}{1}
       \field{year}{2025}
     \endentry
     \entry{deep_anpr_pipeline_access_control_2022}{article}{}{}
@@ -522,6 +521,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Computing and Informatics}
       \field{title}{Artificial Intelligence and Vehicle License Plate Recognition: A Literature Review}
+      \field{volume}{1}
       \field{year}{2025}
     \endentry
     \entry{software_libre_mercosur_2016}{article}{}{}
@@ -600,6 +600,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Access}
       \field{title}{Real Time Car Model and Plate Detection System by Using Deep Learning Architectures}
+      \field{volume}{12}
       \field{year}{2024}
     \endentry
     \entry{streetsavvy_2024}{article}{}{}
@@ -647,6 +648,8 @@
       \field{journaltitle}{Proceedings of the Asian Conference on Computer Vision Workshops (ACCVW)}
       \field{title}{Smart Camera-Based Parking System with Automatic Parking Spot Detection and Guidance}
       \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
     \endentry
     \entry{anpr_pakistan_2020}{article}{}{}
       \name{author}{4}{}{%
@@ -744,8 +747,6 @@
       \field{year}{2024}
     \endentry
     \entry{realtime_parking_two_cameras_2024}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=479ceeb906deeaa956446fc2325be0d9}{%
            family={Sujatha},
@@ -760,14 +761,14 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{adb179cb4af928e389afe766b988c660}
-      \strng{fullhash}{adb179cb4af928e389afe766b988c660}
-      \strng{fullhashraw}{adb179cb4af928e389afe766b988c660}
-      \strng{bibnamehash}{adb179cb4af928e389afe766b988c660}
-      \strng{authorbibnamehash}{adb179cb4af928e389afe766b988c660}
-      \strng{authornamehash}{adb179cb4af928e389afe766b988c660}
-      \strng{authorfullhash}{adb179cb4af928e389afe766b988c660}
-      \strng{authorfullhashraw}{adb179cb4af928e389afe766b988c660}
+      \strng{namehash}{19cde6f719968c8305c442128378891e}
+      \strng{fullhash}{19cde6f719968c8305c442128378891e}
+      \strng{fullhashraw}{19cde6f719968c8305c442128378891e}
+      \strng{bibnamehash}{19cde6f719968c8305c442128378891e}
+      \strng{authorbibnamehash}{19cde6f719968c8305c442128378891e}
+      \strng{authornamehash}{19cde6f719968c8305c442128378891e}
+      \strng{authorfullhash}{19cde6f719968c8305c442128378891e}
+      \strng{authorfullhashraw}{19cde6f719968c8305c442128378891e}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -857,8 +858,6 @@
       \field{year}{2025}
     \endentry
     \entry{smart_parking_wrongly_parked_2023}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=3c77fd118b3bb34e7ef6e1db2508d46d}{%
            family={Alfathani},
@@ -880,13 +879,13 @@
            givenun=0}}%
       }
       \strng{namehash}{974475cbffca319f9a54ba49899d6d1c}
-      \strng{fullhash}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{fullhashraw}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{bibnamehash}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{authorbibnamehash}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{fullhash}{2c12793b5236a94436e07ec7901063de}
+      \strng{fullhashraw}{2c12793b5236a94436e07ec7901063de}
+      \strng{bibnamehash}{2c12793b5236a94436e07ec7901063de}
+      \strng{authorbibnamehash}{2c12793b5236a94436e07ec7901063de}
       \strng{authornamehash}{974475cbffca319f9a54ba49899d6d1c}
-      \strng{authorfullhash}{a05d9d8f42212bb5792f89c1c8af3f76}
-      \strng{authorfullhashraw}{a05d9d8f42212bb5792f89c1c8af3f76}
+      \strng{authorfullhash}{2c12793b5236a94436e07ec7901063de}
+      \strng{authorfullhashraw}{2c12793b5236a94436e07ec7901063de}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -1112,6 +1111,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computer and Information Security}
       \field{title}{Automatic Number Plate Recognition (ANPR) System Enhancing Security in Bangladesh}
+      \field{volume}{1}
       \field{year}{2025}
     \endentry
     \entry{deep_anpr_pipeline_access_control_2022}{article}{}{}
@@ -1323,6 +1323,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Computing and Informatics}
       \field{title}{Artificial Intelligence and Vehicle License Plate Recognition: A Literature Review}
+      \field{volume}{1}
       \field{year}{2025}
     \endentry
     \entry{software_libre_mercosur_2016}{article}{}{}
@@ -1401,6 +1402,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Access}
       \field{title}{Real Time Car Model and Plate Detection System by Using Deep Learning Architectures}
+      \field{volume}{12}
       \field{year}{2024}
     \endentry
     \entry{streetsavvy_2024}{article}{}{}
@@ -1448,6 +1450,8 @@
       \field{journaltitle}{Proceedings of the Asian Conference on Computer Vision Workshops (ACCVW)}
       \field{title}{Smart Camera-Based Parking System with Automatic Parking Spot Detection and Guidance}
       \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
     \endentry
     \entry{anpr_pakistan_2020}{article}{}{}
       \name{author}{4}{}{%
@@ -1545,8 +1549,6 @@
       \field{year}{2024}
     \endentry
     \entry{realtime_parking_two_cameras_2024}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=479ceeb906deeaa956446fc2325be0d9}{%
            family={Sujatha},
@@ -1561,14 +1563,14 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{adb179cb4af928e389afe766b988c660}
-      \strng{fullhash}{adb179cb4af928e389afe766b988c660}
-      \strng{fullhashraw}{adb179cb4af928e389afe766b988c660}
-      \strng{bibnamehash}{adb179cb4af928e389afe766b988c660}
-      \strng{authorbibnamehash}{adb179cb4af928e389afe766b988c660}
-      \strng{authornamehash}{adb179cb4af928e389afe766b988c660}
-      \strng{authorfullhash}{adb179cb4af928e389afe766b988c660}
-      \strng{authorfullhashraw}{adb179cb4af928e389afe766b988c660}
+      \strng{namehash}{19cde6f719968c8305c442128378891e}
+      \strng{fullhash}{19cde6f719968c8305c442128378891e}
+      \strng{fullhashraw}{19cde6f719968c8305c442128378891e}
+      \strng{bibnamehash}{19cde6f719968c8305c442128378891e}
+      \strng{authorbibnamehash}{19cde6f719968c8305c442128378891e}
+      \strng{authornamehash}{19cde6f719968c8305c442128378891e}
+      \strng{authorfullhash}{19cde6f719968c8305c442128378891e}
+      \strng{authorfullhashraw}{19cde6f719968c8305c442128378891e}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}

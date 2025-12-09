@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  8 DEC 2025 18:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.6)  9 DEC 2025 01:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -804,12 +804,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 
-(build/main_ieee.aux
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 16.
-)
+(build/main_ieee.aux)
 \openout1 = `main_ieee.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -836,6 +831,8 @@ LaTeX Font Info:    ... okay on input line 6.
 -- Lines per column: 56 (exact).
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 6.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -941,72 +938,284 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main_ieee.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main_ieee.bbl' found.
+Package biblatex Info: ... file 'main_ieee.bbl' not found.
 
-(build/main_ieee.bbl)
+No file main_ieee.bbl.
 Package biblatex Info: Reference section=0 on input line 6.
 Package biblatex Info: Reference segment=0 on input line 6.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 17.
-
-(/opt/texlive/texdir/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
 (./sections/00_abstract.tex)
 Underfull \vbox (badness 2951) has occurred while \output is active []
 
 
-(./sections/01_introduccion.tex [1
+(./sections/01_introduccion.tex
+
+LaTeX Warning: Citation 'devops_tools_2019' on page 1 undefined on input line 8
+.
+
+
+LaTeX Warning: Citation 'ci_cd_quality_2025' on page 1 undefined on input line 
+8.
+
+[1
 
 
 ]
-Underfull \hbox (badness 2310) in paragraph at lines 16--17
-[]\TU/ptm/bx/it/10 ¿Cómo diseñar una arquitectura de sistema
+
+LaTeX Warning: Reference `sec:relacionados' on page 2 undefined on input line 3
+8.
+
+
+LaTeX Warning: Reference `sec:metodologia' on page 2 undefined on input line 38
+.
+
+
+LaTeX Warning: Reference `sec:implementacion' on page 2 undefined on input line
+ 38.
+
+
+LaTeX Warning: Reference `sec:resultados' on page 2 undefined on input line 38.
+
+
+
+LaTeX Warning: Reference `sec:conclusiones' on page 2 undefined on input line 3
+8.
+
+) (./sections/02_relacionados.tex
+
+LaTeX Warning: Citation 'streetsavvy_2024' on page 2 undefined on input line 9.
+
+
+[2]
+
+LaTeX Warning: Citation 'campussense_2017' on page 3 undefined on input line 11
+.
+
+
+LaTeX Warning: Citation 'iot_parking_ocr_2023' on page 3 undefined on input lin
+e 13.
+
+
+LaTeX Warning: Citation 'smart_parking_wrongly_parked_2023' on page 3 undefined
+ on input line 13.
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 13--14
+[]\TU/ptm/bx/it/10 Otros trabajos combinan ANPR con tecnologías
  []
 
-) (./sections/02_relacionados.tex [2]
-Underfull \hbox (badness 2310) in paragraph at lines 18--19
-[]\TU/ptm/bx/it/10 ¿Cómo diseñar una arquitectura de sistema
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\TU/ptm/bx/it/10 de Internet de las Cosas (IoT), es decir, con
  []
 
-[3] [4] [5]) (./sections/03_metodologia.tex
-Underfull \vbox (badness 1231) has occurred while \output is active []
 
- [6]
-[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\TU/ptm/bx/it/10 redes de sensores y dispositivos conectados. En
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[] \TU/ptm/bx/it/10 presenta
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 13--14
+\TU/ptm/bx/it/10 un sistema de parqueadero inteligente que detecta
+ []
+
+
+LaTeX Warning: Citation 'realtime_parking_two_cameras_2024' on page 3 undefined
+ on input line 15.
+
+
+LaTeX Warning: Citation 'smart_parking_lpr_efficiency_2024' on page 3 undefined
+ on input line 15.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+[]\TU/ptm/bx/it/10 En trabajos sobre ciudades inteligentes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+[] \TU/ptm/bx/it/10 muestra
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 15--16
+\TU/ptm/bx/it/10 lado, [] estudia
+ []
+
+
+LaTeX Warning: Citation 'realtime_ocr_wsn_its_2019' on page 3 undefined on inpu
+t line 23.
+
+
+LaTeX Warning: Citation 'anpr_pakistan_2020' on page 3 undefined on input line 
+23.
+
+
+LaTeX Warning: Citation 'yolo_high_precision_lpr_2024' on page 3 undefined on i
+nput line 25.
+
+
+LaTeX Warning: Citation 'car_model_plate_dl_2024' on page 3 undefined on input 
+line 25.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\TU/ptm/bx/it/10 Los detectores basados en \TU/lmr/m/it/10 YOLO \TU/ptm/bx/it
+/10 han ganado
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\TU/ptm/bx/it/10 un papel destacado en trabajos recientes. En
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[] \TU/ptm/bx/it/10 se estudia cómo
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 25--26
+\TU/ptm/bx/it/10 combinar YOLO con técnicas de posprocesamiento
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 25--26
+\TU/ptm/bx/it/10 la matrícula, sino también el modelo del vehículo,
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 25--26
+\TU/ptm/bx/it/10 apoyándose en arquitecturas profundas especializadas
+ []
+
+
+LaTeX Warning: Citation 'deep_anpr_pipeline_access_control_2022' on page 3 unde
+fined on input line 27.
+
+
+LaTeX Warning: Citation 'lpr_ai_dl_2025' on page 3 undefined on input line 27.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\TU/ptm/bx/it/10 También se han propuesto flujos completos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\TU/ptm/bx/it/10 de ANPR basados en aprendizaje profundo. En
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[] \TU/ptm/bx/it/10 se
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 27--28
+\TU/ptm/bx/it/10 y reconocimiento de caracteres, y se explican las
+ []
+
+
+LaTeX Warning: Citation 'cv_system_lpr_tutorial' on page 3 undefined on input l
+ine 29.
+
+[3]
+
+LaTeX Warning: Citation 'software_libre_mercosur_2016' on page 4 undefined on i
+nput line 35.
+
+
+LaTeX Warning: Citation 'anpr_security_bangladesh_2025' on page 4 undefined on 
+input line 37.
+
+
+LaTeX Warning: Citation 'smart_parking_wrongly_parked_2023' on page 4 undefined
+ on input line 37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+[]\TU/ptm/bx/it/10 Otros trabajos conectan el reconocimiento
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+\TU/ptm/bx/it/10 de matrículas con objetivos de seguridad. En
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+[] \TU/ptm/bx/it/10 se propone
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 37--38
+\TU/ptm/bx/it/10 un sistema de ANPR para mejorar la seguridad en
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 37--38
+\TU/ptm/bx/it/10 los cupos [].
+ []
+
+) (./sections/03_metodologia.tex
+
+LaTeX Warning: Reference `sec:relacionados' on page 4 undefined on input line 2
+1.
+
+[4] [5] [6]
 File: graphics/metodologia_anpr_vision.png Graphic file (type bmp)
 <graphics/metodologia_anpr_vision.png>
-) (./sections/04_implementacion.tex [9]
-Underfull \vbox (badness 2165) has occurred while \output is active []
+) (./sections/04_implementacion.tex
 
- [10]
-[11]
+LaTeX Warning: Reference `sec:metodologia' on page 7 undefined on input line 4.
+
+
+[7]
+
+LaTeX Warning: Reference `fig:arquitectura_anpr_vision' on page 8 undefined on 
+input line 8.
+
+[8] [9]
 Underfull \hbox (badness 1895) in paragraph at lines 149--150
 []\TU/ptm/bx/it/10 Despliega la nueva versión utilizando el archivo
  []
 
+[10]
+
+LaTeX Warning: Reference `fig:arquitectura_detallada_anpr_vision' on page 11 un
+defined on input line 162.
+
 File: graphics/implementacion.jpeg Graphic file (type bmp)
 <graphics/implementacion.jpeg>
-) (./sections/05_resultados.tex [12] [13]
+) (./sections/05_resultados.tex
+
+LaTeX Warning: Reference `sec:implementacion' on page 11 undefined on input lin
+e 4.
+
+[11]
+
+LaTeX Warning: Reference `tab:resultados_resumen' on page 12 undefined on input
+ line 63.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 69.
+(/opt/texlive/texdir/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
 Underfull \hbox (badness 3525) in paragraph at lines 71--71
 []|\TU/lmr/bx/n/8 Aspecto evalua-
  []
@@ -1031,11 +1240,136 @@ Overfull \hbox (3.83954pt too wide) in paragraph at lines 69--85
  [][] 
  []
 
-[14]) (./sections/06_discusion.tex [15]
-Underfull \vbox (badness 1231) has occurred while \output is active []
+[12]) (./sections/06_discusion.tex
 
- [16])
-(./sections/07_conclusiones.tex [17]
+LaTeX Warning: Reference `sec:resultados' on page 13 undefined on input line 4.
+
+
+
+LaTeX Warning: Citation 'streetsavvy_2024' on page 13 undefined on input line 1
+0.
+
+
+LaTeX Warning: Citation 'campussense_2017' on page 13 undefined on input line 1
+0.
+
+
+LaTeX Warning: Citation 'realtime_parking_two_cameras_2024' on page 13 undefine
+d on input line 10.
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 10--11
+[]\TU/ptm/bx/it/10 Frente a las soluciones descritas en la literatura
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+\TU/ptm/bx/it/10 sobre parqueo inteligente y ciudades inteligentes,
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 10--11
+\TU/ptm/bx/it/10 donde con frecuencia se presenta el sistema como
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+\TU/ptm/bx/it/10 un bloque monolítico o se omiten detalles de
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 10--11
+\TU/ptm/bx/it/10 integración [], [],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[]\TU/ptm/bx/it/10 , ANPR-
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 10--11
+\TU/ptm/bx/it/10 componente de manera independiente, probarlos por
+ []
+
+[13]
+
+LaTeX Warning: Citation 'deep_anpr_pipeline_access_control_2022' on page 14 und
+efined on input line 30.
+
+
+LaTeX Warning: Citation 'yolo_high_precision_lpr_2024' on page 14 undefined on 
+input line 30.
+
+
+LaTeX Warning: Citation 'lpr_ai_dl_2025' on page 14 undefined on input line 35.
+
+
+
+LaTeX Warning: Citation 'anpr_pakistan_2020' on page 14 undefined on input line
+ 37.
+
+
+LaTeX Warning: Citation 'software_libre_mercosur_2016' on page 14 undefined on 
+input line 48.
+
+
+LaTeX Warning: Citation 'anpr_pakistan_2020' on page 14 undefined on input line
+ 48.
+
+[14]
+
+LaTeX Warning: Citation 'smart_parking_wrongly_parked_2023' on page 15 undefine
+d on input line 50.
+
+
+LaTeX Warning: Citation 'smart_parking_lpr_efficiency_2024' on page 15 undefine
+d on input line 50.
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 50--51
+\TU/ptm/bx/it/10 abre la puerta a la incorporación de módulos de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\TU/ptm/bx/it/10 analítica avanzada y de gestión multiparqueadero.
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 50--51
+\TU/ptm/bx/it/10 ocupación [],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]\TU/ptm/bx/it/10 . En ANPR-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 50--51
+\TU/ptm/bx/it/10 patrones horarios o recomendaciones de mejora para
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 50--51
+\TU/ptm/bx/it/10 la operación, aprovechando el modelo de datos ya
+ []
+
+
+LaTeX Warning: Citation 'realtime_ocr_wsn_its_2019' on page 15 undefined on inp
+ut line 52.
+
+
+LaTeX Warning: Citation 'anpr_security_bangladesh_2025' on page 15 undefined on
+ input line 54.
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 54--55
+\TU/ptm/bx/it/10 plantea en trabajos orientados a seguridad vehicular
+ []
+
+) (./sections/07_conclusiones.tex [15] [16]
 Underfull \hbox (badness 1442) in paragraph at lines 33--34
 []\TU/lmr/bx/n/10 Extensión a escenarios multiparqueadero y
  []
@@ -1043,9 +1377,10 @@ Underfull \hbox (badness 1442) in paragraph at lines 33--34
 ) (./sections/A1_apendices.tex
 ** WARNING: Ignoring useless \section in Appendix (line 6).
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `tab:tecnologias_componentes' on page 17 undefined on 
+input line 9.
 
- [18]
+
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []|\TU/lmr/m/n/8 Microservicio
  []
@@ -1136,77 +1471,93 @@ Overfull \hbox (10.8023pt too wide) in paragraph at lines 19--64
  []
 
 ** WARNING: Ignoring useless \section in Appendix (line 66).
+
+LaTeX Warning: Reference `lst:evento_kafka' on page 17 undefined on input line 
+69.
+
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 74.
+[17]
 ** WARNING: Ignoring useless \section in Appendix (line 95).
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+LaTeX Warning: Reference `tab:endpoints_api' on page 18 undefined on input line
+ 98.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []|\TU/lmr/bx/n/8 Método
  []
 
 
-Overfull \hbox (68.83124pt too wide) in paragraph at lines 111--111
+Overfull \hbox (56.23047pt too wide) in paragraph at lines 112--112
 []|\TU/lmtt/m/n/8 /api/visits/by-parking/{parkingId}| 
  []
 
 
-Overfull \hbox (51.83923pt too wide) in paragraph at lines 114--114
+Overfull \hbox (39.23846pt too wide) in paragraph at lines 115--115
 []|\TU/lmtt/m/n/8 /api/visits/by-vehicle/{plate}| 
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 118--118
+Underfull \hbox (badness 7451) in paragraph at lines 119--119
 \TU/lmr/m/n/8 sica de un parqueadero
  []
 
 
-Overfull \hbox (68.83124pt too wide) in paragraph at lines 120--120
+Overfull \hbox (56.23047pt too wide) in paragraph at lines 121--121
 []|\TU/lmtt/m/n/8 /api/camera/by-parking/{parkingId}| 
  []
 
 
-Overfull \hbox (98.56723pt too wide) in paragraph at lines 123--123
+Overfull \hbox (85.96646pt too wide) in paragraph at lines 124--124
 []|\TU/lmtt/m/n/8 /api/notifications/by-parking/{parkingId}| 
  []
 
 
-Overfull \hbox (43.34323pt too wide) in paragraph at lines 126--126
+Overfull \hbox (30.74246pt too wide) in paragraph at lines 127--127
 []|\TU/lmtt/m/n/8 /api/notifications/{id}/read| 
  []
 
 
-Overfull \hbox (60.33524pt too wide) in paragraph at lines 132--132
+Overfull \hbox (47.73447pt too wide) in paragraph at lines 133--133
 []|\TU/lmtt/m/n/8 /api/reports/summary/{parkingId}| 
  []
 
 
-Overfull \hbox (15.83954pt too wide) in paragraph at lines 107--136
+Overfull \hbox (18.35815pt too wide) in paragraph at lines 108--137
  [][] 
  []
 
-** WARNING: Ignoring useless \section in Appendix (line 138).
-[19]
-Underfull \hbox (badness 6944) in paragraph at lines 152--153
+** WARNING: Ignoring useless \section in Appendix (line 139).
+
+LaTeX Warning: Reference `sec:resultados' on page 18 undefined on input line 14
+2.
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 153--154
 []\TU/ptm/bx/it/10 Iniciar el servidor de video en la aplicación
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 \TU/ptm/bx/it/10 y anotar la URL generada (por ejemplo,
  []
 
-** WARNING: Ignoring useless \section in Appendix (line 162).
+** WARNING: Ignoring useless \section in Appendix (line 163).
 
-Underfull \hbox (badness 1803) in paragraph at lines 165--170
+Underfull \hbox (badness 1803) in paragraph at lines 166--171
 \TU/ptm/bx/it/10 gue utilizado en el proyecto, se elaboraron archivos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 []\TU/ptm/bx/it/10 Configuración de redes internas (por ejemplo,
  []
 
-) [20]
+)
+
+LaTeX Warning: Empty bibliography on input line 33.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1218,9 +1569,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[21
-
-] (build/main_ieee.aux
+[18] (build/main_ieee.aux
 LaTeX Info: Redefining \sptext on input line 16.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
@@ -1233,19 +1582,47 @@ L3 programming layer <2025-10-24>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main_ieee.out' has not changed.
-(rerunfilecheck)             Checksum: 74A8AABD092BA71D46AE713857EC000B;13059.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main_ieee.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main_ieee.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  20EBD54A4C14A26A7C470F03323EEDC2;12192.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main_ieee
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main_ieee.run.xml'.
-\openout1 = `main_ieee.run.xml'.
+./main_ieee.tex:35: I can't write on file `main_ieee.run.xml'.
+<to be read again> 
+                   \relax 
+l.35 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit; default file extension is `.tex')
+Please type another output file name
+./main_ieee.tex:35: Emergency stop.
+<to be read again> 
+                   \relax 
+l.35 \end{document}
+                   
+*** (job aborted, file error in nonstop mode)
 
- ) 
+ 
 Here is how much of TeX's memory you used:
- 31809 strings out of 468179
- 675372 string characters out of 5435043
- 1657093 words of memory out of 5000000
- 60184 multiletter control sequences out of 15000+600000
- 631196 words of font info for 97 fonts, out of 8000000 for 9000
+ 31672 strings out of 468179
+ 670586 string characters out of 5435043
+ 1619195 words of memory out of 5000000
+ 60051 multiletter control sequences out of 15000+600000
+ 630264 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,83p,1075b,5633s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on build/main_ieee.xdv (21 pages, 1118548 bytes).
+ 78i,11n,83p,1082b,4633s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on build/main_ieee.xdv (18 pages, 966580 bytes).

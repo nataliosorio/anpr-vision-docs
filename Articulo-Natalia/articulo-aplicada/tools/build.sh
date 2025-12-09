@@ -16,6 +16,6 @@ latexmk -f -file-line-error -outdir=build -bibtex -xelatex main_acm.tex
 
 # Compile APA7 (biblatex + biber)
 echo "[build] Compiling APA7"
-latexmk -silent -file-line-error -outdir=build -xelatex main_apa7.tex
+latexmk -file-line-error -outdir=build -xelatex main_apa7.tex
 
 echo "[build] PDFs available in build/"
