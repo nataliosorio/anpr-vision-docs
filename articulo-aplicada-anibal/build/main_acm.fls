@@ -328,12 +328,12 @@ INPUT ./sections/01_introduccion.tex
 INPUT ./sections/01_introduccion.tex
 INPUT ./sections/01_introduccion.tex
 INPUT sections/01_introduccion.tex
+OUTPUT build/main_acm.xdv
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT ./sections/02_relacionados.tex
 INPUT sections/02_relacionados.tex
-OUTPUT build/main_acm.xdv
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex
 INPUT ./sections/03_metodologia.tex

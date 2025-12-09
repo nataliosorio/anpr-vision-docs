@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber build/main_apa7"] 1765279334.53299 "build/main_apa7.bcf" "build/main_apa7.bbl" "build/main_apa7" 1765279345.67271 0
+["biber build/main_apa7"] 1765284495.04169 "build/main_apa7.bcf" "build/main_apa7.bbl" "build/main_apa7" 1765284504.30389 0
   "bibliography/references.bib" 1765276633.09278 6861 f3437ee243cbcf9bfbf947970a737f88 ""
-  "build/main_apa7.bcf" 1765279345.1536 138243 3df7fcbf07061a637bea4499ae88ae67 "xelatex"
+  "build/main_apa7.bcf" 1765284503.77644 140589 e8b9976c95c246f4ac42c1a8ef23d34a "xelatex"
   (generated)
   "build/main_apa7.bbl"
   "build/main_apa7.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765279345.34307 "build/main_apa7.xdv" "build/main_apa7.pdf" "build/main_apa7" 1765279345.67683 0
-  "build/main_apa7.xdv" 1765279345.1556 413632 8df3b1e3129670c24927a3617464bf9f "xelatex"
+["xdvipdfmx"] 1765284503.96929 "build/main_apa7.xdv" "build/main_apa7.pdf" "build/main_apa7" 1765284504.30827 0
+  "build/main_apa7.xdv" 1765284503.77844 628212 0ecea2011f9a1b8c8d0bdab3304a20ab "xelatex"
   (generated)
   "build/main_apa7.pdf"
   (rewritten before read)
-["xelatex"] 1765279342.1767 "main_apa7.tex" "build/main_apa7.xdv" "main_apa7" 1765279345.67282 0
+["xelatex"] 1765284500.29893 "main_apa7.tex" "build/main_apa7.xdv" "main_apa7" 1765284504.30404 0
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -206,22 +206,22 @@
   "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1749313668 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1765266800 5947041 48e8c060eff1965b8f3261615f87a567 ""
   "/opt/texlive/texdir/texmf.cnf" 1759376174 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "build/main_apa7.aux" 1765279345.1426 14756 0dda991b389b4ce357dd1079326fbab3 "xelatex"
-  "build/main_apa7.bbl" 1765279335.83981 46834 6101fa5c8ec0a9aa00ac47232609d8a0 "biber build/main_apa7"
-  "build/main_apa7.out" 1765279345.1526 5732 7c5b1ce78e0a17a96a7eadbe1566d2e1 "xelatex"
-  "build/main_apa7.run.xml" 1765279345.1556 2442 31f193e8afeb02e558f8318341b00aef "xelatex"
-  "build/main_apa7.ttt" 1765279344.8806 957 51963eb2e8b0bfa1388cdbdf0c310676 "xelatex"
+  "build/main_apa7.aux" 1765284503.76344 21513 49b58d38dca2b5cb05477c7b388ab4d3 "xelatex"
+  "build/main_apa7.bbl" 1765284496.4116 59884 037bfe729afc3d767fa7bb99562fa2ce "biber build/main_apa7"
+  "build/main_apa7.out" 1765284503.77544 8551 50d9ad0b2af7e3e2f5a4c6713486b4f5 "xelatex"
+  "build/main_apa7.run.xml" 1765284503.77844 2442 31f193e8afeb02e558f8318341b00aef "xelatex"
+  "build/main_apa7.ttt" 1765284503.45045 957 51963eb2e8b0bfa1388cdbdf0c310676 "xelatex"
   "includes/preamble_apa7.tex" 1760209763 164 9dc229ec09603f7c360024b06d3d1ae7 ""
   "includes/preamble_common.tex" 1760209763 1297 07518923b9f4f85072fe97d52092a43e ""
   "main_apa7.tex" 1765269880.34687 1003 dd6c0686e3d0e020b03a786ca5508e0e ""
   "sections/00_abstract.tex" 1765260910.49915 2104 c6d18090efbc4e47eb98791bd6913608 ""
-  "sections/01_introduccion.tex" 1765264772.99947 3631 ff8ae7a5bbc714414485e52f181c07ca ""
-  "sections/02_relacionados.tex" 1765271621.74418 4503 3b44be8b9eb9fafb3730952c5c2c37d2 ""
-  "sections/03_metodologia.tex" 1765276307.29972 3258 76d5e52bfe1ca00a751854bc36a5fee1 ""
-  "sections/04_implementacion.tex" 1765274782.70706 7123 e348a07477ef447f4e6dfe75e58e66bb ""
-  "sections/05_resultados.tex" 1765276502.59906 4988 d8ff3ed595966fcf87496feaa308d0a7 ""
-  "sections/06_discusion.tex" 1765279212.34561 2562 7af0044bfbc97b87512c267d667f7fca ""
-  "sections/07_conclusiones.tex" 1765279235.61208 1986 5833eab0428498945cb9c38645059641 ""
+  "sections/01_introduccion.tex" 1765283438.17063 5859 3f9aad787bd72608f28cf02971113a24 ""
+  "sections/02_relacionados.tex" 1765281115.03282 5775 b73f0e41ebeb9c4dc3e16a5d3704ecdb ""
+  "sections/03_metodologia.tex" 1765281773.63705 5627 c4572e8d127c2128db006ced6a552eff ""
+  "sections/04_implementacion.tex" 1765282174.35416 7661 3b7ecf45f960bd82ba817e9f0f01a982 ""
+  "sections/05_resultados.tex" 1765284155.69478 7279 0c73c1a3a67f8fadf89cf81c9924e592 ""
+  "sections/06_discusion.tex" 1765283020.53581 6134 118ded417988e91a69814e11c6f01905 ""
+  "sections/07_conclusiones.tex" 1765284415.34431 8084 7080c9c7d1afebaffb6faf4371d155b0 ""
   "sections/A1_apendices.tex" 1765278490.14006 4942 a9e650d52e339bb4b41efbb9cad80dd8 ""
   "tables/kafka_performance.tex" 1765277482.24224 435 738c75679951b2172fbbe31c0e2d996c ""
   "tables/mejora_precision.tex" 1765277488.21812 437 ab3229af1a7efc090be738aaa0f371af ""

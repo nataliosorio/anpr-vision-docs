@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  9 DEC 2025 11:21
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  9 DEC 2025 12:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -734,10 +734,10 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 (build/main_ieee.aux
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 24.
+(babel)             Reported on input line 16.
 )
 \openout1 = `main_ieee.aux'.
 
@@ -895,137 +895,32 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(./sections/00_abstract.tex) (./sections/01_introduccion.tex) (./sections/02_re
-lacionados.tex [1
+(./sections/00_abstract.tex) (./sections/01_introduccion.tex [1
 
 
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\globaldefs' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@ne' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tf@size' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sf@size' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ssf@size' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\globaldefs' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempa' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\raise' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 10.
-
-) (./sections/03_metodologia.tex [2]) (./sections/04_implementacion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-[]\TU/lmr/bx/n/10 Triggers Serverless (Firebase/Cloud
- []
-
-
-Underfull \hbox (badness 4832) in paragraph at lines 17--18
-\TU/lmr/bx/n/10 Functions): \TU/ptm/bx/it/10 Para escenarios más orientados a
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 17--18
-\TU/ptm/bx/it/10 en disparadores (triggers). Aquí, la inserción de
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 17--18
-\TU/ptm/bx/it/10 al servidor central, eliminando la necesidad de
- []
-
-[3] (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+]) (./sections/02_relacionados.tex [2]) (./sections/03_metodologia.tex [3]) (./
+sections/04_implementacion.tex [4] (/opt/texlive/texdir/texmf-dist/tex/latex/li
+stings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 72.
-) (./sections/05_resultados.tex (./tables/mejora_precision.tex) [4] (./tables/k
-afka_performance.tex)) (./sections/06_discusion.tex) (./sections/07_conclusione
-s.tex [5]) (./sections/A1_apendices.tex
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 35.
+) (./sections/05_resultados.tex [5] (./tables/mejora_precision.tex) (./tables/k
+afka_performance.tex) [6]) (./sections/06_discusion.tex) (./sections/07_conclus
+iones.tex [7] [8]) (./sections/A1_apendices.tex
 ** WARNING: Ignoring useless \section in Appendix (line 2).
-[6])
+[9])
+Underfull \hbox (badness 2401) in paragraph at lines 35--35
+[][][] [] [][][][][] [] [][] [] [][][][][] [][] [][][][][][] []
+ []
+
+[10]
+Underfull \hbox (badness 2302) in paragraph at lines 35--35
+\TU/ptm/bx/it/10 dirección: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][]
+[][][] [] [][][] []
+ []
+
+
 Underfull \hbox (badness 2521) in paragraph at lines 35--35
 \TU/ptm/bx/it/10 ge Event Processing,» \TU/lmr/m/it/10 Proceedings of the 11th
  []
@@ -1034,12 +929,6 @@ Underfull \hbox (badness 2521) in paragraph at lines 35--35
 Underfull \hbox (badness 6412) in paragraph at lines 35--35
 [][][][][][][][][][][][][][] [] [][][][][][][][][][] [] [][][] [] [][][][][][][
 ][] []
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 35--35
-\TU/ptm/bx/it/10 dirección: []$[][][][][] [] [] [] [][][] [] [][][][][][][][][]
-[][][] [] [][][] []
  []
 
 
@@ -1053,10 +942,12 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7] (build/main_ieee.aux
-LaTeX Info: Redefining \sptext on input line 24.
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+[11
+
+] (build/main_ieee.aux
+LaTeX Info: Redefining \sptext on input line 16.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -1066,18 +957,18 @@ L3 programming layer <2025-11-14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main_ieee.out' has not changed.
-(rerunfilecheck)             Checksum: 2B892DDB266CCE08C991139B2E78D1E8;5835.
+(rerunfilecheck)             Checksum: 0EF8DF14419A8B67001C0B831DC82E33;8682.
 Package logreq Info: Writing requests to 'main_ieee.run.xml'.
 \openout1 = `main_ieee.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31942 strings out of 468179
- 675869 string characters out of 5435043
- 1785200 words of memory out of 5000000
- 60310 multiletter control sequences out of 15000+600000
+ 31961 strings out of 468179
+ 676566 string characters out of 5435043
+ 1812426 words of memory out of 5000000
+ 60329 multiletter control sequences out of 15000+600000
  631204 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 78i,13n,83p,2125b,4897s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,13n,83p,2125b,5635s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_ieee.xdv (7 pages, 397528 bytes).
+Output written on build/main_ieee.xdv (11 pages, 606300 bytes).

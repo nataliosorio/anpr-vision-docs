@@ -129,42 +129,6 @@
       \verb http://confcats_isif.s3.amazonaws.com/web-files/event/proceedings/html/2014Proceedings/papers/fusion2014_submission_55/paper55.pdf
       \endverb
     \endentry
-    \entry{ciechomski2018soccer}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77b21cf9642f46bc2e177d58f51f7352}{%
-           family={Ciechomski},
-           familyi={C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{fullhash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{fullhashraw}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{bibnamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authorbibnamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authornamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authorfullhash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authorfullhashraw}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{University of Pisa Archive}
-      \field{title}{Soccer Event Detection}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://arpi.unipi.it/handle/11568/931066
-      \endverb
-      \verb{url}
-      \verb https://arpi.unipi.it/handle/11568/931066
-      \endverb
-    \endentry
     \entry{coretti2025neuromorphic}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7a2dc65119cf31f7eb6b709d64f0bced}{%
@@ -209,6 +173,40 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2506.16436
+      \endverb
+    \endentry
+    \entry{kommera2020power}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e30c55a00295557b8b4929068827416c}{%
+           family={Kommera},
+           familyi={K\bibinitperiod},
+           given={Adisheshu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e30c55a00295557b8b4929068827416c}
+      \strng{fullhash}{e30c55a00295557b8b4929068827416c}
+      \strng{fullhashraw}{e30c55a00295557b8b4929068827416c}
+      \strng{bibnamehash}{e30c55a00295557b8b4929068827416c}
+      \strng{authorbibnamehash}{e30c55a00295557b8b4929068827416c}
+      \strng{authornamehash}{e30c55a00295557b8b4929068827416c}
+      \strng{authorfullhash}{e30c55a00295557b8b4929068827416c}
+      \strng{authorfullhashraw}{e30c55a00295557b8b4929068827416c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{The Power of Event-Driven Architecture: Enabling Real-Time Systems and Scalable Solutions}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/385668247_THE_POWER_OF_EVENT-DRIVEN_ARCHITECTURE_ENABLING_REAL-TIME_SYSTEMS_AND_SCALABLE_SOLUTIONS
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/385668247_THE_POWER_OF_EVENT-DRIVEN_ARCHITECTURE_ENABLING_REAL-TIME_SYSTEMS_AND_SCALABLE_SOLUTIONS
       \endverb
     \endentry
     \entry{kul2021microservices}{article}{}{}
@@ -325,6 +323,42 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2308.05270
+      \endverb
+    \endentry
+    \entry{park2021cloud}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=37cd18950ba152a40e401e3e26f4506e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{fullhash}{41513aaac3a9495817ae23a398141bff}
+      \strng{fullhashraw}{41513aaac3a9495817ae23a398141bff}
+      \strng{bibnamehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authorbibnamehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authornamehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authorfullhash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authorfullhashraw}{41513aaac3a9495817ae23a398141bff}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Supercomputing}
+      \field{title}{Design and implementation of a cloud-based event-driven architecture for real-time data processing in wireless sensor networks}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s11227-021-03955-6
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s11227-021-03955-6
       \endverb
     \endentry
     \entry{perera2024traffic}{article}{}{}
@@ -479,6 +513,42 @@
       \verb https://www.academia.edu/download/109262019/s12652-018-0843-y20231219-1-u5ip6.pdf
       \endverb
     \endentry
+    \entry{shi2015execution}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1204d861d1f0178d0b058310e174a69e}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Ruisheng},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{fullhash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{fullhashraw}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{bibnamehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authorbibnamehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authornamehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authorfullhash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authorfullhashraw}{564aaba430ea0fbae73c6f5efbba823f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{An Event-driven Service-oriented Architecture for the Internet of Things Service Execution}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/277641221_An_Event-driven_Service-oriented_Architecture_for_Internet_of_Things_Service_Execution
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/277641221_An_Event-driven_Service-oriented_Architecture_for_Internet_of_Things_Service_Execution
+      \endverb
+    \endentry
     \entry{shujaat2021improvements}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -513,6 +583,78 @@
       \endverb
       \verb{url}
       \verb https://www.researchgate.net/publication/377222341_Improvements_to_Implementation_Methodology_for_CC-IoT
+      \endverb
+    \endentry
+    \entry{visnjic2021decision}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=122fcebf3e493e5f34d1d7e34933d90b}{%
+           family={Visnjic},
+           familyi={V\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{fullhash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{fullhashraw}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{bibnamehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authorbibnamehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authornamehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authorfullhash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authorfullhashraw}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{LogI - Scientific Journal on Transport and Logistics}
+      \field{title}{Smart City Decision Making System Based on Event-driven Platform}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://sciendo.com/pdf/10.2478/logi-2021-0010
+      \endverb
+      \verb{url}
+      \verb https://sciendo.com/pdf/10.2478/logi-2021-0010
+      \endverb
+    \endentry
+    \entry{ward2005response}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1b24b3a6c841f22df3743a2fc7b46d2}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{fullhash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{fullhashraw}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{bibnamehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authorbibnamehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authornamehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authorfullhash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authorfullhashraw}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Event-Driven Response Architecture for Event-Based Computing}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/221501009_Event-driven_response_architecture_for_event-based_computing
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/221501009_Event-driven_response_architecture_for_event-based_computing
       \endverb
     \endentry
     \entry{xu2016provisioning}{article}{}{}
@@ -663,42 +805,6 @@
       \verb http://confcats_isif.s3.amazonaws.com/web-files/event/proceedings/html/2014Proceedings/papers/fusion2014_submission_55/paper55.pdf
       \endverb
     \endentry
-    \entry{ciechomski2018soccer}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77b21cf9642f46bc2e177d58f51f7352}{%
-           family={Ciechomski},
-           familyi={C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{fullhash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{fullhashraw}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{bibnamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authorbibnamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authornamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authorfullhash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \strng{authorfullhashraw}{d7f3b49c4e69f02b26f7dafd2cac2f10}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{University of Pisa Archive}
-      \field{title}{Soccer Event Detection}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://arpi.unipi.it/handle/11568/931066
-      \endverb
-      \verb{url}
-      \verb https://arpi.unipi.it/handle/11568/931066
-      \endverb
-    \endentry
     \entry{coretti2025neuromorphic}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7a2dc65119cf31f7eb6b709d64f0bced}{%
@@ -743,6 +849,40 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2506.16436
+      \endverb
+    \endentry
+    \entry{kommera2020power}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e30c55a00295557b8b4929068827416c}{%
+           family={Kommera},
+           familyi={K\bibinitperiod},
+           given={Adisheshu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e30c55a00295557b8b4929068827416c}
+      \strng{fullhash}{e30c55a00295557b8b4929068827416c}
+      \strng{fullhashraw}{e30c55a00295557b8b4929068827416c}
+      \strng{bibnamehash}{e30c55a00295557b8b4929068827416c}
+      \strng{authorbibnamehash}{e30c55a00295557b8b4929068827416c}
+      \strng{authornamehash}{e30c55a00295557b8b4929068827416c}
+      \strng{authorfullhash}{e30c55a00295557b8b4929068827416c}
+      \strng{authorfullhashraw}{e30c55a00295557b8b4929068827416c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{The Power of Event-Driven Architecture: Enabling Real-Time Systems and Scalable Solutions}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/385668247_THE_POWER_OF_EVENT-DRIVEN_ARCHITECTURE_ENABLING_REAL-TIME_SYSTEMS_AND_SCALABLE_SOLUTIONS
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/385668247_THE_POWER_OF_EVENT-DRIVEN_ARCHITECTURE_ENABLING_REAL-TIME_SYSTEMS_AND_SCALABLE_SOLUTIONS
       \endverb
     \endentry
     \entry{kul2021microservices}{article}{}{}
@@ -859,6 +999,42 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2308.05270
+      \endverb
+    \endentry
+    \entry{park2021cloud}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=37cd18950ba152a40e401e3e26f4506e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{fullhash}{41513aaac3a9495817ae23a398141bff}
+      \strng{fullhashraw}{41513aaac3a9495817ae23a398141bff}
+      \strng{bibnamehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authorbibnamehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authornamehash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authorfullhash}{41513aaac3a9495817ae23a398141bff}
+      \strng{authorfullhashraw}{41513aaac3a9495817ae23a398141bff}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Supercomputing}
+      \field{title}{Design and implementation of a cloud-based event-driven architecture for real-time data processing in wireless sensor networks}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s11227-021-03955-6
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s11227-021-03955-6
       \endverb
     \endentry
     \entry{perera2024traffic}{article}{}{}
@@ -1013,6 +1189,42 @@
       \verb https://www.academia.edu/download/109262019/s12652-018-0843-y20231219-1-u5ip6.pdf
       \endverb
     \endentry
+    \entry{shi2015execution}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1204d861d1f0178d0b058310e174a69e}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Ruisheng},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{fullhash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{fullhashraw}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{bibnamehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authorbibnamehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authornamehash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authorfullhash}{564aaba430ea0fbae73c6f5efbba823f}
+      \strng{authorfullhashraw}{564aaba430ea0fbae73c6f5efbba823f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{An Event-driven Service-oriented Architecture for the Internet of Things Service Execution}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/277641221_An_Event-driven_Service-oriented_Architecture_for_Internet_of_Things_Service_Execution
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/277641221_An_Event-driven_Service-oriented_Architecture_for_Internet_of_Things_Service_Execution
+      \endverb
+    \endentry
     \entry{shujaat2021improvements}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -1047,6 +1259,78 @@
       \endverb
       \verb{url}
       \verb https://www.researchgate.net/publication/377222341_Improvements_to_Implementation_Methodology_for_CC-IoT
+      \endverb
+    \endentry
+    \entry{visnjic2021decision}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=122fcebf3e493e5f34d1d7e34933d90b}{%
+           family={Visnjic},
+           familyi={V\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{fullhash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{fullhashraw}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{bibnamehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authorbibnamehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authornamehash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authorfullhash}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \strng{authorfullhashraw}{01bbfd8263c5f292c7cf5d6642239ec6}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{LogI - Scientific Journal on Transport and Logistics}
+      \field{title}{Smart City Decision Making System Based on Event-driven Platform}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://sciendo.com/pdf/10.2478/logi-2021-0010
+      \endverb
+      \verb{url}
+      \verb https://sciendo.com/pdf/10.2478/logi-2021-0010
+      \endverb
+    \endentry
+    \entry{ward2005response}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1b24b3a6c841f22df3743a2fc7b46d2}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{fullhash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{fullhashraw}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{bibnamehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authorbibnamehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authornamehash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authorfullhash}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \strng{authorfullhashraw}{f491d11fc761ddf9dcbf91e9e8c928b2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Event-Driven Response Architecture for Event-Based Computing}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/221501009_Event-driven_response_architecture_for_event-based_computing
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/221501009_Event-driven_response_architecture_for_event-based_computing
       \endverb
     \endentry
     \entry{xu2016provisioning}{article}{}{}

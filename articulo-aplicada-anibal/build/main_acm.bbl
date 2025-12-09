@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{14}
+\begin{thebibliography}{18}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -80,20 +80,6 @@
 \tempurl}
 
 
-\bibitem[Ciechomski et~al\mbox{.}(2018)]%
-        {ciechomski2018soccer}
-\bibfield{author}{\bibinfo{person}{P. Ciechomski} {et~al\mbox{.}}}
-  \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Soccer Event Detection}.
-\newblock \bibinfo{journal}{\emph{University of Pisa Archive}}
-  (\bibinfo{year}{2018}).
-\newblock
-\urldef\tempurl%
-\url{https://arpi.unipi.it/handle/11568/931066}
-\showURL{%
-\tempurl}
-
-
 \bibitem[Coretti et~al\mbox{.}(2025)]%
         {coretti2025neuromorphic}
 \bibfield{author}{\bibinfo{person}{Alessandro Coretti}, \bibinfo{person}{Mattia
@@ -106,6 +92,20 @@
 \newblock
 \urldef\tempurl%
 \url{https://arxiv.org/abs/2506.16436}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kommera(2020)]%
+        {kommera2020power}
+\bibfield{author}{\bibinfo{person}{Adisheshu Kommera}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{The Power of Event-Driven Architecture: Enabling
+  Real-Time Systems and Scalable Solutions}.
+\newblock \bibinfo{journal}{\emph{ResearchGate}} (\bibinfo{year}{2020}).
+\newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/385668247_THE_POWER_OF_EVENT-DRIVEN_ARCHITECTURE_ENABLING_REAL-TIME_SYSTEMS_AND_SCALABLE_SOLUTIONS}
 \showURL{%
 \tempurl}
 
@@ -150,6 +150,22 @@
 \newblock
 \urldef\tempurl%
 \url{https://arxiv.org/abs/2308.05270}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Park et~al\mbox{.}(2021)]%
+        {park2021cloud}
+\bibfield{author}{\bibinfo{person}{K. Park} {et~al\mbox{.}}}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Design and implementation of a cloud-based
+  event-driven architecture for real-time data processing in wireless sensor
+  networks}.
+\newblock \bibinfo{journal}{\emph{The Journal of Supercomputing}}
+  (\bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://link.springer.com/article/10.1007/s11227-021-03955-6}
 \showURL{%
 \tempurl}
 
@@ -212,6 +228,20 @@
 \tempurl}
 
 
+\bibitem[Shi et~al\mbox{.}(2015)]%
+        {shi2015execution}
+\bibfield{author}{\bibinfo{person}{Ruisheng Shi} {et~al\mbox{.}}}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{An Event-driven Service-oriented Architecture for
+  the Internet of Things Service Execution}.
+\newblock \bibinfo{journal}{\emph{ResearchGate}} (\bibinfo{year}{2015}).
+\newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/277641221_An_Event-driven_Service-oriented_Architecture_for_Internet_of_Things_Service_Execution}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Shujaat et~al\mbox{.}(2021)]%
         {shujaat2021improvements}
 \bibfield{author}{\bibinfo{person}{Muhammad Shujaat} {et~al\mbox{.}}}
@@ -222,6 +252,35 @@
 \newblock
 \urldef\tempurl%
 \url{https://www.researchgate.net/publication/377222341_Improvements_to_Implementation_Methodology_for_CC-IoT}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Visnjic et~al\mbox{.}(2021)]%
+        {visnjic2021decision}
+\bibfield{author}{\bibinfo{person}{D. Visnjic} {et~al\mbox{.}}}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Smart City Decision Making System Based on
+  Event-driven Platform}.
+\newblock \bibinfo{journal}{\emph{LogI - Scientific Journal on Transport and
+  Logistics}} (\bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://sciendo.com/pdf/10.2478/logi-2021-0010}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ward et~al\mbox{.}(2005)]%
+        {ward2005response}
+\bibfield{author}{\bibinfo{person}{Paul Ward} {et~al\mbox{.}}}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Event-Driven Response Architecture for Event-Based
+  Computing}.
+\newblock \bibinfo{journal}{\emph{ResearchGate}} (\bibinfo{year}{2005}).
+\newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/221501009_Event-driven_response_architecture_for_event-based_computing}
 \showURL{%
 \tempurl}
 

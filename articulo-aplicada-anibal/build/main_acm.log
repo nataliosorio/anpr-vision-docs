@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  9 DEC 2025 11:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.9)  9 DEC 2025 12:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1876,10 +1876,10 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 (build/main_acm.aux
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 17.
+(babel)             Reported on input line 13.
 )
 \openout1 = `main_acm.aux'.
 
@@ -2058,158 +2058,88 @@ Overfull \hbox (2.32881pt too wide) in paragraph at lines 24--24
 Procesamien-
  []
 
-(./sections/01_introduccion.tex) (./sections/02_relacionados.tex
+(./sections/01_introduccion.tex
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 7.2pt on input line 5.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 5.4pt on input line 9.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [1.1
 
-]
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 8.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 10.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\globaldefs' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@ne' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tf@size' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sf@size' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ssf@size' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\globaldefs' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempa' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\raise' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 10.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 10.
-
-) (./sections/03_metodologia.tex
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 16.
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 16.
-[2.2]) (./sections/04_implementacion.tex
-Overfull \hbox (8.41878pt too wide) in paragraph at lines 8--9
-[]\TU/LinLibertine(0)/m/n/9 2024[]] es paradigmática: utilizan un servidor Edge
- ejecutando \TU/LinLibertine(0)/b/n/9 Python
+]) (./sections/02_relacionados.tex
+Overfull \hbox (2.85252pt too wide) in paragraph at lines 17--1
+[]\TU/LinLibertine(0)/m/n/9 A lo largo de este artículo, desglosaremos cómo tec
+nologías emer-
  []
 
 
-Overfull \hbox (1.24281pt too wide) in paragraph at lines 17--18
-[]\TU/LinLibertine(0)/b/n/9 Triggers Serverless (Firebase/Cloud Functions): \TU
-/LinLibertine(0)/m/n/9 Para es-
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 21.
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 21.
+[2.2]) (./sections/03_metodologia.tex
+Overfull \hbox (2.23055pt too wide) in paragraph at lines 20--21
+\TU/LinLibertine(0)/m/n/9 Estudios centrados en el procesamiento de imágenes en
+ tiem-
  []
 
-(/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
+
+Overfull \hbox (35.322pt too wide) in paragraph at lines 29--30
+\TU/LinLibertine(0)/m/n/9 gración de datos. Comparamos los enfoques de ”fuerza 
+bruta”(procesamiento
+ []
+
+
+Overfull \hbox (31.60529pt too wide) in paragraph at lines 29--30
+\TU/LinLibertine(0)/m/n/9 masivo de video en clusters Kafka) contra las propues
+tas de .[]riquecimiento
+ []
+
+[3.3]) (./sections/04_implementacion.tex
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 13.
+[4.4] (/opt/texlive/texdir/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-Underfull \vbox (badness 1874) has occurred while \output is active []
-
-[3.3]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `inconsolata' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 72.
+(Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 72.
+(Font)              scaled to size 5.0pt on input line 35.
 
 LaTeX Font Warning: Font shape `TU/inconsolata(0)/m/it' undefined
-(Font)              using `TU/inconsolata(0)/m/n' instead on input line 76.
+(Font)              using `TU/inconsolata(0)/m/n' instead on input line 39.
 
-) (./sections/05_resultados.tex (./tables/mejora_precision.tex) [4.4] (./tables
-/kafka_performance.tex)) (./sections/06_discusion.tex
-Underfull \vbox (badness 1226) has occurred while \output is active []
+) (./sections/05_resultados.tex (./tables/mejora_precision.tex) [5.5] (./tables
+/kafka_performance.tex)) (./sections/06_discusion.tex [6.6]
+Underfull \vbox (badness 4279) has occurred while \output is active []
 
 ) (./sections/07_conclusiones.tex
-Overfull \hbox (1.0735pt too wide) in paragraph at lines 3--4
-[]\TU/LinLibertine(0)/m/n/9 Este estudio confirma que la transición hacia arqui
-tecturas orien-
+Overfull \hbox (1.37553pt too wide) in paragraph at lines 3--4
+\TU/LinLibertine(0)/m/n/9 te que la transición hacia Arquitecturas Orientadas a
+ Eventos (EDA)
  []
 
-[5.5]) (./sections/A1_apendices.tex) (build/main_acm.bbl
+[7.7]
+Overfull \hbox (1.4175pt too wide) in paragraph at lines 17--18
+\TU/LinLibertine(0)/m/n/9 .[]rquitectura de Respuesta Dirigida por Eventos”(EDR
+A). No
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) (./sections/A1_apendices.tex [8.8]
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+) (build/main_acm.bbl
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
 (Font)              scaled to size 7.0pt on input line 45.
 
@@ -2232,9 +2162,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--51
 
 LaTeX Info: Redefining \tempurl on input line 63.
 LaTeX Info: Redefining \tempurl on input line 78.
-[6.6]
-LaTeX Info: Redefining \tempurl on input line 92.
+LaTeX Info: Redefining \tempurl on input line 94.
 LaTeX Info: Redefining \tempurl on input line 108.
+
+Underfull \hbox (badness 1888) in paragraph at lines 101--111
+\TU/LinLibertine(0)/m/n/7 Real-Time Systems and Scalable Solutions.  \TU/LinLib
+ertine(0)/m/it/7 ResearchGate \TU/LinLibertine(0)/m/n/7 (2020).   []$[][][][][]
+ []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--111
+[] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][][][][][] []
+ [][][][][][][][][] [] [][][] [] [][][][][] [] [][] [] [][][][][] [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--111
+[][][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][] [] [][][][] [][] [
+][][][] [] [][][][][][][] [] [][][] []
+ []
+
+[9.9]
 LaTeX Info: Redefining \tempurl on input line 123.
 LaTeX Info: Redefining \tempurl on input line 137.
 
@@ -2258,19 +2207,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--140
  []
 
 LaTeX Info: Redefining \tempurl on input line 152.
-LaTeX Info: Redefining \tempurl on input line 166.
-LaTeX Info: Redefining \tempurl on input line 181.
-LaTeX Info: Redefining \tempurl on input line 195.
-LaTeX Info: Redefining \tempurl on input line 210.
-LaTeX Info: Redefining \tempurl on input line 224.
-LaTeX Info: Redefining \tempurl on input line 238.
+LaTeX Info: Redefining \tempurl on input line 168.
+LaTeX Info: Redefining \tempurl on input line 182.
+LaTeX Info: Redefining \tempurl on input line 197.
+LaTeX Info: Redefining \tempurl on input line 211.
+LaTeX Info: Redefining \tempurl on input line 226.
+LaTeX Info: Redefining \tempurl on input line 240.
+
+Underfull \hbox (badness 7777) in paragraph at lines 233--243
+[]\TU/LinLibertine(0)/m/n/7 Ruisheng Shi et al[] 2015.  An Event-driven Service
+-oriented Architectu-
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 233--243
+\TU/LinLibertine(0)/m/n/7 re for the Internet of Things Service Execution.  \TU
+/LinLibertine(0)/m/it/7 ResearchGate \TU/LinLibertine(0)/m/n/7 (2015).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--243
+[]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][]
+[][][][][][][] [] [][][][][][][][][] [] [][] [] [][][][][] [][] [][][][][][] []
+ [][][][][][][] [][]
+ []
+
+LaTeX Info: Redefining \tempurl on input line 254.
+LaTeX Info: Redefining \tempurl on input line 269.
+LaTeX Info: Redefining \tempurl on input line 283.
+LaTeX Info: Redefining \tempurl on input line 297.
 ) (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/opt/texlive/texdir/texmf-dist/tex/generic/stringenc/se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-) [7.7] (build/main_acm.aux
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+) [10.10] (build/main_acm.aux
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -2280,15 +2252,15 @@ L3 programming layer <2025-11-14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main_acm.out' has not changed.
-(rerunfilecheck)             Checksum: AE898DFEB49D68693F8C9D0A703E44DE;6520.
+(rerunfilecheck)             Checksum: 1E0112278C8C4ADB942BB9EF7E64773A;9110.
  ) 
 Here is how much of TeX's memory you used:
- 42006 strings out of 468179
- 856724 string characters out of 5435043
- 1731854 words of memory out of 5000000
- 70068 multiletter control sequences out of 15000+600000
- 634683 words of font info for 144 fonts, out of 8000000 for 9000
+ 42028 strings out of 468179
+ 857237 string characters out of 5435043
+ 1747826 words of memory out of 5000000
+ 70089 multiletter control sequences out of 15000+600000
+ 634748 words of font info for 145 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
  105i,12n,131p,2125b,32926s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main_acm.xdv (7 pages, 438920 bytes).
+Output written on build/main_acm.xdv (10 pages, 656908 bytes).

@@ -18,16 +18,18 @@ Warning--no number and no volume in baz2019video
 Warning--page numbers missing in both pages and numpages fields in baz2019video
 Warning--no number and no volume in bruns2014fusion
 Warning--page numbers missing in both pages and numpages fields in bruns2014fusion
-Warning--no number and no volume in ciechomski2018soccer
-Warning--page numbers missing in both pages and numpages fields in ciechomski2018soccer
 Warning--no number and no volume in coretti2025neuromorphic
 Warning--page numbers missing in both pages and numpages fields in coretti2025neuromorphic
+Warning--no number and no volume in kommera2020power
+Warning--page numbers missing in both pages and numpages fields in kommera2020power
 Warning--no number and no volume in kul2021microservices
 Warning--page numbers missing in both pages and numpages fields in kul2021microservices
 Warning--no number and no volume in laigner2020monolithic
 Warning--page numbers missing in both pages and numpages fields in laigner2020monolithic
 Warning--no number and no volume in lazzari2023hidden
 Warning--page numbers missing in both pages and numpages fields in lazzari2023hidden
+Warning--no number and no volume in park2021cloud
+Warning--page numbers missing in both pages and numpages fields in park2021cloud
 Warning--no number and no volume in perera2024traffic
 Warning--page numbers missing in both pages and numpages fields in perera2024traffic
 Warning--no number and no volume in phuttharak2023smartcity
@@ -36,49 +38,55 @@ Warning--no number and no volume in roest2017challenges
 Warning--page numbers missing in both pages and numpages fields in roest2017challenges
 Warning--no number and no volume in salamon2018gateway
 Warning--page numbers missing in both pages and numpages fields in salamon2018gateway
+Warning--no number and no volume in shi2015execution
+Warning--page numbers missing in both pages and numpages fields in shi2015execution
 Warning--no number and no volume in shujaat2021improvements
 Warning--page numbers missing in both pages and numpages fields in shujaat2021improvements
+Warning--no number and no volume in visnjic2021decision
+Warning--page numbers missing in both pages and numpages fields in visnjic2021decision
+Warning--no number and no volume in ward2005response
+Warning--page numbers missing in both pages and numpages fields in ward2005response
 Warning--no number and no volume in xu2016provisioning
 Warning--page numbers missing in both pages and numpages fields in xu2016provisioning
-You've used 14 entries,
+You've used 18 entries,
             6273 wiz_defined-function locations,
-            1593 strings with 21416 characters,
-and the built_in function-call counts, 14671 in all, are:
-= -- 2348
-> -- 420
+            1612 strings with 22477 characters,
+and the built_in function-call counts, 18753 in all, are:
+= -- 3011
+> -- 530
 < -- 0
-+ -- 152
-- -- 184
-* -- 902
-:= -- 1334
-add.period$ -- 70
-call.type$ -- 14
-change.case$ -- 77
-chr.to.int$ -- 14
-cite$ -- 42
-duplicate$ -- 1177
-empty$ -- 869
-format.name$ -- 208
-if$ -- 3888
++ -- 193
+- -- 233
+* -- 1140
+:= -- 1701
+add.period$ -- 90
+call.type$ -- 18
+change.case$ -- 97
+chr.to.int$ -- 18
+cite$ -- 54
+duplicate$ -- 1513
+empty$ -- 1117
+format.name$ -- 257
+if$ -- 4984
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 56
-newline$ -- 207
-num.names$ -- 98
-pop$ -- 526
+missing$ -- 72
+newline$ -- 255
+num.names$ -- 126
+pop$ -- 674
 preamble$ -- 1
-purify$ -- 189
+purify$ -- 241
 quote$ -- 0
-skip$ -- 368
+skip$ -- 473
 stack$ -- 0
-substring$ -- 776
-swap$ -- 56
+substring$ -- 1000
+swap$ -- 72
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 224
-warning$ -- 28
-while$ -- 94
+type$ -- 288
+warning$ -- 36
+while$ -- 122
 width$ -- 0
-write$ -- 346
-(There were 28 warnings)
+write$ -- 434
+(There were 36 warnings)
