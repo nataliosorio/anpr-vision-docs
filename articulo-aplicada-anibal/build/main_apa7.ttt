@@ -1,0 +1,39 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Comparación de precisión en detección de matrículas (Sri Lanka)}
+\label{tab:mejora_precision}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+\textbf{Método de Procesamiento} & \textbf{Detecciones} & \textbf{Precisión (\%)} \\
+\midrule
+Solo Preproc. + OCR & 27 / 50 & 54\% \\
+Preproc. + Algoritmo Ad-hoc + OCR & 42 / 50 & \textbf{84\%} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+\centering
+\caption{Rendimiento de Apache Kafka (Producción vs. Consumo)}
+\label{tab:kafka_performance}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{rcc}
+\toprule
+\textbf{Carga (Mensajes)} & \textbf{T. Producción (ms)} & \textbf{T. Consumo (ms)} \\
+\midrule
+10 & 40 & 54 \\
+100 & 145 & 259 \\
+1,000 & 285 & 295 \\
+10,000 & 400 & 456 \\
+100,000 & 2,863 & \textbf{1,209} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

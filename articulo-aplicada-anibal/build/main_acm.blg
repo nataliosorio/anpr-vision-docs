@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main_acm.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bibliography/references.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no number and no volume in adekunle2024financial
+Warning--page numbers missing in both pages and numpages fields in adekunle2024financial
+Warning--no number and no volume in baz2019video
+Warning--page numbers missing in both pages and numpages fields in baz2019video
+Warning--no number and no volume in bruns2014fusion
+Warning--page numbers missing in both pages and numpages fields in bruns2014fusion
+Warning--no number and no volume in ciechomski2018soccer
+Warning--page numbers missing in both pages and numpages fields in ciechomski2018soccer
+Warning--no number and no volume in coretti2025neuromorphic
+Warning--page numbers missing in both pages and numpages fields in coretti2025neuromorphic
+Warning--no number and no volume in kul2021microservices
+Warning--page numbers missing in both pages and numpages fields in kul2021microservices
+Warning--no number and no volume in laigner2020monolithic
+Warning--page numbers missing in both pages and numpages fields in laigner2020monolithic
+Warning--no number and no volume in lazzari2023hidden
+Warning--page numbers missing in both pages and numpages fields in lazzari2023hidden
+Warning--no number and no volume in perera2024traffic
+Warning--page numbers missing in both pages and numpages fields in perera2024traffic
+Warning--no number and no volume in phuttharak2023smartcity
+Warning--page numbers missing in both pages and numpages fields in phuttharak2023smartcity
+Warning--no number and no volume in roest2017challenges
+Warning--page numbers missing in both pages and numpages fields in roest2017challenges
+Warning--no number and no volume in salamon2018gateway
+Warning--page numbers missing in both pages and numpages fields in salamon2018gateway
+Warning--no number and no volume in shujaat2021improvements
+Warning--page numbers missing in both pages and numpages fields in shujaat2021improvements
+Warning--no number and no volume in xu2016provisioning
+Warning--page numbers missing in both pages and numpages fields in xu2016provisioning
+You've used 14 entries,
+            6273 wiz_defined-function locations,
+            1593 strings with 21416 characters,
+and the built_in function-call counts, 14671 in all, are:
+= -- 2348
+> -- 420
+< -- 0
++ -- 152
+- -- 184
+* -- 902
+:= -- 1334
+add.period$ -- 70
+call.type$ -- 14
+change.case$ -- 77
+chr.to.int$ -- 14
+cite$ -- 42
+duplicate$ -- 1177
+empty$ -- 869
+format.name$ -- 208
+if$ -- 3888
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 56
+newline$ -- 207
+num.names$ -- 98
+pop$ -- 526
+preamble$ -- 1
+purify$ -- 189
+quote$ -- 0
+skip$ -- 368
+stack$ -- 0
+substring$ -- 776
+swap$ -- 56
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 224
+warning$ -- 28
+while$ -- 94
+width$ -- 0
+write$ -- 346
+(There were 28 warnings)

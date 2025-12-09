@@ -1,0 +1,27 @@
+\section{Metodología de investigación aplicada}
+
+Para determinar la efectividad real de la arquitectura orientada a eventos (EDA) en el IoT moderno, realizamos un **análisis exhaustivo** del estado del arte actual. Adoptamos un enfoque de revisión sistemática, centrando nuestro estudio en la evaluación técnica de 20 casos de uso recientes. El propósito fue identificar patrones claros de éxito y fracaso al implementar estas tecnologías en escenarios críticos, que van desde la gestión de tráfico urbano hasta operaciones en el espacio.
+
+\subsection{Criterios de Selección}
+Nuestro filtro principal fue la practicidad. Descartamos estudios puramente teóricos para centrarnos en investigaciones que presentaran implementaciones tangibles. Seleccionamos la literatura basándonos en tres condiciones fundamentales:
+\begin{enumerate}
+    \item \textbf{Relevancia del Problema:} El estudio debía atacar limitaciones reales de los sistemas legados, como la latencia excesiva o los costos operativos en la nube.
+    \item \textbf{Tecnología Aplicada:} La solución debía basarse explícitamente en EDA, microservicios asíncronos o computación en el borde (Edge Computing).
+    \item \textbf{Resultados Medibles:} Requerimos evidencia de mejora, ya fuera a través de métricas comparativas o mediante la validación de una migración exitosa, tal como lo documentan Silva et al. \cite{laigner2020monolithic}.
+\end{enumerate}
+
+\subsection{Estrategia de Análisis}
+En lugar de realizar resúmenes lineales, aplicamos un análisis comparativo cruzado para entender cómo distintos autores abordan problemas similares.
+Por ejemplo, contrastamos las técnicas de detección de objetos en tierra firme presentadas por Perera et al. \cite{perera2024traffic} frente a los métodos utilizados por Coretti, Varile y Bertaina \cite{coretti2025neuromorphic} en entornos espaciales. Buscamos validar si el patrón arquitectónico de procesar localmente para reducir la dependencia de la nube se mantenía constante independientemente del entorno.
+
+De igual manera, evaluamos las estrategias de integración de datos. Comparamos los enfoques de procesamiento directo de video \cite{kul2021microservices} contra las propuestas de enriquecimiento semántico para ciudades inteligentes \cite{phuttharak2023smartcity}, analizando cuál ofrecía un mejor equilibrio entre la complejidad de implementación y la utilidad del dato final.
+
+\subsection{Dimensiones de Evaluación}
+Para organizar la discusión, clasificamos los hallazgos en tres categorías técnicas:
+\begin{itemize}
+    \item \textbf{Rendimiento:} Evaluamos si la adopción de EDA redujo efectivamente la latencia en los estudios de tráfico y vigilancia.
+    \item \textbf{Interoperabilidad:} Analizamos cómo los autores resolvieron la heterogeneidad de los datos provenientes de múltiples sensores.
+    \item \textbf{Madurez Arquitectónica:} Examinamos la resiliencia de las soluciones propuestas, considerando la dependencia de herramientas como Kafka y la necesidad de orquestación externa señalada por Adekunle \cite{adekunle2024financial}.
+\end{itemize}
+
+Este método nos permitió separar las expectativas teóricas de la utilidad técnica real demostrada en los proyectos analizados.

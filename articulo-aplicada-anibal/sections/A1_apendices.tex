@@ -1,0 +1,61 @@
+\appendix
+\section{Apéndices}
+
+Este apartado reúne varias anotaciones que se fueron acumulando durante la revisión de los artículos y que, aunque no encajan muy bien en las secciones principales, ayudan a entender cómo se realizó realmente el análisis. No es un apéndice tradicional lleno de tablas de datos; más bien son recordatorios, observaciones sueltas y pequeños extractos que se fueron guardando para no perder el hilo de la investigación.
+
+\subsection*{Apéndice A. Notas durante la búsqueda bibliográfica}
+
+Una de las primeras cosas que se anotó mientras se buscaban los *papers* fue lo difícil que es encontrar implementaciones reales en medio de tanta teoría. Se dejó un pequeño archivo de notas internas para filtrar el ruido. No era documentación formal, solo algo como:
+
+``Ojo con los artículos que dicen 'propuesta de arquitectura' en el título. Si no tienen sección de experimentos o resultados con números, descartarlos. Necesitamos ver latencia real, no supuestos.''
+
+Esa nota simple nos ahorró leer docenas de documentos que al final no aportaban pruebas tangibles.
+
+Otra anotación que apareció mucho era simplemente esta frase:  
+``Revisar la fecha de publicación antes de leer. Si es de antes de 2015, probablemente la tecnología (Kafka/Docker) ya cambió demasiado.''
+
+\subsection*{Apéndice B. Observaciones sobre la lectura cruzada}
+
+En lugar de colocar aquí una lista de lecturas, se dejó registro de las sensaciones que surgieron al comparar autores tan distintos (como los de tráfico vs. los espaciales). Por ejemplo:
+
+- Cuando un artículo no explicaba cómo manejaba los fallos de red, casi siempre era porque asumían una conexión perfecta. Esos los marcamos con un asterisco de ``sospechoso''.  
+- La métrica de ``precisión'' se volvió un indicador confuso. Unos medían precisión por píxel y otros por objeto detectado. Tuvimos que leer la letra pequeña de las tablas varias veces para no comparar peras con manzanas.
+- La parte de los diagramas de arquitectura terminó siendo más confiable que el texto. A veces el texto prometía ``tiempo real'', pero el diagrama mostraba una base de datos relacional en el medio que claramente iba a ser un cuello de botella.
+
+Hubo otra observación que se repitió varias veces en las notas:  
+``El papel aguanta todo, pero las gráficas de latencia no mienten. Si no hay gráfica de estrés, dudar de la escalabilidad.''
+
+\subsection*{Apéndice C. Comentarios sobre la extracción de datos}
+
+Extraer los datos de las tablas originales (como las de Kul o Perera) dejó algunas conclusiones que vale la pena guardar.
+
+Una de ellas fue que los datos de rendimiento a veces estaban escondidos en el texto y no en las tablas. A menudo pasábamos por alto un párrafo, pero al releer encontrábamos el dato clave de los ``1209 ms'' que cambiaba toda la interpretación del *paper*.
+
+Otro comentario recurrente en las notas era que los autores rara vez hablan de los costos de infraestructura. Nos tocó inferir la complejidad basándonos en los diagramas (``esto necesita al menos 3 nodos de Kafka''), lo cual fue un ejercicio interesante de ingeniería inversa.
+
+También quedó una lista de ``cosas que nos hubiera gustado ver'' en los estudios analizados:
+
+- ``Ver qué pasa con la latencia si se cae la red 5 segundos y vuelve.''
+- ``Saber cuánto cuesta mantener esos contenedores Docker encendidos 24/7.''
+- ``Comparativas con hardware más barato (Raspberry Pi) en lugar de servidores i9.''
+
+\subsection*{Apéndice D. Notas generales del análisis}
+
+Durante la redacción del artículo circularon varios mensajes y recordatorios para mantener la coherencia. Algunos de esos apuntes quedaron guardados y ayudan a entender el enfoque:
+
+- ``No repetir tanto que 'Kafka es rápido', explicar por qué (asincronía/logs).''  
+- ``Cuidado con mezclar los resultados de visión (YOLO) con los de infraestructura. Son capas distintas.''  
+- ``El caso de las ambulancias es clave para la parte cualitativa, no olvidarlo en la discusión.''  
+- ``Recordar que 'tiempo real' en el espacio (Coretti) es más crítico que en un parking.''
+
+Estos comentarios pueden parecer simples, pero ayudaron a que la sección de Discusión no fuera solo un resumen aburrido, sino una comparativa real.
+
+\subsection*{Apéndice E. Reflexiones finales}
+
+Aquí se dejó un conjunto de observaciones sueltas que aparecieron al final, cuando ya se tenía el panorama completo de los 20 artículos:
+
+- La tecnología está lista, pero la integración es el problema real (la torre de Babel de los datos).  
+- Muchos sistemas funcionan bien no por la IA, sino porque filtran los datos *antes* de usar la IA.  
+- La separación por capas (Edge vs Cloud) es lo único que evitó que estos sistemas colapsaran.
+
+Este tipo de anotaciones fueron la base para escribir las conclusiones y nos recuerdan que, a veces, la arquitectura es más importante que el algoritmo.

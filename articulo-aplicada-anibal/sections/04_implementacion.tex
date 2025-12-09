@@ -1,0 +1,112 @@
+\section{Implementación del software}
+
+El análisis transversal de los 20 casos de estudio revela que la industria ha superado la etapa de experimentación con EDA para consolidar un \textbf{stack tecnológico de referencia}. Identificamos que el éxito de estas implementaciones no radica en una sola herramienta, sino en la orquestación precisa entre tres capas lógicas: la ingesta en el borde (Edge), el transporte asíncrono y el procesamiento distribuido.
+
+A continuación, desglosamos las decisiones de ingeniería críticas que permitieron a sistemas como el de tráfico de Sri Lanka \cite{perera2024traffic} o el de monitoreo de Tecgraf \cite{laigner2020monolithic} escalar donde sus predecesores fallaron.
+
+\subsection{El Stack de Visión y Detección (Edge)}
+En la capa de captura, observamos una homogeneización en torno a soluciones de código abierto optimizadas para hardware limitado. La implementación descrita por Perera et al. \cite{perera2024traffic} es paradigmática: utilizan un servidor Edge ejecutando \textbf{Python} con multiprocesamiento (Multi-threading). Mientras un hilo captura el video, otro ejecuta la inferencia utilizando \textbf{YOLOv5} para la detección de objetos y \textbf{DeepSORT} para el rastreo (tracking) de trayectorias.
+
+Esta combinación es crucial. Como señalan Kul y Tashiev \cite{kul2021microservices}, delegar la extracción de características (tipo, color, velocidad) al borde utilizando redes como YOLOv4-tiny permite que lo que viaje por la red no sea video pesado, sino metadatos ligeros (JSON). En casos extremos de eficiencia, Coretti, Varile y Bertaina \cite{coretti2025neuromorphic} reemplazan el procesamiento de cuadros convencional por algoritmos \textbf{Stack-CNN}, que procesan únicamente los eventos de cambio de polaridad en sensores neuromórficos, eliminando la redundancia visual desde la raíz.
+
+\subsection{El Sistema Nervioso: Patrones de Mensajería}
+Una vez generado el evento, la estrategia de transporte define la resiliencia del sistema. La literatura muestra dos enfoques dominantes:
+
+\begin{enumerate}
+    \item \textbf{Bus de Eventos Estricto (Kafka):} En entornos de alta densidad de datos, como el análisis de video distribuido, Kul y Tashiev \cite{kul2021microservices} implementan \textbf{Apache Kafka} sobre contenedores \textbf{Docker}. Su innovación radica en el patrón de "topics jerárquicos": un microservicio publica el color, otro la velocidad, y un tercero ("Merger") se suscribe a ambos para fusionar la información en un evento complejo. Esto garantiza desacoplamiento total.
+    \item \textbf{Triggers Serverless (Firebase/Cloud Functions):} Para escenarios más orientados a la gestión administrativa, como el sistema de multas de Perera et al. \cite{perera2024traffic}, se opta por arquitecturas basadas en disparadores (triggers). Aquí, la inserción de un dato en la base de datos (Firestore) dispara automáticamente una \textbf{Cloud Function} que notifica al servidor central, eliminando la necesidad de mantener un servidor de mensajería dedicado.
+\end{enumerate}
+
+\subsection{Persistencia y Orquestación}
+La transición a microservicios exige repensar el almacenamiento. Laigner et al. \cite{laigner2020monolithic} documentan cómo el modelo relacional tradicional se convierte en un cuello de botella bajo carga masiva. Su solución fue migrar la capa de persistencia a \textbf{Cassandra}, una base de datos NoSQL optimizada para escrituras rápidas, esencial para guardar la telemetría de miles de sensores sin bloqueos.
+
+Sin embargo, la coreografía de eventos pura puede volverse inmanejable. Adekunle \cite{adekunle2024financial} advierte que, en sistemas financieros o críticos, dejar que los servicios reaccionen libremente es riesgoso. Por ello, la implementación robusta suele incluir un motor de procesos (como \textbf{Camunda BPM}) que orquesta los flujos de Kafka, asegurando que si un evento de "infracción detectada" no recibe un evento de "multa pagada" en X tiempo, se dispare una alerta de escalado.
+
+\subsection{Fragmento de código: Productor de Eventos IoT}
+El siguiente código conceptualiza la lógica de un nodo Edge basada en el patrón de filtrado descrito por Salamon et al. \cite{salamon2018gateway}. A diferencia de un sistema tonto que transmite todo, este script implementa lógica de negocio local para decidir qué merece ser enviado al bus global.
+
+\ifminted
+\begin{minted}[linenos]{python}
+from kafka import KafkaProducer
+import json
+import time
+
+# Configuracion del productor (Edge Node)
+# Se conecta al cluster Kafka gestionado por Zookeeper
+producer = KafkaProducer(
+    bootstrap_servers=['kafka-broker:9092'],
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
+
+def procesar_sensor_trafico(sensor_id, datos_vision):
+    """
+    Simula la logica de 'Smart Filtering' en el borde.
+    Solo emite eventos si la confianza de la IA (YOLO) es alta.
+    """
+    nivel_confianza = datos_vision.get('confidence', 0)
+    tipo_infraccion = datos_vision.get('type')
+
+    # Filtrado en origen: Reduccion de ancho de banda y ruido
+    # como sugieren Salamon et al.
+    if nivel_confianza > 0.85:
+        evento = {
+            "sensor_id": sensor_id,
+            "timestamp": time.time(),
+            "evento": "INFRACCION_DETECTADA",
+            "detalles": {
+                "tipo": tipo_infraccion,
+                "confianza": nivel_confianza,
+                "coordenadas": datos_vision.get('bbox')
+            }
+        }
+        
+        # Publicacion asincrona al topico particionado
+        producer.send('alertas-trafico', value=evento)
+        print(f"Evento critico enviado: {tipo_infraccion}")
+    else:
+        # Los falsos positivos se descartan localmente
+        pass
+\end{minted}
+\else
+\begin{lstlisting}[language=Python]
+from kafka import KafkaProducer
+import json
+import time
+
+# Configuracion del productor (Edge Node)
+# Se conecta al cluster Kafka gestionado por Zookeeper
+producer = KafkaProducer(
+    bootstrap_servers=['kafka-broker:9092'],
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
+
+def procesar_sensor_trafico(sensor_id, datos_vision):
+    """
+    Simula la logica de 'Smart Filtering' en el borde.
+    Solo emite eventos si la confianza de la IA (YOLO) es alta.
+    """
+    nivel_confianza = datos_vision.get('confidence', 0)
+    tipo_infraccion = datos_vision.get('type')
+
+    # Filtrado en origen: Reduccion de ancho de banda y ruido
+    # como sugieren Salamon et al.
+    if nivel_confianza > 0.85:
+        evento = {
+            "sensor_id": sensor_id,
+            "timestamp": time.time(),
+            "evento": "INFRACCION_DETECTADA",
+            "detalles": {
+                "tipo": tipo_infraccion,
+                "confianza": nivel_confianza,
+                "coordenadas": datos_vision.get('bbox')
+            }
+        }
+        
+        # Publicacion asincrona al topico particionado
+        producer.send('alertas-trafico', value=evento)
+        print(f"Evento critico enviado: {tipo_infraccion}")
+    else:
+        # Los falsos positivos se descartan localmente
+        pass
+\end{lstlisting}
+\fi

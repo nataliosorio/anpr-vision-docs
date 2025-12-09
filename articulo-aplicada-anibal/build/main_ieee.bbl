@@ -1,0 +1,494 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{phuttharak2023smartcity}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=766b9e73333563ac01c3596c3d780b35}{%
+           family={Phuttharak},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=093794304eb7515f73e89940bcd18b3e}{%
+           family={Loke},
+           familyi={L\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{fullhash}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{fullhashraw}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{bibnamehash}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{authorbibnamehash}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{authornamehash}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{authorfullhash}{08c739ff68f1d9bad77781a513fa745d}
+      \strng{authorfullhashraw}{08c739ff68f1d9bad77781a513fa745d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Sensor and Actuator Networks}
+      \field{title}{An Event-Driven Architectural Model for Integrating Heterogeneous Data and Developing Smart City Applications}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2224-2708/12/1/12
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2224-2708/12/1/12
+      \endverb
+    \endentry
+    \entry{bruns2014fusion}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=80ee91ab689385203c6231c6a66f6b96}{%
+           family={Bruns},
+           familyi={B\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=68308be510ed1c483965b14e00d32aa6}{%
+           family={Dunkel},
+           familyi={D\bibinitperiod},
+           given={Jurgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{fullhash}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{fullhashraw}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{bibnamehash}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{authorbibnamehash}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{authornamehash}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{authorfullhash}{cc7d64ad43532c0695ee15a34925e159}
+      \strng{authorfullhashraw}{cc7d64ad43532c0695ee15a34925e159}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on Information Fusion}
+      \field{title}{Using Complex Event Processing to support data fusion for ambulance coordination}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://confcats_isif.s3.amazonaws.com/web-files/event/proceedings/html/2014Proceedings/papers/fusion2014_submission_55/paper55.pdf
+      \endverb
+      \verb{url}
+      \verb http://confcats_isif.s3.amazonaws.com/web-files/event/proceedings/html/2014Proceedings/papers/fusion2014_submission_55/paper55.pdf
+      \endverb
+    \endentry
+    \entry{laigner2020monolithic}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=f655e7178c9cd7ec15d2b2dce12d407b}{%
+           family={Laigner},
+           familyi={L\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{fullhash}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{fullhashraw}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{bibnamehash}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{authorbibnamehash}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{authornamehash}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{authorfullhash}{a4e11869605a155d6a787df8a0ab177d}
+      \strng{authorfullhashraw}{a4e11869605a155d6a787df8a0ab177d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{From a Monolithic Big Data System to a Microservices Event-Driven Architecture}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/341822188_From_a_Monolithic_Big_Data_System_to_a_Microservices_Event-Driven_Architecture
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/341822188_From_a_Monolithic_Big_Data_System_to_a_Microservices_Event-Driven_Architecture
+      \endverb
+    \endentry
+    \entry{lazzari2023hidden}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1ad79180c0b54b26a7230da1a7e28060}{%
+           family={Lazzari},
+           familyi={L\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=85b01b976a19329ff4536e3d0d44a8e8}{%
+           family={Farias},
+           familyi={F\bibinitperiod},
+           given={Kleinner},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{fullhash}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{fullhashraw}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{bibnamehash}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{authorbibnamehash}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{authornamehash}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{authorfullhash}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \strng{authorfullhashraw}{21082d47d01b7c53b41e0e9dbcc1840d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2308.05270}
+      \field{title}{Uncovering the Hidden Potential of Event-Driven Architecture: A Research Agenda}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2308.05270
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2308.05270
+      \endverb
+    \endentry
+    \entry{perera2024traffic}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=e032fa9c4492d4f8b10350fb12823742}{%
+           family={Perera},
+           familyi={P\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{fullhash}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{fullhashraw}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{bibnamehash}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{authorbibnamehash}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{authornamehash}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{authorfullhash}{6d91f2ee66c1984fed955911f7c73850}
+      \strng{authorfullhashraw}{6d91f2ee66c1984fed955911f7c73850}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Community Development and Humanitarian Action}
+      \field{title}{Traffic Violation Detection System}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://journals.sjp.ac.lk/index.php/contre/article/view/7390
+      \endverb
+      \verb{url}
+      \verb https://journals.sjp.ac.lk/index.php/contre/article/view/7390
+      \endverb
+    \endentry
+    \entry{coretti2025neuromorphic}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7a2dc65119cf31f7eb6b709d64f0bced}{%
+           family={Coretti},
+           familyi={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=01f6e25ae2ff177c05731b14c37dd0a1}{%
+           family={Varile},
+           familyi={V\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=331d06a9d31e7b816225a9a31cba3e63}{%
+           family={Bertaina},
+           familyi={B\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5197f8b5dfef7fe83d684ae4da8043a1}
+      \strng{fullhash}{12fca853f35a9459f5a938cf52bef47d}
+      \strng{fullhashraw}{12fca853f35a9459f5a938cf52bef47d}
+      \strng{bibnamehash}{12fca853f35a9459f5a938cf52bef47d}
+      \strng{authorbibnamehash}{12fca853f35a9459f5a938cf52bef47d}
+      \strng{authornamehash}{5197f8b5dfef7fe83d684ae4da8043a1}
+      \strng{authorfullhash}{12fca853f35a9459f5a938cf52bef47d}
+      \strng{authorfullhashraw}{12fca853f35a9459f5a938cf52bef47d}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2506.16436}
+      \field{title}{An efficient neuromorphic approach for collision avoidance combining Stack-CNN with event cameras}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2506.16436
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2506.16436
+      \endverb
+    \endentry
+    \entry{baz2019video}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=0cac368d6f99b7cac72069d0db11b0dc}{%
+           family={Baz},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4340b893922671aad85763f0fee6cc36}
+      \strng{fullhash}{4340b893922671aad85763f0fee6cc36}
+      \strng{fullhashraw}{4340b893922671aad85763f0fee6cc36}
+      \strng{bibnamehash}{4340b893922671aad85763f0fee6cc36}
+      \strng{authorbibnamehash}{4340b893922671aad85763f0fee6cc36}
+      \strng{authornamehash}{4340b893922671aad85763f0fee6cc36}
+      \strng{authorfullhash}{4340b893922671aad85763f0fee6cc36}
+      \strng{authorfullhashraw}{4340b893922671aad85763f0fee6cc36}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 25th Conference of Open Innovations Association FRUCT}
+      \field{title}{Event-Driven Video Services for Monitoring in Edge-Centric Internet of Things Environments}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://fruct.org/publications/volume-25/fruct25/files/Baz.pdf
+      \endverb
+      \verb{url}
+      \verb https://fruct.org/publications/volume-25/fruct25/files/Baz.pdf
+      \endverb
+    \endentry
+    \entry{salamon2018gateway}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=f121989a50aeac4f36b92af108018003}{%
+           family={Salamon},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{330df4005c2ef7172378297dc9bd9366}
+      \strng{fullhash}{330df4005c2ef7172378297dc9bd9366}
+      \strng{fullhashraw}{330df4005c2ef7172378297dc9bd9366}
+      \strng{bibnamehash}{330df4005c2ef7172378297dc9bd9366}
+      \strng{authorbibnamehash}{330df4005c2ef7172378297dc9bd9366}
+      \strng{authornamehash}{330df4005c2ef7172378297dc9bd9366}
+      \strng{authorfullhash}{330df4005c2ef7172378297dc9bd9366}
+      \strng{authorfullhashraw}{330df4005c2ef7172378297dc9bd9366}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Supercomputing}
+      \field{title}{Event driven and semantic based approach for data processing on IoT gateway devices}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.academia.edu/download/109262019/s12652-018-0843-y20231219-1-u5ip6.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.academia.edu/download/109262019/s12652-018-0843-y20231219-1-u5ip6.pdf
+      \endverb
+    \endentry
+    \entry{ciechomski2018soccer}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=77b21cf9642f46bc2e177d58f51f7352}{%
+           family={Ciechomski},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{fullhash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{fullhashraw}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{bibnamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{authorbibnamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{authornamehash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{authorfullhash}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \strng{authorfullhashraw}{d7f3b49c4e69f02b26f7dafd2cac2f10}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Pisa Archive}
+      \field{title}{Soccer Event Detection}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://arpi.unipi.it/handle/11568/931066
+      \endverb
+      \verb{url}
+      \verb https://arpi.unipi.it/handle/11568/931066
+      \endverb
+    \endentry
+    \entry{roest2017challenges}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2a798c8be7cf28ea8a2616866cf0fc45}{%
+           family={Roest},
+           familyi={R\bibinitperiod},
+           given={Maxwell},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1fcced3997f2592e5e1aaf545307dff1}{%
+           family={Florkowski},
+           familyi={F\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{fullhash}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{fullhashraw}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{bibnamehash}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{authorbibnamehash}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{authornamehash}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{authorfullhash}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \strng{authorfullhashraw}{5198ffca3cdcd352c41c06c3e5d96bbc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 11th ACM International Conference on Distributed and Event-based Systems}
+      \field{title}{Challenges with Image Event Processing}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://d1wqtxts1xzle7.cloudfront.net/82405097/DEBS2017-Aslam-libre.pdf
+      \endverb
+      \verb{url}
+      \verb https://d1wqtxts1xzle7.cloudfront.net/82405097/DEBS2017-Aslam-libre.pdf
+      \endverb
+    \endentry
+    \entry{kul2021microservices}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=46648e094db33facd083c7c1b5872f88}{%
+           family={Kul},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1b6c60a72940767fd9b00b2fa981c36f}{%
+           family={Tashiev},
+           familyi={T\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{fullhash}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{fullhashraw}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{bibnamehash}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{authorbibnamehash}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{authornamehash}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{authorfullhash}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \strng{authorfullhashraw}{ae93103cc1fcda3edb0ac1b6bd1505a1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Event-Based Microservices With Apache Kafka Streams: A Real-Time Vehicle Detection System Based on Type, Color, and Speed Attributes}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/9446179
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/9446179
+      \endverb
+    \endentry
+    \entry{adekunle2024financial}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e21680ed42564fad195ccee736bbaf00}{%
+           family={Adekunle},
+           familyi={A\bibinitperiod},
+           given={Bolaji},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e21680ed42564fad195ccee736bbaf00}
+      \strng{fullhash}{e21680ed42564fad195ccee736bbaf00}
+      \strng{fullhashraw}{e21680ed42564fad195ccee736bbaf00}
+      \strng{bibnamehash}{e21680ed42564fad195ccee736bbaf00}
+      \strng{authorbibnamehash}{e21680ed42564fad195ccee736bbaf00}
+      \strng{authornamehash}{e21680ed42564fad195ccee736bbaf00}
+      \strng{authorfullhash}{e21680ed42564fad195ccee736bbaf00}
+      \strng{authorfullhashraw}{e21680ed42564fad195ccee736bbaf00}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Designing Event-Driven Architecture for Financial Systems Using Kafka, Camunda BPM, and Process Engines}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/392081813_Designing_Event-Driven_Architecture_for_Financial_Systems_Using_Kafka_Camunda_BPM_and_Process_Engines
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/392081813_Designing_Event-Driven_Architecture_for_Financial_Systems_Using_Kafka_Camunda_BPM_and_Process_Engines
+      \endverb
+    \endentry
+    \entry{shujaat2021improvements}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=786aee9356ac699403b96ff26c9acf34}{%
+           family={Shujaat},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{fullhash}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{fullhashraw}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{bibnamehash}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{authorbibnamehash}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{authornamehash}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{authorfullhash}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \strng{authorfullhashraw}{ba123f11524c2a0e0ba1b7e4070fc895}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Improvements to Implementation Methodology for CC-IoT}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/377222341_Improvements_to_Implementation_Methodology_for_CC-IoT
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/377222341_Improvements_to_Implementation_Methodology_for_CC-IoT
+      \endverb
+    \endentry
+    \entry{xu2016provisioning}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=9de9518d9dc6d0b890a7f960e94ea3ad}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{77d53f58024add08545baf6de2ea5286}
+      \strng{fullhash}{77d53f58024add08545baf6de2ea5286}
+      \strng{fullhashraw}{77d53f58024add08545baf6de2ea5286}
+      \strng{bibnamehash}{77d53f58024add08545baf6de2ea5286}
+      \strng{authorbibnamehash}{77d53f58024add08545baf6de2ea5286}
+      \strng{authornamehash}{77d53f58024add08545baf6de2ea5286}
+      \strng{authorfullhash}{77d53f58024add08545baf6de2ea5286}
+      \strng{authorfullhashraw}{77d53f58024add08545baf6de2ea5286}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{An Event-Driven Service Provisioning Mechanism for IoT (Internet of Things) System Interaction}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/7562353/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/7562353/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

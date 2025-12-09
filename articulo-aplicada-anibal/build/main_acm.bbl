@@ -1,0 +1,243 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Adekunle(2024)]%
+        {adekunle2024financial}
+\bibfield{author}{\bibinfo{person}{Bolaji Adekunle}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Designing Event-Driven Architecture for Financial
+  Systems Using Kafka, Camunda BPM, and Process Engines}.
+\newblock \bibinfo{journal}{\emph{ResearchGate}} (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/392081813_Designing_Event-Driven_Architecture_for_Financial_Systems_Using_Kafka_Camunda_BPM_and_Process_Engines}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Baz et~al\mbox{.}(2019)]%
+        {baz2019video}
+\bibfield{author}{\bibinfo{person}{A. Baz} {et~al\mbox{.}}}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Event-Driven Video Services for Monitoring in
+  Edge-Centric Internet of Things Environments}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 25th Conference of Open
+  Innovations Association FRUCT}} (\bibinfo{year}{2019}).
+\newblock
+\urldef\tempurl%
+\url{https://fruct.org/publications/volume-25/fruct25/files/Baz.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bruns and Dunkel(2014)]%
+        {bruns2014fusion}
+\bibfield{author}{\bibinfo{person}{Ralf Bruns} {and} \bibinfo{person}{Jurgen
+  Dunkel}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Using Complex Event Processing to support data
+  fusion for ambulance coordination}.
+\newblock \bibinfo{journal}{\emph{International Conference on Information
+  Fusion}} (\bibinfo{year}{2014}).
+\newblock
+\urldef\tempurl%
+\url{http://confcats_isif.s3.amazonaws.com/web-files/event/proceedings/html/2014Proceedings/papers/fusion2014_submission_55/paper55.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ciechomski et~al\mbox{.}(2018)]%
+        {ciechomski2018soccer}
+\bibfield{author}{\bibinfo{person}{P. Ciechomski} {et~al\mbox{.}}}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Soccer Event Detection}.
+\newblock \bibinfo{journal}{\emph{University of Pisa Archive}}
+  (\bibinfo{year}{2018}).
+\newblock
+\urldef\tempurl%
+\url{https://arpi.unipi.it/handle/11568/931066}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Coretti et~al\mbox{.}(2025)]%
+        {coretti2025neuromorphic}
+\bibfield{author}{\bibinfo{person}{Alessandro Coretti}, \bibinfo{person}{Mattia
+  Varile}, {and} \bibinfo{person}{Mario Bertaina}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{An efficient neuromorphic approach for collision
+  avoidance combining Stack-CNN with event cameras}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2506.16436}}
+  (\bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2506.16436}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kul and Tashiev(2021)]%
+        {kul2021microservices}
+\bibfield{author}{\bibinfo{person}{S. Kul} {and} \bibinfo{person}{I. Tashiev}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Event-Based Microservices With Apache Kafka
+  Streams: A Real-Time Vehicle Detection System Based on Type, Color, and Speed
+  Attributes}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}} (\bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://ieeexplore.ieee.org/abstract/document/9446179}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Laigner et~al\mbox{.}(2020)]%
+        {laigner2020monolithic}
+\bibfield{author}{\bibinfo{person}{Rodrigo Laigner} {et~al\mbox{.}}}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{From a Monolithic Big Data System to a
+  Microservices Event-Driven Architecture}.
+\newblock \bibinfo{journal}{\emph{ResearchGate}} (\bibinfo{year}{2020}).
+\newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/341822188_From_a_Monolithic_Big_Data_System_to_a_Microservices_Event-Driven_Architecture}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lazzari and Farias(2023)]%
+        {lazzari2023hidden}
+\bibfield{author}{\bibinfo{person}{Lucas Lazzari} {and}
+  \bibinfo{person}{Kleinner Farias}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Uncovering the Hidden Potential of Event-Driven
+  Architecture: A Research Agenda}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2308.05270}}
+  (\bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2308.05270}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Perera et~al\mbox{.}(2024)]%
+        {perera2024traffic}
+\bibfield{author}{\bibinfo{person}{H. Perera} {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Traffic Violation Detection System}.
+\newblock \bibinfo{journal}{\emph{Journal of Community Development and
+  Humanitarian Action}} (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://journals.sjp.ac.lk/index.php/contre/article/view/7390}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Phuttharak and Loke(2023)]%
+        {phuttharak2023smartcity}
+\bibfield{author}{\bibinfo{person}{J. Phuttharak} {and} \bibinfo{person}{S.~W.
+  Loke}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{An Event-Driven Architectural Model for Integrating
+  Heterogeneous Data and Developing Smart City Applications}.
+\newblock \bibinfo{journal}{\emph{Journal of Sensor and Actuator Networks}}
+  (\bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://www.mdpi.com/2224-2708/12/1/12}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Roest and Florkowski(2017)]%
+        {roest2017challenges}
+\bibfield{author}{\bibinfo{person}{Maxwell Roest} {and}
+  \bibinfo{person}{Stanley Florkowski}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Challenges with Image Event Processing}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 11th ACM International
+  Conference on Distributed and Event-based Systems}} (\bibinfo{year}{2017}).
+\newblock
+\urldef\tempurl%
+\url{https://d1wqtxts1xzle7.cloudfront.net/82405097/DEBS2017-Aslam-libre.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Salamon et~al\mbox{.}(2018)]%
+        {salamon2018gateway}
+\bibfield{author}{\bibinfo{person}{F. Salamon} {et~al\mbox{.}}}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Event driven and semantic based approach for data
+  processing on IoT gateway devices}.
+\newblock \bibinfo{journal}{\emph{Journal of Supercomputing}}
+  (\bibinfo{year}{2018}).
+\newblock
+\urldef\tempurl%
+\url{https://www.academia.edu/download/109262019/s12652-018-0843-y20231219-1-u5ip6.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Shujaat et~al\mbox{.}(2021)]%
+        {shujaat2021improvements}
+\bibfield{author}{\bibinfo{person}{Muhammad Shujaat} {et~al\mbox{.}}}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Improvements to Implementation Methodology for
+  CC-IoT}.
+\newblock \bibinfo{journal}{\emph{ResearchGate}} (\bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/377222341_Improvements_to_Implementation_Methodology_for_CC-IoT}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Xu et~al\mbox{.}(2016)]%
+        {xu2016provisioning}
+\bibfield{author}{\bibinfo{person}{B. Xu} {et~al\mbox{.}}}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{An Event-Driven Service Provisioning Mechanism for
+  IoT (Internet of Things) System Interaction}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}} (\bibinfo{year}{2016}).
+\newblock
+\urldef\tempurl%
+\url{https://ieeexplore.ieee.org/abstract/document/7562353/}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}

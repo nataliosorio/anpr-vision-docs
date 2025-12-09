@@ -1,0 +1,14 @@
+\section{Discusión}
+
+Adoptar arquitecturas orientadas a eventos (EDA) no es una actualización gratuita; es más bien un trueque. Si bien descentralizar el cómputo resuelve la latencia crítica en escenarios de vida o muerte como el tráfico o el espacio \cite{perera2024traffic, coretti2025neuromorphic}, el precio a pagar es una complejidad cognitiva y operativa brutal. Básicamente, estamos cambiando un monolito lento pero predecible por un sistema distribuido rápido pero potencialmente caótico.
+
+\subsection{El Espejismo de la Simplicidad}
+A menudo se vende la idea de que los microservicios simplifican el desarrollo, pero la evidencia sugiere lo contrario. Kul y Tashiev \cite{kul2021microservices} lograron un rendimiento impresionante, sí, pero a costa de gestionar múltiples contenedores Docker y clústeres de Zookeeper. Esto traslada la complejidad del código a la infraestructura. Para un equipo pequeño, mantener una topología de Kafka Streams como la que ellos proponen puede ser más costoso que el problema que intentan resolver.
+
+\subsection{La Torre de Babel de los Datos}
+El verdadero cuello de botella ya no es la tecnología, sino el entendimiento. Como bien apuntan Roest y Florkowski \cite{roest2017challenges}, sin una capa de traducción semántica, corremos el riesgo de crear un "pantano de datos" donde los sensores hablan, pero el negocio no entiende nada. La propuesta de Xu et al. \cite{xu2016provisioning} sobre romper los "silos" de información es crucial aquí: no basta con conectar cables; hay que estandarizar el lenguaje. Por eso, soluciones como las de Phuttharak y Loke \cite{phuttharak2023smartcity} son vitales: ponen orden semántico antes que velocidad bruta.
+
+\subsection{El Dilema del Control: ¿Quién manda?}
+Existe una tensión no resuelta en la literatura entre la autonomía pura y el control centralizado. Mientras que Bruns y Dunkel \cite{bruns2014fusion} demuestran que la inferencia automática de estados (CEP) es superior al reporte manual en ambulancias, Adekunle \cite{adekunle2024financial} nos recuerda que en sistemas financieros no podemos dejar que los eventos fluyan sin supervisión.
+
+Para los líderes técnicos, la lección es dura pero clara: invertir en Kafka o Edge Computing es tirar el dinero si no se invierte igual en observabilidad. Un sistema distribuido sin un buen rastreo es una bomba de tiempo \cite{lazzari2023hidden}. A veces, la decisión más madura no es buscar la pureza del evento, sino introducir un orquestador centralizado que ponga reglas claras en el caos.

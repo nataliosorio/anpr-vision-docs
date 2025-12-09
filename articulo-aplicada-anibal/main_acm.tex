@@ -1,0 +1,38 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+\input{includes/preamble_common}
+\input{includes/preamble_acm}
+
+\AtBeginDocument{\providecommand\BibTeX{{\sc Bib}\TeX}}
+
+\title[Arquitecturas Orientadas a Eventos en IoT]{Modernización de Ecosistemas IoT: Un Enfoque Basado en Arquitecturas Orientadas a Eventos, Microservicios y Computación en el Borde}
+
+\author{Anibal Alvarado Andrade}
+\affiliation{%
+  \institution{Servicio Nacional de Aprendizaje - SENA}
+  \city{Neiva}
+  \country{Colombia}}
+\email{anibalalvaradoandrade@gmail.com}
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\keywords{Arquitectura Orientada a Eventos, Internet de las Cosas (IoT), Microservicios, Computación en el Borde, Apache Kafka, Procesamiento en tiempo real}
+
+\begin{document}
+\maketitle
+
+\input{sections/01_introduccion}
+\input{sections/02_relacionados}
+\input{sections/03_metodologia}
+\input{sections/04_implementacion}
+\input{sections/05_resultados}
+\input{sections/06_discusion}
+\input{sections/07_conclusiones}
+\input{sections/A1_apendices}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography/references}
+
+\end{document}

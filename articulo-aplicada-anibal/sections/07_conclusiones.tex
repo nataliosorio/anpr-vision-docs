@@ -1,0 +1,9 @@
+\section{Conclusiones y trabajo futuro}
+
+Este estudio confirma que la transición hacia arquitecturas orientadas a eventos y microservicios no es opcional para los sistemas modernos; es una necesidad técnica impuesta por la física. La evidencia analizada muestra que las arquitecturas tradicionales, como el monolito descrito en el caso de Tecgraf \cite{laigner2020monolithic}, ya no pueden manejar la velocidad que requieren escenarios críticos actuales, como la prevención de colisiones espaciales \cite{coretti2025neuromorphic} o el control de tráfico en tiempo real \cite{perera2024traffic}.
+
+Sin embargo, también queda claro que esta modernización trae sus propios problemas. Aunque procesar datos en el borde (Edge Computing) reduce drásticamente la dependencia de la nube \cite{baz2019video}, aumenta la dificultad operativa de mantener cientos de dispositivos dispersos. Además, identificamos que la velocidad es inútil si no se resuelve primero la falta de estandarización en los datos; sin una capa semántica adecuada, la información de los sensores pierde su valor y contexto, convirtiéndose en ruido digital \cite{phuttharak2023smartcity}.
+
+Otra conclusión clave es que la "fuerza bruta" computacional no siempre es la respuesta. Estudios como el de Kul y Tashiev \cite{kul2021microservices} demuestran que modelos de IA optimizados y ligeros (Tiny-YOLO) pueden superar en eficiencia a modelos complejos si se integran correctamente en una arquitectura de flujo.
+
+El trabajo a futuro debe concentrarse obsesivamente en solucionar los puntos débiles que encontramos: la falta de herramientas maduras para monitorear y rastrear errores en sistemas distribuidos \cite{lazzari2023hidden} y la necesidad de estándares de interoperabilidad más simples que no requieran ontologías complejas. Mientras no resolvamos la dificultad de observar y depurar estos sistemas, su adopción masiva fuera de los gigantes tecnológicos seguirá siendo una apuesta arriesgada.
